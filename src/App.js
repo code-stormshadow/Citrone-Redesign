@@ -1,13 +1,17 @@
-import './App.css';
-
+import { Route, Routes } from 'react-router-dom';
+import Dashboard from './components/pages/Dashboard';
+import LandingPage from './components/pages/LandingPage';
+import LoginPage from './components/pages/LoginPage';
+import SignUpPage from './components/pages/SignUpPage';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+      <Routes>
+        <Route path="/" element={<LandingPage />}></Route>
+        <Route path="signup" element={<SignUpPage />}></Route>
+        <Route path="login" element={<LoginPage />}></Route>
+        <Route path="dashboard" element={<Dashboard />}></Route>
+      </Routes>
     </div>
   );
 }
