@@ -12,7 +12,134 @@ code {
     monospace;
 } */
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 /* Landing page styling starts here */
 
+.first-container {
+  background: #FEF2F2;
+  height: 730px;
+  padding-left: 80px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+}
+
+.citrone {
+  margin-left: 7px;
+}
+
+/* .login-button {
+  margin-left: 1030px;
+  height: 48px;
+  width: 106px;
+  background: #FEF2F2;
+  border: 1px solid #F54F59;
+  border-radius: 6px;
+  font-family: 'Lato';
+  font-size: 16px;
+  cursor: pointer;
+  }
+
+  .login-button:hover {
+    background-color: #f74955;
+    transition: 0.2s;
+    color: #fff;
+  } */
+
+.paragraph-container {
+margin-top: 120px;
+}
+
+.first-paragraph {
+  width: 693px;
+  height: 128px;
+  font-family: 'Montserrat-bold', sans-serif;
+  font-size: 45px;
+  letter-spacing: 0.01em;
+  line-height: 60px;
+}
+
+.community {
+  color: #F54F59;
+}
+
+.second-paragraph {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  width: 740px;
+  letter-spacing: 0.012em;
+  margin-top: 40px;
+}
+
+.certified {
+  color: #F54F59;
+}
+
+.start-career-button {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  color: #ffff;
+  line-height: 24px;
+  width: 211px;
+  height: 48px;
+  background: #F54F59;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.start-career-button:hover {
+  background-color: #ef3744;
+  transition: 0.2s;
+}
+
+.section-landing-1 {
+  display: flex;
+}
+
+.portrait {
+  margin: 10px 50px;
+  width: 463px;
+  height: 650px;
+}
+
+.learning-process-container {
+  background: #ffff;
+  border: 1px solid red;
+  height: 128px;
+  width: 1248px;
+  padding-left: 90px;
+  color:#F54F59;
+  text-align: center;
+  margin: -60px auto;
+  position: relative;
+  z-index: 1;
+}
+
+.learning-process-text-container {
+  display: flex;
+  border: 1px solid blue;
+  width: 1100px;
+  height: 100px;
+  margin-top: 30px;
+}
+
+.learning-process-text1 {
+  border: 1px solid red;
+}
 
 /* Landing page styling ends here */
