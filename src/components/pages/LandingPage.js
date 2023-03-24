@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from './images/Mask group 1.png';
+import Logo from './images/Mask group.png';
 
 const LandingPage = () => {
   return (

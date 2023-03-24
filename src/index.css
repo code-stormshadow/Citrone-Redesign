@@ -16,3 +16,22 @@ code {
 
 
 /* Landing page styling ends here */
+/*SignUp Page begins here */
+.imgDiv{
+  background-color: transparent;
+  margin-top: 200px;
+  border: 1px solid rgb(12, 161, 32);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  
+}
+img{
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+h1{
+  font-size: 12px;
+  
+}
