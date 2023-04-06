@@ -1,6 +1,8 @@
 import React from 'react';
-import SideArrow from './/images/side-arrow.svg';
+import SideArrow from '../images/side-arrow.svg';
 import RealTime from './RealTime';
+import IncompleteTask from './IncompleteTasks';
+import CourseProgress from './CourseProgress';
 
 const Main = () => {
   return (
@@ -28,6 +30,8 @@ const Main = () => {
       </div>
 
       <RealTime />
+      <IncompleteTask />
+      <CourseProgress />
     </main>
   );
 };
