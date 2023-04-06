@@ -1,0 +1,311 @@
+/* body {
+    height: 100%;
+    width: 100%;
+    background: #F8E8E9;
+
+  } */
+  
+.signUp-container{
+    background: #F8E8E9;
+    width: 100%;
+    height: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding-left: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+.contentContainer{
+    padding-left: 70px;
+}
+#headerLogo{
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+img{
+    height: 50px;
+}
+  
+#logoHeader{
+    font-weight: 600;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+  
+#formSignUp{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 80%;
+    height: 90%;
+    background-color: #fafafa;
+    padding: 30px 40px;
+  
+}
+.headerTwo{
+    width: 300px;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-left: 68px;
+}
+.inputsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-left: 35px;
+}
+#signUpLabels{
+    font-weight: 600;
+    margin-left: 35px;
+}
+.names{
+    width: 88%;
+    display: flex;
+    flex-direction: row;
+    color: #3a3a3a;
+    gap: 20px;
+    /* justify-content: space-between; */
+    margin-bottom: 25px;
+    font-weight: 600;
+    margin-left: 35px;
+    
+}
+.names input[type="text"]{
+    width: 371px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+}
+.names input:hover{
+    background: #F8E8E9;
+}
+.emailPasswordContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    
+}
+.emailPasswordContainer input[type="email"], .emailPasswordContainer input[type="password"]{
+    width: 88%;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: thin;
+    margin-left: 35px;
+}
+/* .emailPasswordContainer input[type="email"], .emailPasswordContainer input[type="text"]{
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(194, 181, 181);
+    
+} */
+.emailPasswordContainer input:hover{
+    background: #F8E8E9;
+}
+#changePasswordEye{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: -33px;
+    margin-top: 13px;
+}
+#uniqueCodes-container{
+    margin-top: 10px;
+    gap: 1px;
+    padding: 3px 0;
+    margin-left: 35px;
+}
+.icon{
+    margin-bottom: 7px;
+}
+#uniqueCodesAndText{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: rows;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+.uniqueCodes{
+    margin-right: 20px;
+    width: 77px;
+    height: 48px;
+    border-radius: 5px;
+    border-width: thin;
+}
+.uniqueCodes:hover{
+    background: #F8E8E9;
+}
+#uniqueCodeText{
+    margin: 10px 5px;
+    color: #e20e0e;
+    font-size: 15px;
+    width: 225px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+.termsAndPrivacy{
+    font-weight: 400;
+    width: 700px;
+    margin: 30px 50px ;
+    text-align: center;
+    display: inline-block;
+    justify-self: center;
+    align-items: center;
+}
+.termsLink{
+    cursor: pointer;
+    color: #3a3a3a;
+    text-decoration: underline;
+}
+.termsLink:hover{
+    cursor: pointer;
+    color: #3a3a3a;
+    text-decoration: underline;
+}
+.signupBtn, .loginBtn{
+
+    width: 88%;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    background: #F54F59;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+}
+.signupBtn:hover, .loginBtn:hover{
+    background-color: #ce3434;
+}
+#lastPara{
+    text-align: center;
+    width: 250px;
+    margin: 0 250px;
+}
+.logInLink, .signUpLink{
+    cursor: pointer;
+    color: #e20e0e;
+    text-decoration: none;
+}
+.logInLink:hover, .signUpLink:hover{
+    cursor: pointer;
+    color: #e20e0e;
+    text-decoration: underline;
+}
+
+#logInFormHeader{
+    /* border: 1px solid blue; */
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    margin-left: 95px;
+    margin-bottom: 10px;    
+}
+#logInLogoImg{
+    height: 50px;
+}
+#citroneTextHeader{
+    font-weight: 600;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    /* line-height: 19px; */
+}
+#logInForm{
+    background: #FAFAFA;
+    padding: 40px 30px 40px 50px;
+    width: 80%;
+    border-radius: 5px;
+    margin-left: 100px;
+}
+#logInHeader{
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin: 10px 99px;
+}
+#greetingDiv{
+    border-radius: 5px;
+    width: 77%;
+    padding: 10px 15px 10px 32px;
+    margin: 10px 20px 10px 103px;
+    background: #CDEDCC;
+}
+#greetingHeader{
+    display: inline;
+    padding: 10px 0;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #1A9447;
+    
+}
+#congratulations{
+    font-weight: 600;
+}
+.loginform-Content{
+    margin-left: 70px;
+    width: 87%;
+    padding-top: 10px;
+}
+/* .emailPasswordContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;   
+} */
+#emailLabelForLogin{
+    margin-bottom: 10px;
+    margin-left: 35px;
+}
+
+.passwordLabelsForLogin {
+    border: 1px solid red;
+    padding-left: 1px;
+    padding-bottom: 10px;
+    margin-left: 35px;
+    /* margin-right: 423px; */
+    width: 88%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#forgotPassword{
+    cursor: pointer;
+    color: #3a3a3a;
+    text-decoration: none; 
+    margin-left: 68%;
+    /* margin-right: none;    */
+
+}
+#forgotPassword:hover{
+    cursor: pointer;
+    color: #e20e0e;
+    text-decoration: underline;
+    
+}
+#checkbox input [type="radio"]:active {
+    background-color: #3a3a3a;
+}
+
+
+  
+  
