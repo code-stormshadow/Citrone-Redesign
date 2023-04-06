@@ -1,12 +1,16 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import FirstComponent from './FirstComponent';
+import SecondComponent from './SecondComponent';
+import ThirdComponent from './ThirdComponent';
 
 const LandingPage = () => {
   return (
-    <header className="header-container">
-      <div>
-        <h1>LandingPage</h1>
-      </div>
-    </header>
+    <div>
+      <FirstComponent />
+      <SecondComponent />
+      <ThirdComponent />
+    </div>
   );
 };
 
