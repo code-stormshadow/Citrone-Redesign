@@ -3,17 +3,18 @@ import SideArrow from '../images/side-arrow.svg';
 import RealTime from './RealTime';
 import IncompleteTask from './IncompleteTasks';
 import CourseProgress from './CourseProgress';
+import styles from './/Dashboard.module.css';
 
 const Main = () => {
   return (
-    <main className="main-content">
-      <div className="greetings-container">
-        <div className="greetings">
+    <main className={styles.main_content}>
+      <div className={styles.greetings_container}>
+        <div className={styles.greetings}>
           <h1>Hello, Olurotimi Akinnagbe 👍✨</h1>
           <span>Believe you can & youre halfway done!</span>
         </div>
 
-        <div className="resume-lesson">
+        <div className={styles.resume_lesson}>
           <div>
             <p>
               <a href="">Resume previous lesson</a>

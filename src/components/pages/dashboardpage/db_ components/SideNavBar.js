@@ -13,7 +13,8 @@ import SettingsIcon from '../images/settings-icon.svg';
 import LogOutIcon from '../images/logout-icon.svg';
 // import BarIcon from './/images/fa-bars.svg';
 import MainProfilePic from '../images/main-profile-pic.png';
-import '../db_ components/Dashboard.css';
+import styles from './/Dashboard.module.css';
+// import '../db_ components/Dashboard.css';
 import LogOutModal from './LogOutModal';
 
 const SideNavBar = () => {
@@ -40,11 +41,11 @@ const SideNavBar = () => {
     <div id="app" style={{ height: '100vh' }}>
       <Sidebar style={{ height: '160vh', background: 'white' }}>
         <Menu>
-          <div className="profilePic">
-            <img src={MainProfilePic} className="profileImg" alt="Profile Picture" />
+          <div className={styles.profilePic}>
+            <img src={MainProfilePic} className={styles.profileImg} alt="Profile Picture" />
           </div>
-          <p className="profileName">Olurotimi Akinnagbe</p>
-          <span className="profileCourse">UI/UX Design</span>
+          <p className={styles.profileName}>Olurotimi Akinnagbe</p>
+          <span className={styles.profileCourse}>UI/UX Design</span>
 
           <MenuItem
             component={<Link to="/dashboard" />}
@@ -56,7 +57,7 @@ const SideNavBar = () => {
               'custom-class': clicked
             })}>
             <img src={DashboardIcon} alt="Icon" />
-            <span className="menu_link">Dashboard</span>
+            <span className={styles.menu_link}>Dashboard</span>
           </MenuItem>
 
           <MenuItem
@@ -67,12 +68,12 @@ const SideNavBar = () => {
               'custom-class': clicked
             })}>
             <img src={CourseIcon} alt="Course Icon" />
-            <span className="menu_link">Course Content</span>
+            <span className={styles.menu_link}>Course Content</span>
           </MenuItem>
 
           <MenuItem
             component={<Link to="/assignment" />}
-            id="menuItem"
+            id={styles.menuItem}
             className={classNames({
               active: splitLocation[1] === 'assignment',
               'custom-class': clicked
@@ -83,57 +84,57 @@ const SideNavBar = () => {
 
           <MenuItem
             component={<Link to="/quizzes" />}
-            id="menuItem"
+            id={styles.menuItem}
             className={classNames({
               active: splitLocation[1] === 'quizzes',
               'custom-class': clicked
             })}>
             <img src={QuizIcon} alt="Icon" />
-            <span className="menu_link">Quizzes</span>
+            <span className={styles.menu_link}>Quizzes</span>
           </MenuItem>
 
           <MenuItem
             component={<Link to="/students_tutors" />}
-            id="menuItem"
+            id={styles.menuItem}
             className={classNames({
               active: splitLocation[1] === 'students_tutors',
               'custom-class': clicked
             })}>
             <img src={StIcon} alt="Icon" />
-            <span className="menu_link">Students & Tutors</span>
+            <span className={styles.menu_link}>Students & Tutors</span>
           </MenuItem>
 
-          <hr className="hr_line" />
+          <hr className={styles.hr_line} />
 
           <MenuItem
             component={<Link to="/faq" />}
-            id="menuItem"
+            id={styles.menuItem}
             className={classNames({
               active: splitLocation[1] === 'faq',
               'custom-class': clicked
             })}>
             <img src={FaqIcon} alt="Icon" />
-            <span className="menu_link">FAQ</span>
+            <span className={styles.menu_link}>FAQ</span>
           </MenuItem>
 
           <MenuItem
             component={<Link to="/settings" />}
-            id="menuItem"
+            id={styles.menuItem}
             className={classNames({
               active: splitLocation[1] === 'settings',
               'custom-class': clicked
             })}>
             <img src={SettingsIcon} alt="Icon" />
-            <span className="menu_link">Settings</span>
+            <span className={styles.menu_link}>Settings</span>
           </MenuItem>
 
           <MenuItem
             // component={<Link to="/logout" />}
-            id="menuItem"
+            id={styles.menuItem}
             className="logout_item"
             onClick={() => setModalShow(true)}>
             <img src={LogOutIcon} alt="Icon" />
-            <span className="menu_logout">Logout</span>
+            <span className={styles.menu_logout}>Logout</span>
           </MenuItem>
         </Menu>
       </Sidebar>
