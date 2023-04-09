@@ -1,0 +1,433 @@
+/* body {
+    height: 100%;
+    width: 100%;
+    background: #F8E8E9;
+
+  } */
+  
+.signUp-container, #loginDiv, .forgotPasswordMainDiv{
+    background: #F8E8E9;
+    width: 100%;
+    height: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding-left: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+.contentContainer, #forgotPassContent-div{
+    padding-left: 70px;
+}
+#headerLogo{
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+#imgHeaderLogo{
+    height: 50px;
+}
+  
+#logoHeader{
+    font-weight: 600;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+  
+#formSignUp{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 80%;
+    height: 90%;
+    background-color: #fafafa;
+    padding: 30px 40px;
+  
+}
+.headerTwo{
+    width: 40%;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-left: 68px;
+}
+.inputsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-left: 35px;
+}
+#signUpLabels{
+    font-weight: 600;
+    margin-left: 35px;
+}
+.names{
+    width: 88%;
+    display: flex;
+    flex-direction: row;
+    color: #3a3a3a;
+    gap: 20px;
+    /* justify-content: space-between; */
+    margin-bottom: 25px;
+    font-weight: 600;
+    margin-left: 35px;
+    
+}
+.namesInputs{
+    width: 367px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border-width: thin;
+    border-color: #3a3a3a;
+}
+.names input:hover{
+    background: #F8E8E9;
+}
+.emailPasswordContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    
+}
+#inputPasswordEmail{
+    width: 88%;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: thin;
+    margin-left: 35px;
+    border-color: #3a3a3a;
+
+}
+.emailPasswordContainer input:hover{
+    background: #F8E8E9;
+}
+#changePasswordEye{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: -33px;
+    margin-top: 13px;
+}
+#uniqueCodes-container{
+    margin-top: 10px;
+    gap: 1px;
+    padding: 3px 0;
+    margin-left: 35px;
+}
+#asterisk{
+    margin-bottom: 7px;
+    margin-left: 5px;
+}
+#uniqueCodesAndText{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: rows;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+.uniqueCodes{
+    margin-right: 20px;
+    width: 77px;
+    height: 48px;
+    border-radius: 5px;
+    border-width: thin;
+    border-color: #3a3a3a;
+
+}
+.uniqueCodes:hover{
+    background: #F8E8E9;
+}
+#uniqueCodeText{
+    margin: 10px 5px;
+    color: #e20e0e;
+    font-size: 15px;
+    width: 225px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+.termsAndPrivacy{
+    font-weight: 400;
+    width: 700px;
+    margin: 30px 90px ;
+    text-align: center;
+    display: inline-block;
+    justify-self: center;
+    align-items: center;
+}
+.termsLink{
+    cursor: pointer;
+    color: #3a3a3a;
+    text-decoration: underline;
+}
+.termsLink:hover{
+    cursor: pointer;
+    color: #3a3a3a;
+    text-decoration: underline;
+}
+.signupBtn{
+    width: 88%;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    background: #F54F59;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+}
+.signupBtn:hover{
+    background-color: #ce3434;
+}
+#lastPara, .forgotPassLastPara{
+    text-align: center;
+    width: 30%;
+    margin: 0 290px;
+}
+.logInLink, .signUpLink{
+    cursor: pointer;
+    color: #e20e0e;
+    text-decoration: none;
+}
+.logInLink:hover, .signUpLink:hover{
+    cursor: pointer;
+    color: #e20e0e;
+    text-decoration: underline;
+}
+#loginDiv{
+    background: #F8E8E9;
+    width: 100%;
+    height: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+#logInFormHeader, #ForgotPassHeader{
+    /* border: 1px solid blue; */
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    margin-left: 75px;
+    margin-bottom: 10px;    
+}
+#logInLogoImg, #forgotPassLogo{
+    height: 50px;
+}
+#citroneTextHeader, #citroneTextHeaderForPass{
+    font-weight: 600;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    /* line-height: 19px; */
+}
+#logInForm{
+    background: #FAFAFA;
+    padding: 40px 30px 40px 50px;
+    width: 90%;
+    border-radius: 5px;
+    margin-left: 80px;
+}
+#logInHeader{
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 10px 0 20px 99px;
+    
+}
+#greetingDiv{
+    border-radius: 5px;
+    width: 74%;
+    padding: 10px 15px 10px 32px;
+    margin: 10px 20px 10px 103px;
+    background: #CDEDCC;
+}
+#greetingHeader{
+    display: inline;
+    padding: 10px 0;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #1A9447;
+    
+}
+#congratulations{
+    font-weight: 600;
+}
+.loginform-Content{
+    margin-left: 70px;
+    width: 87%;
+    padding-top: 10px;
+}
+#emailLabelForLogin{
+    margin-bottom: 10px;
+    margin-left: 35px;
+}
+.emailInputForLogin, #passwordInputForLogin{
+    width: 77%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 35px;
+    border-width: thin;
+    border-color: #3a3a3a;
+}
+
+.passwordLabelsForLogin {
+    width: 77%;
+    display: flex;
+    padding-left: 1px;
+    padding-bottom: 10px;
+    margin-left: 35px;
+    
+}
+#forgotPassword{
+    cursor: pointer;
+    color: #3a3a3a;
+    text-decoration: none; 
+    margin-left: auto;
+       
+
+}
+#forgotPassword:hover{
+    cursor: pointer;
+    color: #e20e0e;
+    text-decoration: underline;
+    
+}
+/* #checkbox{
+    
+    background-color: #3a3a3a !important;
+    border: 1px solid blue;
+    margin-left: 35px;
+} */
+  .login-checkbox{
+    width: 180px;
+    padding-left: 1px;
+    display: flex;
+    margin-left: 35px;
+    flex-direction: row;
+  }
+  .login-checkboxLabel {
+    font-family: 'montserrat', sans-serif;
+    font-size: 16px;
+    margin-left: 5px; 
+  }
+ 
+  .login-checkboxLabel--disabled {
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
+  }
+  
+  input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: var(--form-background);
+    /* Not removed via appearance */
+    margin-top: 5px;
+  
+    font: inherit;
+    color: #3a3a3a;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid #3a3a3a;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    /* Windows High Contrast Mode */
+    background-color: CanvasText;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+  
+  /* input[type="checkbox"]:focus {
+    outline: max(2px, 0.15em) solid currentColor;
+    outline-offset: max(2px, 0.15em);
+  } */
+  
+  input[type="checkbox"]:disabled {
+    --form-control-color: var(--form-control-disabled);
+  
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
+  }
+  
+  /* .b-contain:hover input[type="radio"]:not([disabled]):checked ~ .b-input,
+  .b-contain input[type="radio"]:checked:focus ~ .b-input {
+    background: #3a3a3a;
+    border-color: #3a3a3a;
+  } */
+
+/* #checkbox input [type="radio"]:active {
+    background-color: #3a3a3a;
+    border: 1px solid blue;
+} */
+
+.loginBtn{
+    width: 77%;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    background: #F54F59;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+}
+.loginBtn:hover{
+    background-color: #ce3434;
+}
+.forgotPassForm{
+    width: 100%;
+    background-color: #FAFAFA;
+}
+/* .forgotPasswordMainDiv{
+    background: #F8E8E9;
+    width: 100%;
+    height: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+} */
+
+
+  
+  
