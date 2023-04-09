@@ -3,6 +3,7 @@ import Dashboard from './components/pages/dashboardpage/Dashboard';
 import LandingPage from './components/pages/landingpage/LandingPage';
 import LoginPage from './components/pages/loginpage/LoginPage';
 import SignUpPage from './components/pages/signuppage/SignUpPage';
+import ForgotPasswordPage from './components/pages/forgotpasswordpage/ForgotPasswordPage';
 import CourseContent from './components/pages/dashboardpage/CourseContent';
 import Assignment from './components/pages/dashboardpage/Assignment';
 import Quizzes from './components/pages/dashboardpage/Quizzes';
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<LandingPage />}></Route>
         <Route path="signup" element={<SignUpPage />}></Route>
         <Route path="login" element={<LoginPage />}></Route>
+        <Route path="forgotpassword" element={<ForgotPasswordPage />}></Route>
         <Route path="dashboard" element={<Dashboard />}></Route>
         <Route path="course-content" element={<CourseContent />}></Route>
         <Route path="assignment" element={<Assignment />}></Route>
