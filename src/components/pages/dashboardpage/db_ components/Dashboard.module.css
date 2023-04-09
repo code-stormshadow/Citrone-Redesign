@@ -11,6 +11,7 @@ body {
 /* DashBoard styling starts here */
 /* NavBar Styling starts here */
 .top_navbar {
+  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem 1rem 2rem;
