@@ -6,11 +6,12 @@ import ProfileIcon from './/images/profile-icon.svg';
 import SettingsIcon from './/images/settings-filled.svg';
 import LogOutIcon from './/images/logout-icon.svg';
 import Polygon from './/images/polygon.svg';
+import styles from './/Dashboard.module.css';
 
 const DropdownProfile = () => (
-  <div className="dropdownProfile">
-    <img src={Polygon} alt="icon" className="polygon" />
-    <div className="profileCard">
+  <div className={styles.dropdownProfile}>
+    <img src={Polygon} alt="icon" className={styles.polygon} />
+    <div className={styles.profileCard}>
       <div>
         <img src={ProfilePic} alt="Profilfe Picture" />
       </div>

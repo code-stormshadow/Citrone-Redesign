@@ -1,6 +1,7 @@
 // import Button from 'react-bootstrap/Button';
 import ModalIcon from '../images/modal-icon.svg';
 import Modal from 'react-bootstrap/Modal';
+import styles from './/Dashboard.module.css';
 // import { Link } from 'react-router-dom';
 
 function LogOutModal(props) {
@@ -10,18 +11,18 @@ function LogOutModal(props) {
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
-      className="modal">
+      className={styles.modal}>
       <h2>Log Out?</h2>
       <object data={ModalIcon}></object>
-      <div className="buttons">
+      <div className={styles.buttons}>
         <div>
           {/* eslint-disable-next-line react/prop-types */}
-          <button onClick={props.onHide} className="btnNo">
+          <button onClick={props.onHide} className={styles.btnNo}>
             No
           </button>
         </div>
         <div>
-          <button className="btnYes">Yes</button>
+          <button className={styles.btnYes}>Yes</button>
         </div>
       </div>
       {/* <Modal.Body>

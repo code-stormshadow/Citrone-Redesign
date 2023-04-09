@@ -3,15 +3,16 @@ import SideNavBar from './db_ components/SideNavBar';
 import Accordion from 'react-bootstrap/Accordion';
 import PlusCircle from '../dashboardpage/images/PlusCircle.svg';
 import MinusCircle from '../dashboardpage/images/MinusCircle.svg';
+import styles from './db_ components/Dashboard.module.css';
 
 const Faq = () => {
   return (
     <div>
       <NavBar />
-      <div className="wrapper">
+      <div className={styles.wrapper}>
         <SideNavBar />
         <div>
-          <div className="faqBanner">
+          <div className={styles.faqBanner}>
             <h1>Frequently Asked Questions</h1>
           </div>
           <Accordion defaultActiveKey="0" flush className="accordion">
