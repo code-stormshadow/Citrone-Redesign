@@ -21,38 +21,36 @@ const TableData = () => {
           <tr className="tableRow">
             <td>
               <object data={WarningIcon} className="warningIcon"></object>
-              <span className="tableData">
+              <p className="tableData">
                 Pick your wireframes and start converting them into high fidelity prototypes.
-              </span>
+              </p>
             </td>
             <td className="tableDate">27 Nov 2022</td>
             <td className="pending">Pending submission</td>
-            <td>-</td>
+            <td className="noGrade">-</td>
             <td>
               <Link className="tableLink">View more</Link>
             </td>
           </tr>
           <tr>
             <td>
-              <object data={WarningIcon}></object>
-              <span className="tableData">
-                Work on your user flows and information architectures.
-              </span>
+              <object data={WarningIcon} className="warningIcon"></object>
+              <p className="tableData">Work on your user flows and information architectures.</p>
             </td>
             <td className="tableDate">27 Nov 2022</td>
             <td className="graded">Graded successfully</td>
-            <td className="tableData">95/100</td>
+            <td className="tableGrade">95/100</td>
             <td>
               <Link className="tableLink">View more</Link>
             </td>
           </tr>
           <tr>
             <td>
-              <object data={WarningIcon}></object>
-              <span className="tableData">
+              <object data={WarningIcon} className="warningIcon"></object>
+              <p className="tableData">
                 Start working on previewing all the sketches and turning them into wireframes for
                 the Citrone main action pages.
-              </span>
+              </p>
             </td>
             <td className="tableDate">27 Nov 2022</td>
             <td className="awaiting">Awaiting grade</td>
@@ -63,10 +61,10 @@ const TableData = () => {
           </tr>
           <tr>
             <td>
-              <object data={WarningIcon}></object>
-              <span className="tableData">
+              <object data={WarningIcon} className="warningIcon"></object>
+              <p className="tableData">
                 Pick your wireframes and start converting them into high fidelity prototypes.
-              </span>
+              </p>
             </td>
             <td className="tableDate">27 Nov 2022</td>
             <td className="pending">Pending submission</td>
@@ -77,25 +75,23 @@ const TableData = () => {
           </tr>
           <tr>
             <td>
-              <object data={WarningIcon}></object>
-              <span className="tableData">
-                Work on your user flows and information architectures.
-              </span>
+              <object data={WarningIcon} className="warningIcon"></object>
+              <p className="tableData">Work on your user flows and information architectures.</p>
             </td>
             <td className="tableDate">27 Nov 2022</td>
             <td className="graded">Graded successfully</td>
-            <td className="tableData">95/100</td>
+            <td className="tableGrade">95/100</td>
             <td>
               <Link className="tableLink">View more</Link>
             </td>
           </tr>
           <tr>
             <td>
-              <object data={WarningIcon}></object>
-              <span className="tableData">
+              <object data={WarningIcon} className="warningIcon"></object>
+              <p className="tableData">
                 Start working on previewing all the sketches and turning them into wireframes for
                 the Citrone main action pages.
-              </span>
+              </p>
             </td>
             <td className="tableDate">27 Nov 2022</td>
             <td className="awaiting">Awaiting grade</td>
