@@ -138,6 +138,9 @@
 .uniqueCodes{
     margin-right: 20px;
     width: 77px;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
     height: 48px;
     border-radius: 5px;
     border-width: thin;
@@ -410,7 +413,7 @@
     margin-bottom: 30px;
     width: 75%;
 }
-.forgotPassBtn{
+.forgotPassBtn{             /* button styles for both forgot password page and set password page*/
     width: 77%;
     border: none;
     border-radius: 5px;
