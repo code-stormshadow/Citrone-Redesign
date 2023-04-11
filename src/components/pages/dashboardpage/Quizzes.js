@@ -9,6 +9,7 @@ const Quizzes = () => {
       <NavBar />
       <div className={styles.wrapper}>
         <SideNavBar />
+        <p>Hello</p>
       </div>
     </div>
   );
