@@ -183,15 +183,12 @@ body {
   background-repeat: no-repeat;
   background-color: #F5D4D6;
   background-position-y: 0.5rem;
+  font-weight: 600;
 }
 
-.custom-class {
+/* .custom-class {
   color: #F54F59;
-}
-
-.custom-class img > * {
-  fill: #F54F59;
-}
+} */
 
 /* .custom-class.active img {
   fill: red;
@@ -209,12 +206,12 @@ body {
 
 .menu_link {
   margin-left: 2rem;
-  font-weight: 600;
+  font-weight: 450;
 }
 
 .menu_logout {
   margin-left: 1.5rem;
-  font-weight: 600;
+  font-weight: 450;
 }
 
 .logout_item {
@@ -433,7 +430,7 @@ body {
   font-family: 'Mont';
   font-style: normal;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 21px;
   color: #3A3A3A;
 }
@@ -441,7 +438,7 @@ body {
 .tableData {
   font-family: 'Mont';
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #3A3A3A;
   margin-left: 1rem;
   line-height: 5px;
