@@ -11,7 +11,6 @@ body {
 /* DashBoard styling starts here */
 /* NavBar Styling starts here */
 .top_navbar {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem 1rem 2rem;
@@ -231,7 +230,7 @@ body {
 /* Main Styling starts here */
 .wrapper {
   display: flex;
-  background: #F5D4D6;
+  background: #FEF2F2;
   
 }
 
@@ -900,17 +899,45 @@ margin-left: 0.6rem;
 /*  Quizzes styling starts here */
 
 .quiz-container h3 {
-  
+  margin: 5% 12%;
+  font-size: 26px;
 }
 
 .module-container {
+  background: #ffff;
   border: 1px solid red;
   display: flex;
-  margin-top: 5%;
+  /* justify-content: space-evenly; */
+  margin: 5% 12%;
+  padding-top: 2%;
+  width: 944px;
+  height: 144px;
+}
+
+#module1 {
+  border: 1px solid red;
+  margin-top: 15px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+#line {
+  margin-left: 20px;
+  width: 6px;
+  height: 112px;
+}
+
+#module1-text {
+  margin-left: 20px;
+  letter-spacing: 2px;
 }
 
 .module1-sub-container {
+  border: 1px solid red;
   display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  width: 530px;
 }
 
 /*  Quizzes styling ends here */

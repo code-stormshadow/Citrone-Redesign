@@ -7,15 +7,17 @@ const QuizzesModule = () => {
     <div>
       <div className={classes['module-container']}>
         <div>
-          <h5>Module</h5>
-          <h2>1</h2>
+          <h6 id={classes.module1}>Module</h6>
+          <h2 id={classes.module1}>1</h2>
         </div>
         <div>
-          <img src={Line} />
+          <img id={classes.line} src={Line} />
         </div>
         <div>
-          <h3>Introduction to product design</h3>
-          <p>Study the brief for your milestone project and start noting the questions that...</p>
+          <h4 id={classes['module1-text']}>Introduction to product design</h4>
+          <p id={classes['module1-text']}>
+            Study the brief for your milestone project and start noting the questions that...
+          </p>
           <div className={classes['module1-sub-container']}>
             <div>
               <img src={Note} />
