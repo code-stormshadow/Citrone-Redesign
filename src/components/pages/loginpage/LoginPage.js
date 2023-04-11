@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Logo from './images/Mask group.png';
 import Eye from './images/Eye.png';
-// import Asterisk from './images/Asterisk.png';
 import classes from '../signuppage/SignUp.module.css';
 import { Link } from 'react-router-dom';
 
@@ -49,8 +48,8 @@ const LoginPage = () => {
                 </label>{' '}
                 <Link id={classes.forgotPassword} to="/forgotpassword">
                   Forgot your password?
-                </Link>{' '}
-                <br />
+                </Link>
+                ? <br />
               </div>
               <input
                 id={classes.passwordInputForLogin}
