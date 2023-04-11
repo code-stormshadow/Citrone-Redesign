@@ -235,6 +235,11 @@ body {
 .wrapper {
   display: flex;
   background: #F5D4D6;
+  
+}
+
+.wrapper {
+  margin: auto;
 }
   
 .main_content {
