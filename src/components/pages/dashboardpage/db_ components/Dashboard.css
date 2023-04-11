@@ -5,7 +5,7 @@
 }
   
 body { 
-  min-height: 100vh; 
+  height: 100%; 
 }
 
 /* DashBoard styling starts here */
@@ -238,7 +238,7 @@ body {
   
 .main-content {
   width: 148vh;
-  height: 1100px;
+  height: 900px;
   margin-left: 3.5rem;
   margin-right: 3.5rem;
   margin-top: 1rem;
@@ -427,6 +427,7 @@ body {
 .table {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  padding-left: 1rem !important;
 }
 
 .header {
@@ -443,21 +444,50 @@ body {
   font-weight: 500;
   font-size: 0.9rem;
   color: #3A3A3A;
-  margin-left: 1rem;
-  line-height: 5px;
+  margin-left: 2rem;
+  margin-top: -2rem;
+  line-height: 19px;
+  /* border: 1px solid red; */
+  width: 310px;
 }
+
+.warningIcon {
+  /* border: 1px solid blue; */
+  width: 22px;
+  height: 21px;
+  margin-top: 0.8rem;
+}
+
+/* .dataWidth {
+  border: 1px solid red;
+  width: 250px;
+  height: 36px;
+} */
 
 .fixed {
   margin-left: 2.3rem;
 }
 
 .tableDate {
-  width: 80px;
+  width: 100px;
   font-family: 'Mont';
   font-style: normal;
   font-weight: 500;
   font-size: 0.9rem;
   line-height: 18px;
+  padding-top: 1.7rem !important;
+  color: #3A3A3A;
+  text-align: center;
+}
+
+
+.tableGrade {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 18px;
+  padding-top: 1.7rem !important;
   color: #3A3A3A;
 }
 
@@ -468,6 +498,7 @@ body {
   font-size: 0.9rem;
   line-height: 18px;
   color: #F54F59;
+  padding-top: 1.7rem !important;
 }
 
 .graded {
@@ -476,6 +507,7 @@ body {
   font-weight: 500;
   font-size: 0.9rem;
   line-height: 18px;
+  padding-top: 1.7rem !important;
   color: #1A9447;
 }
 
@@ -485,7 +517,12 @@ body {
   font-weight: 500;
   font-size: 0.9rem;
   line-height: 18px;
+  padding-top: 1.7rem !important;
   color: #F1A207;
+}
+
+.noGrade {
+  padding-top: 1.7rem !important;
 }
 
 .tableLink {
@@ -495,6 +532,7 @@ font-weight: 500;
 font-size: 0.9rem;
 line-height: 16px;
 text-decoration-line: underline;
+padding-top: 1.7rem !important;
 color: #3A3A3A;
 }
 /* Table styling ends */
