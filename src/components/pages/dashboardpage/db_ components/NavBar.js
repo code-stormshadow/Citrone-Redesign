@@ -1,5 +1,5 @@
 import React from 'react';
-// import { useState } from 'react';
+import { useState } from 'react';
 import Logo from '../images/logo-spin.png';
 import BellIcon from '../images/bell-icon.svg';
 // import ColoredBellIcon from './/images/colored-bell.svg';
@@ -7,25 +7,29 @@ import ProfilePic from '../images/profile-pic.png';
 import DropDownArrow from '../images/caret-down.svg';
 import styles from './/Dashboard.module.css';
 // import '../db_ components/Dashboard.css';
-import { Menu, MenuItem, useProSidebar } from 'react-pro-sidebar';
+import { Menu, useProSidebar } from 'react-pro-sidebar';
 import BarIcon from '../images/fa-bars.svg';
 // import DropdownProfile from './DropdownProfile';
 
 const NavBar = () => {
   const { collapseSidebar } = useProSidebar();
 
+  const [collapsed, setCollapsed] = useState(false);
+
   return (
     <div>
       <header className={styles.top_navbar}>
         <div className={styles.right_nav}>
           <Menu>
-            <MenuItem
-              className={styles.hamburger}
+            <img
+              src={BarIcon}
+              alt="Icon"
+              className={styles.bar_icon}
               onClick={() => {
                 collapseSidebar();
-              }}>
-              <img src={BarIcon} alt="Icon" className={styles.bar_icon} />{' '}
-            </MenuItem>
+                setCollapsed(!collapsed);
+              }}
+            />{' '}
             {/* <img src={ColoredBellIcon} alt="Icon" className="coloredBell" />{' '} */}
           </Menu>
           <div className={styles.logo_container}>
