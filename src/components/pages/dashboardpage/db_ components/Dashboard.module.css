@@ -32,10 +32,13 @@ body {
   padding-bottom: 2.2rem;
 }
 
-
-
 .hamburger:hover {
   color: #F5D4D6 !important;
+  outline: 1px solid red;
+}
+
+.bar_icon {
+  cursor: pointer;
 }
   
 .right_nav h1 {
@@ -172,6 +175,34 @@ body {
   border: 3px solid #F54F59;
 }
 
+/* .collapsedProfilePic {
+  display: none;
+} */
+
+.collapsedProfilePic {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px auto;
+  background-color: #ccc;
+}
+
+.profilePicSmall {
+  width: 40px;
+  height: 69px;
+}
+
+.profileImgSmall {
+  width: 70px;
+  border: 3px solid #F54F59;
+  border-radius: 50%;
+  margin-left: 0.48rem;
+}
+
+
+
 #menuItem {
   margin-top: 1.4rem;
 }
@@ -201,7 +232,7 @@ body {
 } */
 
 #menuItem img {
-  padding-left: .7rem;
+  padding-left: .6rem;
 }
 
 .menu_link {
@@ -235,7 +266,7 @@ body {
   
 .main_content {
   width: 148vh;
-  height: 1200px;
+  height: 1100px;
   margin-left: 3.5rem;
   margin-right: 3.5rem;
   margin-top: 1rem;
