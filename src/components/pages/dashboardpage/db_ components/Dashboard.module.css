@@ -237,6 +237,7 @@ body {
 
 .wrapper {
   margin: auto;
+  overflow: scroll;
 }
   
 .main_content {
@@ -895,3 +896,21 @@ margin-left: 0.6rem;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  
 } 
+
+/*  Quizzes styling starts here */
+
+.quiz-container h3 {
+  
+}
+
+.module-container {
+  border: 1px solid red;
+  display: flex;
+  margin-top: 5%;
+}
+
+.module1-sub-container {
+  display: flex;
+}
+
+/*  Quizzes styling ends here */

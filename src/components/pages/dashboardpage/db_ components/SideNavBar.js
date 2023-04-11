@@ -38,7 +38,7 @@ const SideNavBar = () => {
   // const splitLocation = pathname.split('/');
 
   return (
-    <div id="app" style={{ height: '0vh' }}>
+    <div id="app" style={{ height: '100vh' }}>
       <Sidebar style={{ height: '160vh', background: 'white' }}>
         <Menu>
           <div className={styles.profilePic}>
