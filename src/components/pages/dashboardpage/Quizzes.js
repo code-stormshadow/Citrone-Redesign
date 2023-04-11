@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from './db_ components/NavBar';
 import SideNavBar from './db_ components/SideNavBar';
 import styles from './db_ components/Dashboard.module.css';
+import SearchBar from './db_ components/SearchBar';
 
 const Quizzes = () => {
   return (
@@ -9,7 +10,7 @@ const Quizzes = () => {
       <NavBar />
       <div className={styles.wrapper}>
         <SideNavBar />
-        <p>Hello</p>
+        <SearchBar />
       </div>
     </div>
   );
