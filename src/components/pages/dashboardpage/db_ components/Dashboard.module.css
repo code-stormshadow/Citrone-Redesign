@@ -966,9 +966,39 @@ margin-left: 0.6rem;
 .module1-sub-container {
   border: 1px solid red;
   display: flex;
-  justify-content: space-between;
-  margin-left: 20px;
+  /* justify-content: space-evenly; */
+  margin-left: 8px;
+  padding-top: 10px;
   width: 530px;
 }
 
+#module-image {
+  width: 18.03px;
+  height: 24px;
+}
+
+/* #image-text {
+  border: 1px solid black;
+} */
+
+/* #module-image2 {
+  border: 1px solid red;
+  margin-left: 10px;
+} */
+
+/* #module-paragraph2 {
+  margin-left: 240px;
+} */
+
+#module-image-paragraph {
+  border: 1px solid black;
+  margin-left: 13px;
+}
+
+#module-image-paragraph2 {
+  border: 1px solid black;
+  margin-left: 13px;
+  position: relative;
+  left: 190px;
+}
 /*  Quizzes styling ends here */

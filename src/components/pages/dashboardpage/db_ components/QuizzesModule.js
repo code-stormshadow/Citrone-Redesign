@@ -20,16 +20,16 @@ const QuizzesModule = () => {
           </p>
           <div className={classes['module1-sub-container']}>
             <div>
-              <img src={Note} />
+              <img id={classes['module-image-paragraph']} src={Note} />
             </div>
             <div>
-              <p>4 Quizzes</p>
+              <p id={classes['module-image-paragraph']}>4 Quizzes</p>
             </div>
             <div>
-              <img src={Note} />
+              <img id={classes['module-image-paragraph2']} src={Note} />
             </div>
             <div>
-              <p>4/4 Quizzes Attempted</p>
+              <p id={classes['module-image-paragraph2']}>4/4 Quizzes Attempted</p>
             </div>
           </div>
         </div>
