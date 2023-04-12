@@ -2,11 +2,10 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* justify-content: center; */
   }
   
   .first-container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background: #FEF2F2;
     width: 100%;
     height: 100%;
@@ -14,7 +13,7 @@
   }
   
   .header-container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     display: flex;
     align-items: center;
