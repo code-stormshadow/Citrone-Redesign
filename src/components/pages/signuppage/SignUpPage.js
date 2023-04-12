@@ -19,7 +19,7 @@ const SignUpPage = () => {
     <div className={classes['signUp-container']}>
       <div className={classes.contentContainer}>
         <header id={classes.headerLogo}>
-          <img src={Logo}></img>
+          <img id={classes.imgHeaderLogo} src={Logo}></img>
           <h1 id={classes.logoHeader}>citrone</h1>
         </header>
         <form id={classes.formSignUp}>
@@ -27,8 +27,9 @@ const SignUpPage = () => {
           <div className={classes.inputsContainer}>
             <div className={classes.names}>
               <div className={classes.firstName}>
-                <label htmlFor="fname">First Name</label> {/* <br /> */}
+                <label htmlFor="fname">First Name</label> <br />
                 <input
+                  className={classes.namesInputs}
                   type="text"
                   placeholder="Enter your first name"
                   required
@@ -39,6 +40,7 @@ const SignUpPage = () => {
               <div className={classes.lastName}>
                 <label htmlFor="lname">Last name</label> <br />
                 <input
+                  className={classes.namesInputs}
                   type="text"
                   placeholder="Enter your last name"
                   required
@@ -54,6 +56,7 @@ const SignUpPage = () => {
                 </label>{' '}
                 <br />
                 <input
+                  id={classes.inputPasswordEmail}
                   type="email"
                   placeholder="Enter your email"
                   required
@@ -67,6 +70,7 @@ const SignUpPage = () => {
                 </label>{' '}
                 <br />
                 <input
+                  id={classes.inputPasswordEmail}
                   type="password"
                   placeholder="Enter your password"
                   required
@@ -82,16 +86,7 @@ const SignUpPage = () => {
 
           <div id={classes['uniqueCodes-container']}>
             <label id={classes.signUpLabels} htmlFor="uniquecode">
-              Unique Code{' '}
-              {/* <FontAwesomeIcon
-                className={classes.icon}
-                fontSize="10px"
-                color="red"
-                position="absolute"
-                bottom="20px"
-                top="10px"
-                padding-bottom="200px"
-              /> */}
+              Unique Codes
               <i className={classes.showPassword}>
                 <img id={classes.asterisk} src={Asterisk}></img>
               </i>

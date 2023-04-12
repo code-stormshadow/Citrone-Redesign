@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Logo from './images/Mask group.png';
 import Eye from './images/Eye.png';
-// import Asterisk from './images/Asterisk.png';
 import classes from '../signuppage/SignUp.module.css';
 import { Link } from 'react-router-dom';
 
@@ -13,7 +12,7 @@ const LoginPage = () => {
   // };
 
   return (
-    <div>
+    <div id={classes.loginDiv}>
       <header id={classes.logInFormHeader}>
         <img id={classes.logInLogoImg} src={Logo}></img>
         <h1 id={classes.citroneTextHeader}>citrone</h1>
@@ -34,6 +33,7 @@ const LoginPage = () => {
               </label>{' '}
               <br />
               <input
+                className={classes.emailInputForLogin}
                 type="email"
                 placeholder="Enter your email"
                 required
@@ -46,13 +46,13 @@ const LoginPage = () => {
                 <label id={classes.passwordLabelForLogin} htmlFor="password">
                   Password
                 </label>{' '}
-                <Link id={classes.forgotPassword} to="/PasswordPage">
+                <Link id={classes.forgotPassword} to="/forgotpassword">
                   Forgot your password?
-                </Link>{' '}
-                <br />
+                </Link>
+                ? <br />
               </div>
               <input
-                id={classes.password}
+                id={classes.passwordInputForLogin}
                 type="password"
                 placeholder="Enter your password"
                 required
@@ -64,24 +64,13 @@ const LoginPage = () => {
                 <br />
                 <br />
               </i>
-              <input
-                id={classes.checkbox}
-                style={{
-                  marginLeft: '35px',
-                  border: '1px solid red',
-                  width: '17px',
-                  height: '16px'
-                }}
-                type="checkbox"></input>
-              <label
-                style={{
-                  marginLeft: '5px',
-                  border: '1px solid red',
-                  fontSize: '16px'
-                }}
-                htmlFor="radio">
-                Remember me
-              </label>
+
+              <div className={classes['login-checkbox']}>
+                <input type="checkbox" />
+                <label className={classes['login-checkboxLabel']}>
+                  <span>Remember me</span>
+                </label>
+              </div>
             </div>
           </div>
           <button className={classes.loginBtn}>Log In</button>

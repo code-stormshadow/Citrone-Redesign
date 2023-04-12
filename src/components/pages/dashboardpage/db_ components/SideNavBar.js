@@ -1,8 +1,10 @@
 import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
+import { useProSidebar } from 'react-pro-sidebar';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
-import classNames from 'classnames';
+// import { useLocation } from 'react-router-dom';
+// import classNames from 'classnames';
+// import 'react-pro-sidebar/dist/css/styles.css';
 import DashboardIcon from '../images/dashboard-default.svg';
 import CourseIcon from '../images/course-icon.svg';
 import AssignmentIcon from '../images/assignment-icon.svg';
@@ -11,129 +13,81 @@ import StIcon from '../images/st-icon.svg';
 import FaqIcon from '../images/faq-icon.svg';
 import SettingsIcon from '../images/settings-icon.svg';
 import LogOutIcon from '../images/logout-icon.svg';
-// import BarIcon from './/images/fa-bars.svg';
 import MainProfilePic from '../images/main-profile-pic.png';
-import '../db_ components/Dashboard.css';
+import styles from './/Dashboard.module.css';
 import LogOutModal from './LogOutModal';
 
 const SideNavBar = () => {
   // to open the popup
   const [modalShow, setModalShow] = useState(false);
 
-  // To change the color of the icon/text when clicked
-  const [clicked, setClicked] = useState(false);
-
-  const colorChange = () => {
-    setClicked(!clicked);
-  };
-
-  //assigning location variable for active links
-  const location = useLocation();
-
-  //destructuring pathname from location
-  const { pathname } = location;
-
-  //Javascript split method to get the name of the path in array
-  const splitLocation = pathname.split('/');
+  // collapsed prop from the useProSidebar hook to conditionally render the profile picture and its associated text.
+  // When the sidebar is collapsed, the collapsed prop will be true, and the profile picture and text will not be displayed.
+  const { collapsed } = useProSidebar();
 
   return (
-    <div id="app" style={{ height: '100vh' }}>
-      <Sidebar style={{ height: '160vh', background: 'white' }}>
+    <div id="app" style={{ height: '100%' }}>
+      <Sidebar style={{ height: '165vh', background: 'white' }} collapsed={collapsed}>
         <Menu>
-          <div className="profilePic">
-            <img src={MainProfilePic} className="profileImg" alt="Profile Picture" />
-          </div>
-          <p className="profileName">Olurotimi Akinnagbe</p>
-          <span className="profileCourse">UI/UX Design</span>
+          {collapsed && (
+            <div className={styles.profilePicSmall}>
+              <img src={MainProfilePic} className={styles.profileImgSmall} alt="Profile Picture" />
+            </div>
+          )}
+          {!collapsed && (
+            <>
+              <div className={styles.profilePic}>
+                <img src={MainProfilePic} className={styles.profileImg} alt="Profile Picture" />
+              </div>
+              <p className={styles.profileName}>Olurotimi Akinnagbe</p>
+              <span className={styles.profileCourse}>UI/UX Design</span>
+            </>
+          )}
 
-          <MenuItem
-            component={<Link to="/dashboard" />}
-            id="menuItem"
-            onClick={colorChange}
-            // className={splitLocation[1] === 'dashboard' ? 'active' : ''}
-            className={classNames({
-              active: splitLocation[1] === 'dashboard',
-              'custom-class': clicked
-            })}>
+          <MenuItem component={<Link to="/dashboard" />} id="menuItem">
             <img src={DashboardIcon} alt="Icon" />
-            <span className="menu_link">Dashboard</span>
+            <span className={styles.menu_link}>Dashboard</span>
           </MenuItem>
 
-          <MenuItem
-            component={<Link to="/course-content" />}
-            id="menuItem"
-            className={classNames({
-              active: splitLocation[1] === 'course-content',
-              'custom-class': clicked
-            })}>
+          <MenuItem component={<Link to="/course-content" />} id="menuItem">
             <img src={CourseIcon} alt="Course Icon" />
-            <span className="menu_link">Course Content</span>
+            <span className={styles.menu_link}>Course Content</span>
           </MenuItem>
 
-          <MenuItem
-            component={<Link to="/assignment" />}
-            id="menuItem"
-            className={classNames({
-              active: splitLocation[1] === 'assignment',
-              'custom-class': clicked
-            })}>
+          <MenuItem component={<Link to="/assignment" />} id={styles.menuItem}>
             <img src={AssignmentIcon} alt="Icon" />
-            <span className="menu_link">Assignment</span>
+            <span className={styles.menu_link}>Assignment</span>
           </MenuItem>
 
-          <MenuItem
-            component={<Link to="/quizzes" />}
-            id="menuItem"
-            className={classNames({
-              active: splitLocation[1] === 'quizzes',
-              'custom-class': clicked
-            })}>
+          <MenuItem component={<Link to="/quizzes" />} id={styles.menuItem}>
             <img src={QuizIcon} alt="Icon" />
-            <span className="menu_link">Quizzes</span>
+            <span className={styles.menu_link}>Quizzes</span>
           </MenuItem>
 
-          <MenuItem
-            component={<Link to="/students_tutors" />}
-            id="menuItem"
-            className={classNames({
-              active: splitLocation[1] === 'students_tutors',
-              'custom-class': clicked
-            })}>
+          <MenuItem component={<Link to="/students_tutors" />} id={styles.menuItem}>
             <img src={StIcon} alt="Icon" />
-            <span className="menu_link">Students & Tutors</span>
+            <span className={styles.menu_link}>Students & Tutors</span>
           </MenuItem>
 
-          <hr className="hr_line" />
+          <hr className={styles.hr_line} />
 
-          <MenuItem
-            component={<Link to="/faq" />}
-            id="menuItem"
-            className={classNames({
-              active: splitLocation[1] === 'faq',
-              'custom-class': clicked
-            })}>
+          <MenuItem component={<Link to="/faq" />} id={styles.menuItem}>
             <img src={FaqIcon} alt="Icon" />
-            <span className="menu_link">FAQ</span>
+            <span className={styles.menu_link}>FAQ</span>
           </MenuItem>
 
-          <MenuItem
-            component={<Link to="/settings" />}
-            id="menuItem"
-            className={classNames({
-              active: splitLocation[1] === 'settings',
-              'custom-class': clicked
-            })}>
+          <MenuItem component={<Link to="/settings" />} id={styles.menuItem}>
             <img src={SettingsIcon} alt="Icon" />
-            <span className="menu_link">Settings</span>
+            <span className={styles.menu_link}>Settings</span>
           </MenuItem>
 
           <MenuItem
             // component={<Link to="/logout" />}
-            id="menuItem"
+            id={styles.menuItem}
             className="logout_item"
             onClick={() => setModalShow(true)}>
             <img src={LogOutIcon} alt="Icon" />
-            <span className="menu_logout">Logout</span>
+            <span className={styles.menu_logout}>Logout</span>
           </MenuItem>
         </Menu>
       </Sidebar>

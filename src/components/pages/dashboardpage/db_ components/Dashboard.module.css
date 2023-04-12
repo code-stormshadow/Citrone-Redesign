@@ -5,12 +5,12 @@
 }
   
 body { 
-  height: 100%; 
+  min-height: 100vh; 
 }
 
 /* DashBoard styling starts here */
 /* NavBar Styling starts here */
-.top-navbar {
+.top_navbar {
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem 1rem 2rem;
@@ -18,7 +18,7 @@ body {
   position: relative;
 }
   
-.logo-container {
+.logo_container {
   display: inline-block;
   width: 160px;
   height: 50px;
@@ -28,17 +28,20 @@ body {
   top: 1rem;
 }
   
-.logo-img {
+.logo_img {
   padding-bottom: 2.2rem;
 }
 
-
-
 .hamburger:hover {
   color: #F5D4D6 !important;
+  outline: 1px solid red;
+}
+
+.bar_icon {
+  cursor: pointer;
 }
   
-.right-nav h1 {
+.right_nav h1 {
   display: inline;
   margin-left: .5rem;
   position: absolute;
@@ -47,12 +50,12 @@ body {
   font-weight: 600; 
 }
   
-.left-nav {
+.left_nav {
   width: 170px;
   height: 50px;
 }
   
-.left-nav .bell-icon {
+.left_nav .bell_icon {
   margin-right: 1rem;
 }
 
@@ -64,14 +67,14 @@ body {
   left: 9.5rem;
 }
   
-.left-nav img {
+.left_nav img {
   margin-top: -2.2rem;
   margin-right: 0.5rem;
   border-radius: 50%;
   border: 3px solid #F54F59;
 }
   
-.dropdown-arrow {
+.dropdown_arrow {
   margin-bottom: .8rem;
 }
 /* NavBar Styling starts ends here */
@@ -172,6 +175,34 @@ body {
   border: 3px solid #F54F59;
 }
 
+/* .collapsedProfilePic {
+  display: none;
+} */
+
+.collapsedProfilePic {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px auto;
+  background-color: #ccc;
+}
+
+.profilePicSmall {
+  width: 40px;
+  height: 69px;
+}
+
+.profileImgSmall {
+  width: 70px;
+  border: 3px solid #F54F59;
+  border-radius: 50%;
+  margin-left: 0.48rem;
+}
+
+
+
 #menuItem {
   margin-top: 1.4rem;
 }
@@ -183,15 +214,12 @@ body {
   background-repeat: no-repeat;
   background-color: #F5D4D6;
   background-position-y: 0.5rem;
+  font-weight: 600;
 }
 
-.custom-class {
+/* .custom-class {
   color: #F54F59;
-}
-
-.custom-class img > * {
-  fill: #F54F59;
-}
+} */
 
 /* .custom-class.active img {
   fill: red;
@@ -204,17 +232,17 @@ body {
 } */
 
 #menuItem img {
-  padding-left: .7rem;
+  padding-left: .6rem;
 }
 
 .menu_link {
   margin-left: 2rem;
-  font-weight: 500;
+  font-weight: 450;
 }
 
 .menu_logout {
   margin-left: 1.5rem;
-  font-weight: 500;
+  font-weight: 450;
 }
 
 .logout_item {
@@ -233,18 +261,24 @@ body {
 /* Main Styling starts here */
 .wrapper {
   display: flex;
-  background: #F5D4D6;
+  background: #FEF2F2;
+  
+}
+
+.wrapper {
+  margin: auto;
+  overflow: scroll;
 }
   
-.main-content {
+.main_content {
   width: 148vh;
-  height: 900px;
+  height: 1100px;
   margin-left: 3.5rem;
   margin-right: 3.5rem;
   margin-top: 1rem;
 }
   
-  .greetings-container {
+  .greetings_container {
     display: flex;
     justify-content: space-between;
   }
@@ -264,7 +298,7 @@ body {
     color: #3A3A3A;
   }
   
-  .resume-lesson {
+  .resume_lesson {
     width: 215px;
     height: 21px;
     font-size: 1.1rem;
@@ -272,18 +306,18 @@ body {
     display: flex;
   }
   
-  .resume-lesson a {
+  .resume_lesson a {
     text-decoration: none;
     color: #F54F59;
   }
   
-  .resume-lesson a:hover {
+  .resume_lesson a:hover {
     text-decoration: underline solid #F54F59;
     cursor: pointer;
     color: #F54F59;
   }
   
-  .resume-lesson span {
+  .resume_lesson span {
     margin-left: 0.5rem;
     cursor: pointer;
     top:0.3rem;
@@ -350,7 +384,7 @@ body {
 
 /* incomplete task styling */
 .incomplete_task_wrapper {
-  width: 850px;
+  width: 895px;
   height: 368px;
   margin-left: 2rem;
   margin-top: 2rem;
@@ -360,29 +394,29 @@ body {
   border-radius: 0.62rem;  
 }
 
-.task-flex {
+.task_flex {
   display: flex;
   justify-content: space-between;
 }
 
-.task-title {
+.task_title {
   margin-top: 0.9rem;
   height: 24px;
   margin-left: 1rem;
 }
 
-.task-title h2 {
+.task_title h2 {
   color: #252525;
   font-size: 1.2rem;
   font-family: 'Mont';
   font-weight: 700;
 }
 
-.task-dropdown {
+.task_dropdown {
   position: relative;
 }
 
-.task-dropdown select {
+.task_dropdown select {
   width: 200px;
   height: 48px;
   margin-top: 1rem;
@@ -427,14 +461,13 @@ body {
 .table {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-  padding-left: 1rem !important;
 }
 
 .header {
   font-family: 'Mont';
   font-style: normal;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 21px;
   color: #3A3A3A;
 }
@@ -442,52 +475,23 @@ body {
 .tableData {
   font-family: 'Mont';
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #3A3A3A;
-  margin-left: 2rem;
-  margin-top: -2rem;
-  line-height: 19px;
-  /* border: 1px solid red; */
-  width: 310px;
+  margin-left: 1rem;
+  line-height: 5px;
 }
-
-.warningIcon {
-  /* border: 1px solid blue; */
-  width: 22px;
-  height: 21px;
-  margin-top: 0.8rem;
-}
-
-/* .dataWidth {
-  border: 1px solid red;
-  width: 250px;
-  height: 36px;
-} */
 
 .fixed {
   margin-left: 2.3rem;
 }
 
 .tableDate {
-  width: 100px;
+  width: 80px;
   font-family: 'Mont';
   font-style: normal;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 18px;
-  padding-top: 1.7rem !important;
-  color: #3A3A3A;
-  text-align: center;
-}
-
-
-.tableGrade {
-  font-family: 'Mont';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 0.9rem;
-  line-height: 18px;
-  padding-top: 1.7rem !important;
   color: #3A3A3A;
 }
 
@@ -495,19 +499,17 @@ body {
   font-family: 'Mont';
   font-style: italic;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 18px;
   color: #F54F59;
-  padding-top: 1.7rem !important;
 }
 
 .graded {
   font-family: 'Mont';
   font-style: italic;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 18px;
-  padding-top: 1.7rem !important;
   color: #1A9447;
 }
 
@@ -515,25 +517,19 @@ body {
   font-family: 'Mont';
   font-style: italic;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 18px;
-  padding-top: 1.7rem !important;
   color: #F1A207;
-}
-
-.noGrade {
-  padding-top: 1.7rem !important;
 }
 
 .tableLink {
 font-family: 'Mont';
 font-style: normal;
 font-weight: 500;
-font-size: 0.9rem;
+font-size: 0.8rem;
 line-height: 16px;
 text-decoration-line: underline;
 color: #3A3A3A;
-padding-top: 1rem;
 }
 /* Table styling ends */
 
@@ -550,11 +546,11 @@ padding-top: 1rem;
 
 }
 
-.card-flex {
+.cardFlex {
   display: flex;
 }
 
-.card-wrapper {
+.cardWrapper {
   margin-top: 1rem;
   width: 210px;
   height: 240px !important;
@@ -570,7 +566,7 @@ padding-top: 1rem;
 
 }
 
-.card-wrapper::after {
+.cardWrapper::after {
   content: "";
   background-color: rgba(9, 155, 136, 0.7); 
   position: absolute;
@@ -580,7 +576,7 @@ padding-top: 1rem;
   bottom: 0;
 }
 
-.card-wrapper::after {
+.cardWrapper::after {
   content: "";
   background-image: url('../images/stutern.svg');
   background-repeat: no-repeat;
@@ -592,7 +588,7 @@ padding-top: 1rem;
   bottom: 0;
 }
 
-.card-wrapper2 {
+.cardWrapper2 {
   margin-top: 1rem;
   width: 210px;
   height: 240px !important;
@@ -601,7 +597,7 @@ padding-top: 1rem;
   overflow: hidden;
 }
 
-.card-wrapper2::after {
+.cardWrapper2::after {
   content: "";
   background-color: rgba(9, 155, 136, 0.7); 
   position: absolute;
@@ -611,7 +607,7 @@ padding-top: 1rem;
   bottom: 0;
 }
 
-.card-wrapper2::after {
+.cardWrapper2::after {
   content: "";
   background-image: url('../images/stutern.svg');
   background-repeat: no-repeat;
@@ -630,7 +626,7 @@ padding-top: 1rem;
 }
 
 
-.card-wrapper2::before {
+.cardWrapper2::before {
   content: "";
   background-size: 35px;
   background-position-x: 10rem;
@@ -638,7 +634,7 @@ padding-top: 1rem;
   background-image: url('../images/course-in-view.svg');
 } 
 
-.card-title {
+.card_title {
   font-family: 'Mont';
   font-weight: 700;
   font-size: 1.1rem;
@@ -755,3 +751,254 @@ padding-top: 1rem;
 /* .accordion-button.collapsed::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 } */
+
+/* Course Content styling */
+/* search bar */
+.searchBar {
+  margin-left: 13.5rem;
+  margin-top: 1rem;
+  width: 712px;
+  height: 48px;
+  padding-left: 2rem;
+  background: #FFFFFF;
+  border: 1px solid #A2A2A2;
+  border-radius: 10px;
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 21px;
+  color: #A2A2A2;
+  background-image: url('..//images/search-icon.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 42rem;
+  outline: none;
+}
+
+.courseTitle {
+  width: 196px;
+  height: 34px;
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 34px;
+  color: #252525;
+  margin-left: 6.2rem;
+  margin-top: 2rem;
+  margin-bottom: 1.8rem;
+}
+
+/* Module courses */
+.link {
+  text-decoration: none;
+}
+
+#card {
+  /* outline: 1px solid red; */
+  width: 944px;
+  height: 175px;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  margin-left: 6.2rem;
+}
+
+#cardBody {
+  padding: 0;
+  margin: 0;
+}
+
+.moduleName {
+  /* outline: 1px solid blue; */
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 69.56%, rgba(255, 255, 255, 0.6) 100%);
+  backdrop-filter: blur(30.5px);
+  border-radius: 10px 0px 0px 0px;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #FFFFFF;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 26px;
+  text-transform: uppercase;
+
+}
+
+.modulePic {
+  /* outline: 1px solid red; */
+  margin-top: -.8rem;
+}
+
+.courseFlex {
+  display: flex;
+}
+
+.header {
+  padding-left: 1.7rem;
+  display: flex;
+  gap: 14rem;
+  margin-top: 0.9rem;
+}
+.header p {
+  font-family: 'Mont';
+font-style: normal;
+font-weight: 700;
+line-height: 21px;
+font-size: 1rem;
+color: #252525;
+}
+
+.secondRow {
+  padding-left: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+line-height: 19px;
+color: #3A3A3A;
+}
+
+.tutorRow {
+  
+}
+
+.hR {
+  margin-left: 1.7rem;
+  border: 1px solid rgba(91, 89, 89, 0.4);
+  margin-top: -.4rem;
+}
+
+.includes {
+  padding-left: 1.7rem;
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 16px;
+  color: #252525;
+}
+
+.thirdRow {
+  display: flex;
+  padding-left: 1.7rem;
+  justify-content: space-between;
+  margin-top: 0.9rem;
+}
+
+.spanDetails {
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 600;
+font-size: 0.8rem;
+line-height: 17px;
+color: #3A3A3A;
+margin-left: 0.6rem;
+}
+
+.hrLine {
+  margin-left: 6.2rem;
+  width: 944px;
+}
+
+.activeCard {
+  border-right-color: #1A9447;
+  border-right-width: 4px;
+}
+
+.courseWrapper {
+  overflow-y: scroll; /* Add the ability to scroll */
+  width: 1062px;
+  height: 954px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.courseWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.courseWrapper {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  
+} 
+
+/*  Quizzes styling starts here */
+
+.quiz-container h3 {
+  margin: 5% 12%;
+  font-size: 26px;
+}
+
+.module-container {
+  background: #ffff;
+  border: 1px solid red;
+  display: flex;
+  /* justify-content: space-evenly; */
+  margin: 5% 12%;
+  padding-top: 2%;
+  width: 944px;
+  height: 144px;
+}
+
+#module1 {
+  border: 1px solid red;
+  margin-top: 15px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+#line {
+  margin-left: 20px;
+  width: 6px;
+  height: 112px;
+}
+
+#module1-text {
+  margin-left: 20px;
+  letter-spacing: 2px;
+}
+
+.module1-sub-container {
+  border: 1px solid red;
+  display: flex;
+  /* justify-content: space-evenly; */
+  margin-left: 8px;
+  padding-top: 10px;
+  width: 530px;
+}
+
+#module-image {
+  width: 18.03px;
+  height: 24px;
+}
+
+/* #image-text {
+  border: 1px solid black;
+} */
+
+/* #module-image2 {
+  border: 1px solid red;
+  margin-left: 10px;
+} */
+
+/* #module-paragraph2 {
+  margin-left: 240px;
+} */
+
+#module-image-paragraph {
+  border: 1px solid black;
+  margin-left: 13px;
+}
+
+#module-image-paragraph2 {
+  border: 1px solid black;
+  margin-left: 13px;
+  position: relative;
+  left: 190px;
+}
+/*  Quizzes styling ends here */
