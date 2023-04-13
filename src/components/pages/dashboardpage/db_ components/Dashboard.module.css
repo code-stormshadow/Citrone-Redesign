@@ -927,6 +927,8 @@ margin-left: 0.6rem;
   scrollbar-width: none;  
 } 
 
+
+
 /*  Quizzes styling starts here */
 
 .quiz-container h3 {
@@ -934,22 +936,53 @@ margin-left: 0.6rem;
   font-size: 26px;
 }
 
-.module-container {
-  background: #ffff;
-  border: 1px solid red;
-  display: flex;
-  /* justify-content: space-evenly; */
-  margin: 5% 12%;
-  padding-top: 2%;
-  width: 944px;
-  height: 144px;
+.modules {
+  height: 50%;
+  overflow: scroll;
+  margin-top: -70px;
 }
 
-#module1 {
-  border: 1px solid red;
+/* Hide scrollbar for Chrome, Safari and Opera */
+.modules::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.modules {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  
+} 
+
+.module-container {
+  background: #ffff;
+  border-right: 5px solid #1A9447;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  font-family: 'Mont';
+  margin: 5% 12%;
+  padding-top: 2%;
+  padding-left: 10px;
+  width: 944px;
+  height: 144px;
+  color: #3A3A3A;
+}
+
+#module {
   margin-top: 15px;
   margin-left: 20px;
   text-align: center;
+  width: 70px;
+  font-family: 'Mont';
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.1rem;
+}
+
+#module1 {
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 40px;
 }
 
 #line {
@@ -960,15 +993,26 @@ margin-left: 0.6rem;
 
 #module1-text {
   margin-left: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+#module1-text1 {
+  font-family: 'Mont';
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  line-height: 24px;
+  margin-left: 20px;
 }
 
 .module1-sub-container {
-  border: 1px solid red;
   display: flex;
-  /* justify-content: space-evenly; */
   margin-left: 8px;
-  padding-top: 10px;
+  padding-top: 5px;
   width: 530px;
 }
 
@@ -977,28 +1021,53 @@ margin-left: 0.6rem;
   height: 24px;
 }
 
-/* #image-text {
-  border: 1px solid black;
-} */
-
-/* #module-image2 {
-  border: 1px solid red;
-  margin-left: 10px;
-} */
-
-/* #module-paragraph2 {
-  margin-left: 240px;
-} */
-
 #module-image-paragraph {
-  border: 1px solid black;
+  color: #252525;
   margin-left: 13px;
+  font-family: 'Mont';
 }
 
 #module-image-paragraph2 {
-  border: 1px solid black;
+  color: #1A9447;
   margin-left: 13px;
   position: relative;
   left: 190px;
+  font-family: 'Mont';
+}
+
+.module-image-paragraph-2-6 {
+  color: #F57078;
+}
+
+.module-2-6-container {
+  background: #ffff;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  font-family: 'Mont';
+  margin: 5% 12%;
+  padding-top: 2%;
+  padding-left: 10px;
+  width: 944px;
+  height: 144px;
+  color: #3A3A3A;
+}
+
+#module-2-6-image-paragraph2 {
+  color: #F57078;
+  margin-left: 13px;
+  position: relative;
+  left: 190px;
+  font-family: 'Mont';
+}
+
+.module-image-paragraph-2-6 {
+  color: #F57078;
+}
+
+.hr {
+  margin-top: -40px;
+  margin-left: 130px;
+  width: 944px;
 }
 /*  Quizzes styling ends here */

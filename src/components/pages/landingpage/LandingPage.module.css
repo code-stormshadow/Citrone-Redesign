@@ -192,7 +192,6 @@
   }
 
   .carousel-image-container {
-    border: 1px solid red;
     text-align: left;
     color: #ffff;
     margin-top: 40px;
@@ -256,6 +255,14 @@
     width: 158px;
     height: 54px;
     text-align: center;
+  }
+
+  .carousel-links {
+    color: #ffff;
+  }
+
+  .carousel-links:hover {
+    color: #ffff;
   }
 
   #carousel-image-button:hover {
