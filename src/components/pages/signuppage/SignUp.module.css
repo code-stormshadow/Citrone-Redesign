@@ -31,7 +31,7 @@
 }
 #imgHeaderLogo, #forgotPassLogo{                        /* Citrone logo styles for both signUp and forgot password Pages*/
     height: 50px;
-}
+} 
   
 #logoHeader{               /* Citrone text @logo styles for both signUp and password Pages*/
     font-weight: 600;                                      
