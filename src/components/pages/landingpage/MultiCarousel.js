@@ -41,7 +41,9 @@ const MultiCarousel = () => {
           <p>
             {`You'll learn how to transform user research to high-fidelity interactive designs...`}
           </p>
-          <Link to="https://www.stutern.com/beginners-course/ui_ux_design.html">
+          <Link
+            className={classes['carousel-links']}
+            to="https://www.stutern.com/beginners-course/ui_ux_design.html">
             <div id={classes['carousel-image-button']}>
               <div>
                 <p>Learn more</p>
@@ -57,64 +59,84 @@ const MultiCarousel = () => {
           <p>
             {`You’ll`} build exciting portfolios while learning the fundamentals of HTML, CSS...
           </p>
-          <div id={classes['carousel-image-button']}>
-            <div>
-              <p>Learn more</p>
+          <Link
+            className={classes['carousel-links']}
+            to="https://www.stutern.com/beginners-course/ui_ux_design.html">
+            <div id={classes['carousel-image-button']}>
+              <div>
+                <p>Learn more</p>
+              </div>
+              <div>
+                <FontAwesomeIcon icon={faArrowRight} />
+              </div>
             </div>
-            <div>
-              <FontAwesomeIcon icon={faArrowRight} />
-            </div>
-          </div>
+          </Link>
         </div>
         <div className={classes['carousel-image3']} id={classes['carousel-images']}>
           <h4>Backend Development</h4>
           <p>{`You'll learn the fundamentals of backend development, build a job ready port...`}</p>
-          <div id={classes['carousel-image-button']}>
-            <div>
-              <p>Learn more</p>
+          <Link
+            className={classes['carousel-links']}
+            to="https://www.stutern.com/beginners-course/ui_ux_design.html">
+            <div id={classes['carousel-image-button']}>
+              <div>
+                <p>Learn more</p>
+              </div>
+              <div>
+                <FontAwesomeIcon icon={faArrowRight} />
+              </div>
             </div>
-            <div>
-              <FontAwesomeIcon icon={faArrowRight} />
-            </div>
-          </div>
+          </Link>
         </div>
         <div className={classes['carousel-image4']} id={classes['carousel-images']}>
           <h4>Data Science</h4>
           <p>{` You’ll learn the fundamentals of Python, data science and machine learning...`}</p>
-          <div id={classes['carousel-image-button']}>
-            <div>
-              <p>Learn more</p>
+          <Link
+            className={classes['carousel-links']}
+            to="https://www.stutern.com/beginners-course/ui_ux_design.html">
+            <div id={classes['carousel-image-button']}>
+              <div>
+                <p>Learn more</p>
+              </div>
+              <div>
+                <FontAwesomeIcon icon={faArrowRight} />
+              </div>
             </div>
-            <div>
-              <FontAwesomeIcon icon={faArrowRight} />
-            </div>
-          </div>
+          </Link>
         </div>
         <div className={classes['carousel-image5']} id={classes['carousel-images']}>
           <h4>Mobile Development</h4>
           <p>{`You'll learn the best practices for mobile development, build a portfolio of...`}</p>
-          <div id={classes['carousel-image-button']}>
-            <div>
-              <p>Learn more</p>
+          <Link
+            className={classes['carousel-links']}
+            to="https://www.stutern.com/beginners-course/ui_ux_design.html">
+            <div id={classes['carousel-image-button']}>
+              <div>
+                <p>Learn more</p>
+              </div>
+              <div>
+                <FontAwesomeIcon icon={faArrowRight} />
+              </div>
             </div>
-            <div>
-              <FontAwesomeIcon icon={faArrowRight} />
-            </div>
-          </div>
+          </Link>
         </div>
         <div className={classes['carousel-image6']} id={classes['carousel-images']}>
           <h4>Software Testing</h4>
           <p>
             {`You'll learn to ensure that products match expected requirements while free of defects.`}
           </p>
-          <div id={classes['carousel-image-button']}>
-            <div>
-              <p>Learn more</p>
+          <Link
+            className={classes['carousel-links']}
+            to="https://www.stutern.com/beginners-course/ui_ux_design.html">
+            <div id={classes['carousel-image-button']}>
+              <div>
+                <p>Learn more</p>
+              </div>
+              <div>
+                <FontAwesomeIcon icon={faArrowRight} />
+              </div>
             </div>
-            <div>
-              <FontAwesomeIcon icon={faArrowRight} />
-            </div>
-          </div>
+          </Link>
         </div>
       </Carousel>
       ;
