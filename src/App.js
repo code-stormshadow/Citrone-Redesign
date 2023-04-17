@@ -14,6 +14,7 @@ import Students_Tutors from './components/pages/dashboardpage/Students_Tutors';
 import Faq from './components/pages/dashboardpage/FAQs';
 import Settings from './components/pages/dashboardpage/Settings';
 import LogOut from './components/pages/dashboardpage/LogOut';
+import ModuleOne from './components/pages/dashboardpage/QuizModuleOne';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="faq" element={<Faq />}></Route>
         <Route path="settings" element={<Settings />}></Route>
         <Route path="logout" element={<LogOut />}></Route>
+        <Route path="moduleone" element={<ModuleOne />}></Route>
       </Routes>
     </div>
   );
