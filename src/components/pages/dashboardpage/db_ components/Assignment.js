@@ -1,7 +1,8 @@
 import React from 'react';
 import NavBar from '..//dashboardpage/db_ components/NavBar';
 import SideNavBar from '..//dashboardpage/db_ components/SideNavBar';
-import styles from './db_ components/Dashboard.module.css';
+import styles from './db_ components/Assignment.module.css';
+import SearchBar from './db_ components/SearchBar';
 
 const Assignment = () => {
   return (
@@ -9,6 +10,7 @@ const Assignment = () => {
       <NavBar />
       <div className={styles.wrapper}>
         <SideNavBar />
+        <SearchBar />
       </div>
     </div>
   );

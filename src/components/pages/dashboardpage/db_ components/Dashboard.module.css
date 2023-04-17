@@ -262,7 +262,7 @@ body {
 .wrapper {
   display: flex;
   background: #FEF2F2;
-  
+  /* border: 1px solid red; */
 }
 
 .wrapper {
