@@ -390,13 +390,24 @@ footer {
     transition: 0.2s;
   }
 
-  /* @media only screen and ( max-width: 1284px ) {
+  /* @media only screen and ( min-width: 1200px ) {
     .first-container {
       width: 100%;
     }
 
     .login-button {
-      margin-left: 900px;
+      margin-left: 800px;
     }
+
+    .portrait {
+      margin: 20px 5px;
+      width: 350px;
+      height: 500px;
+  }
+
+  .cap {
+    margin-top: -50px;
+    margin-left: -410px;
+  }
 
   } */
