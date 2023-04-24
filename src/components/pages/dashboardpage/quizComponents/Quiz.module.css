@@ -177,3 +177,9 @@
     .quiz1-card-sub-container {
     display: flex;
     }
+
+    ::placeholder {
+    font-family: regular-mont;
+    color: #A2A2A2;
+    font-size: 16px;
+    }
