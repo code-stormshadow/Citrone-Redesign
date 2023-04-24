@@ -25,30 +25,42 @@ const SignUpPage = () => {
         <form id={classes.formSignUp}>
           <h1 className={classes.headerTwo}>Create a new account</h1>
           <div className={classes.inputsContainer}>
-            <div className={classes.names}>
-              <div className={classes.firstName}>
-                <label htmlFor="fname">First Name</label> <br />
-                <input
+            <div className={classes.labelNames}>
+              <label htmlFor="fname">First Name</label>
+              <label htmlFor="lname">Last name</label>
+              {/* <input
                   className={classes.namesInputs}
                   type="text"
                   placeholder="Enter your first name"
                   required
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
-                />
-              </div>
-              <div className={classes.lastName}>
-                <label htmlFor="lname">Last name</label> <br />
-                <input
+                /> */}
+            </div>
+            <div className={classes.namesInputs}>
+              <input
+                placeholder="Enter your first name"
+                className={classes.fnameInput}
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+              />
+              <input
+                placeholder="Enter your last name"
+                className={classes.fnameInput}
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+              />
+
+              {/* <input
                   className={classes.namesInputs}
                   type="text"
                   placeholder="Enter your last name"
                   required
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
-                />
-              </div>
+                /> */}
             </div>
+
             <div className={classes.emailPasswordContainer}>
               <div className={classes.email}>
                 <label id={classes.signUpLabels} htmlFor="Email">
