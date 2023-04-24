@@ -1,9 +1,9 @@
 import React from 'react';
-import NavBar from './db_ components/NavBar';
-import styles from './/.//db_ components/Dashboard.module.css';
-import SideNavBar from './db_ components/SideNavBar';
-import classes from '.././/dashboardpage/db_ components/Dashboard.module.css';
-import Line from '.././/dashboardpage/images/Line.png';
+import NavBar from '../db_ components/NavBar';
+import styles from '../db_ components/Dashboard.module.css';
+import SideNavBar from '../db_ components/SideNavBar';
+import classes from './Quiz.module.css';
+import Line from '../images/Line.png';
 
 const ModuleOne = () => {
   return (

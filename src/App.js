@@ -6,15 +6,14 @@ import SignUpPage from './components/pages/signuppage/SignUpPage';
 import ForgotPasswordPage from './components/pages/signuppage/ForgotPasswordPage';
 import CheckMail from './components/pages/signuppage/CheckMail';
 import SetPassword from './components/pages/signuppage/SetPassword';
-
+import Quizzes from './components/pages/dashboardpage/quizComponents/Quizzes';
 import CourseContent from './components/pages/dashboardpage/CourseContent';
 import Assignment from './components/pages/dashboardpage/Assignment';
-import Quizzes from './components/pages/dashboardpage/Quizzes';
 import Students_Tutors from './components/pages/dashboardpage/Students_Tutors';
 import Faq from './components/pages/dashboardpage/FAQs';
 import Settings from './components/pages/dashboardpage/Settings';
 import LogOut from './components/pages/dashboardpage/LogOut';
-import ModuleOne from './components/pages/dashboardpage/QuizModuleOne';
+import ModuleOne from './components/pages/dashboardpage/quizComponents/QuizModuleOne';
 
 function App() {
   return (

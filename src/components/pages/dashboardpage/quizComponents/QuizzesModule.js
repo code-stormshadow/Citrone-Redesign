@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Line from '..//images/Line.png';
 import Note from '..//images/Note.png';
-import classes from './Dashboard.module.css';
+import classes from './Quiz.module.css';
 const QuizzesModule = () => {
   return (
     <div className={classes.modules}>
@@ -65,7 +65,7 @@ const QuizzesModule = () => {
               <img id={classes['module-image-paragraph2']} src={Note} />
             </div>
             <div>
-              <p id={classes['module-2-6-image-paragraph2']}>2/4 Quizzes Attempted</p>
+              <p id={classes['module-2-6-image-paragraph2']}>2&#8725;4 Quizzes Attempted</p>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ const QuizzesModule = () => {
               <img id={classes['module-image-paragraph2']} src={Note} />
             </div>
             <div>
-              <p id={classes['module-2-6-image-paragraph2']}>0/4 Quizzes Attempted</p>
+              <p id={classes['module-2-6-image-paragraph2']}>0&#8725;4 Quizzes Attempted</p>
             </div>
           </div>
         </div>
@@ -125,7 +125,7 @@ const QuizzesModule = () => {
               <img id={classes['module-image-paragraph2']} src={Note} />
             </div>
             <div>
-              <p id={classes['module-2-6-image-paragraph2']}>0/4 Quizzes Attempted</p>
+              <p id={classes['module-2-6-image-paragraph2']}>0&#8725;4 Quizzes Attempted</p>
             </div>
           </div>
         </div>
@@ -155,7 +155,7 @@ const QuizzesModule = () => {
               <img id={classes['module-image-paragraph2']} src={Note} />
             </div>
             <div>
-              <p id={classes['module-2-6-image-paragraph2']}>4/4 Quizzes Attempted</p>
+              <p id={classes['module-2-6-image-paragraph2']}>4&#8725;4 Quizzes Attempted</p>
             </div>
           </div>
         </div>
@@ -185,7 +185,7 @@ const QuizzesModule = () => {
               <img id={classes['module-image-paragraph2']} src={Note} />
             </div>
             <div>
-              <p id={classes['module-2-6-image-paragraph2']}>4/4 Quizzes Attempted</p>
+              <p id={classes['module-2-6-image-paragraph2']}>4&#8725;4 Quizzes Attempted</p>
             </div>
           </div>
         </div>
