@@ -13,6 +13,11 @@
     src: url(/src/components/pages/font/Mont-Bold.ttf);
   }
 
+  @font-face {
+    font-family: light-mont;
+    src: url(/src/components/pages/font/Mont-Light.ttf);
+  }
+
 /* .quiz-container h3 {
     font-family: semi-bold-mont;
     margin: 25% 29%;
@@ -159,23 +164,97 @@
     }
   
     #quiz-moduleone-first-paragraph4 {
+    font-family: semi-bold-mont;
     margin: 10px 105px;
     }
   
     .quiz1-card {
     background: #ffff;
-    border: 1px solid red;
     border-radius: 10px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
     display: flex;
     height: 80px;
     margin: 20px 105px;
-    padding-left: 20px;
+    padding-left: 10px;
     width: 944px;
     }
-  
-    .quiz1-card-sub-container {
+
+    .quiz1 {
+    font-family: semi-bold-mont;
+    margin-top: 25px;
+    }
+
+    .quiz1-second-container {
+    left: 15px;
+    position: relative;
+    }
+
+    .quiz1-line {
+    height: 48px;
+    margin-top: 15px;
+    margin-left: 17px;
+    width: 4px;
+    }
+
+    #introduction {
+        font-family: semi-bold-mont;
+        margin-top: 13px;
+    }
+    
+    .quiz1-card-second-sub-container {
     display: flex;
+    font-family: light-mont;
+    font-size: 14px;
+    justify-content: space-between;
+    margin-top: -8px;
+    width: 500px;
+    }
+
+    .graded {
+    background: #1EAA51;
+    border-radius: 5px;
+    color: #ffff;
+    font-family: regular-mont;
+    height: 48px;
+    justify-content: center;
+    margin: 0px;
+    padding-top: 10px;
+    position: relative;
+    top: 20%;
+    left: 240px;
+    text-align: center;
+    width: 100px;   
+    }
+
+    .quiz1-card2-5 {
+    background: #ffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+    display: flex;
+    height: 80px;
+    margin: 20px 105px;
+    padding-left: 10px;
+    width: 944px;
+    }
+
+    .start {
+    background: #F54F59;
+    border-radius: 5px;
+    color: #ffff;
+    font-family: regular-mont;
+    height: 48px;
+    justify-content: center;
+    margin: 0px;
+    padding-top: 10px;
+    position: relative;
+    top: 20%;
+    left: 240px;
+    text-align: center;
+    width: 100px; 
+    }
+
+    Link {
+        text-decoration: none;
     }
 
     ::placeholder {
