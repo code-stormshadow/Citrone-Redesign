@@ -15,6 +15,7 @@ import SwitchComponent from '../images/switch.png';
 import DropdownProfilePic from '../images/profile-pic.png';
 import ProfileIcon from '../images/profile-icon.svg';
 import SettingsIcon from '../images/settings-filled.svg';
+import Border from '../images/border.svg';
 import LogOutIcon from '../images/logout-icon.svg';
 import Polygon from '../images/polygon.svg';
 
@@ -107,7 +108,8 @@ const NavBar = () => {
                     <span className={styles.spanLink}>Profile Information</span>
                   </MenuItem>
                   <MenuItem component={<Link to="/settings" />}>
-                    <img src={SettingsIcon} alt="Icon" />
+                    <img src={Border} alt="Border" className={styles.border} />
+                    <img src={SettingsIcon} alt="Icon" className={styles.settingsIcon} />
                     <span className={styles.spanLink}>Settings</span>
                   </MenuItem>
                   <MenuItem component={<Link to="/settings" />}>

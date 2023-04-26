@@ -1,8 +1,8 @@
 import NavBar from './db_ components/NavBar';
 import SideNavBar from './db_ components/SideNavBar';
 import Accordion from 'react-bootstrap/Accordion';
-import PlusCircle from '../dashboardpage/images/PlusCircle.svg';
-import MinusCircle from '../dashboardpage/images/MinusCircle.svg';
+// import PlusCircle from '../dashboardpage/images/PlusCircle.svg';
+// import MinusCircle from '../dashboardpage/images/MinusCircle.svg';
 import styles from './db_ components/Dashboard.module.css';
 
 const Faq = () => {
@@ -11,35 +11,99 @@ const Faq = () => {
       <NavBar />
       <div className={styles.wrapper}>
         <SideNavBar />
-        <div>
-          <div className={styles.faqBanner}>
-            <h1>Frequently Asked Questions</h1>
-          </div>
-          <Accordion defaultActiveKey="0" flush className="accordion">
+        <div className={styles.faqWrapper}>
+          <div className={styles.faqBanner}></div>
+          <Accordion
+            defaultActiveKey="0"
+            id={styles.accordionWrapper}
+            style={{ backgroundColor: '#FEF2F2', border: 'none', outline: 'none' }}>
             <Accordion.Item eventKey="0">
-              <Accordion.Header>
-                <span>Accordion Item #1</span>
-                <object data={PlusCircle} className="accordion-icon"></object>
-                <object data={MinusCircle} className="accordion-icon"></object>
+              <Accordion.Header
+                className={styles.accordionHeader}
+                style={{ background: '#FEF2F2' }}>
+                <h3 className={styles.faqHeader}>
+                  How do I upload a file as an assignment submission on Citrone?
+                </h3>
               </Accordion.Header>
               <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+                <p className={styles.accordionText}>
+                  If your tutor allows file uploads as a submission type, you can upload a file from
+                  your computer as an assignment submission. You can also upload a file from Google
+                  Drive.
+                </p>
+                <span className={styles.accordionNote}>Note:</span>
+                <ul className={styles.accordionText}>
+                  <li>Citrone does not support file uploads larger than 5 GB.</li>
+                  <li>
+                    If enabled in your account, Citrone plays a celebration animation when you
+                    submit an assignment on time. However, if you prefer, you can disable this
+                    feature setting in your user settings.
+                  </li>
+                </ul>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
-              <Accordion.Header>Accordion Item #2</Accordion.Header>
+              <Accordion.Header>
+                <h2 className={styles.faqHeader}>How do I view Assignments?</h2>
+              </Accordion.Header>
               <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+                <p>Body</p>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="2">
+              <Accordion.Header>
+                <h2 className={styles.faqHeader}>How do I view Assignments?</h2>
+              </Accordion.Header>
+              <Accordion.Body>
+                <p>Body</p>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="3">
+              <Accordion.Header>
+                <h2 className={styles.faqHeader}>How do I view Assignments?</h2>
+              </Accordion.Header>
+              <Accordion.Body>
+                <p>Body</p>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="4">
+              <Accordion.Header>
+                <h2 className={styles.faqHeader}>How do I view Assignments?</h2>
+              </Accordion.Header>
+              <Accordion.Body>
+                <p>Body</p>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="5">
+              <Accordion.Header>
+                <h2 className={styles.faqHeader}>How do I view Assignments?</h2>
+              </Accordion.Header>
+              <Accordion.Body>
+                <p>Body</p>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="6">
+              <Accordion.Header>
+                <h2 className={styles.faqHeader}>How do I view Assignments?</h2>
+              </Accordion.Header>
+              <Accordion.Body>
+                <p>Body</p>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="7">
+              <Accordion.Header>
+                <h2 className={styles.faqHeader}>How do I view Assignments?</h2>
+              </Accordion.Header>
+              <Accordion.Body>
+                <p>Body</p>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="8">
+              <Accordion.Header>
+                <h2 className={styles.faqHeader}>How do I view Assignments?</h2>
+              </Accordion.Header>
+              <Accordion.Body>
+                <p>Body</p>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>

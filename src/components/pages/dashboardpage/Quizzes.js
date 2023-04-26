@@ -13,7 +13,7 @@ const Quizzes = () => {
         <div>
           <div>
             <div>
-              <input placeholder="Search QUIZ title" className={styles.searchBar} />
+              <input placeholder="Search QUIZ title" className={styles.searchBarQuiz} />
             </div>
           </div>
           <h3>Quizzes</h3>
