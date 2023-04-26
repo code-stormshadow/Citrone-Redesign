@@ -13,10 +13,7 @@ const Faq = () => {
         <SideNavBar />
         <div className={styles.faqWrapper}>
           <div className={styles.faqBanner}></div>
-          <Accordion
-            defaultActiveKey="0"
-            id={styles.accordionWrapper}
-            style={{ backgroundColor: '#FEF2F2', border: 'none', outline: 'none' }}>
+          <Accordion defaultActiveKey="0" id={styles.accordionWrapper}>
             <Accordion.Item eventKey="0">
               <Accordion.Header
                 className={styles.accordionHeader}

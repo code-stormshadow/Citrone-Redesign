@@ -17,7 +17,7 @@ const Modules = () => {
   return (
     <div className={styles.courseWrapper}>
       <Link to="" className={styles.link}>
-        <Card id={styles.card} className={styles.activeCard}>
+        <Card id={styles.card} class={styles.activeCard}>
           <Card.Body id={styles.cardBody}>
             <div className={styles.courseFlex}>
               <div>
