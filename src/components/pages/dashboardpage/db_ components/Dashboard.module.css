@@ -335,13 +335,13 @@ color: rgba(58, 58, 58, 0.5);
   font-weight: 800;
   font-family: bold-mont;
 }
-/* 
+
 .active .navIcon {
   background-image: url('../images/dashboard-colored.svg');
   background-repeat: no-repeat;
   background-color: #F54F59;
   z-index: 2;
-} */
+} 
 
 .menu_link {
   margin-left: 2rem;
@@ -365,10 +365,9 @@ color: rgba(58, 58, 58, 0.5);
 .wrapper {
   display: flex;
   background: #FEF2F2;
-  /* border: 1px solid red; */
   margin: auto;
-  /* overflow: scroll; */
-}
+  overflow: scroll;
+ }
   
 .main_content {
   width: 148vh;
