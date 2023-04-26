@@ -15,7 +15,7 @@ const LessonAssignments = () => {
             Assignments <span>&#10095; </span>
             <span className={styles.redHeader}>Module 1 Assignments</span>
           </h4>
-          <h2 className={styles.assignmentHeaderTwo}>Assignments</h2>
+          <h2 className={styles.assignmentHeaderTwo}>Module 1 Assignments;</h2>
           <div className={styles.assignmentLessons}>
             <div className={styles.assignmentModule}>
               <h3 className={styles.allModules}>Lesson</h3>

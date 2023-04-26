@@ -1,8 +1,9 @@
 import React from 'react';
-import NavBar from './db_ components/NavBar';
-import SideNavBar from './db_ components/SideNavBar';
-import styles from './db_ components/Dashboard.module.css';
-import QuizzesModule from './db_ components/QuizzesModule';
+import NavBar from '../db_ components/NavBar';
+import SideNavBar from '../db_ components/SideNavBar';
+import styles from '../db_ components/Dashboard.module.css';
+import classes from './Quiz.module.css';
+import QuizzesModule from './QuizzesModule';
 
 const Quizzes = () => {
   return (
@@ -16,7 +17,7 @@ const Quizzes = () => {
               <input placeholder="Search QUIZ title" className={styles.searchBar} />
             </div>
           </div>
-          <h3>Quizzes</h3>
+          <h3 id={classes.quizzes}>Quizzes</h3>
           <QuizzesModule />
         </div>
       </div>

@@ -39,8 +39,8 @@ const AssignmentModule = () => {
                     Assignments
                   </Link>
                   <Link to="/lesson-assignments" className={styles.assignmentsSubmitted}>
-                    <img className={styles.assignmentsSubmittedIcons} src={CalendarNote}></img>4
-                    &#8725; 4 Assignments Submitted
+                    <img className={styles.assignmentsSubmittedIcons} src={CalendarNote}></img>
+                    4&#47;4 Assignments Submitted
                   </Link>
                 </div>
               </div>
@@ -55,8 +55,8 @@ const AssignmentModule = () => {
               <div className={styles.assignmentsParagraphsNotCompleted}>
                 <h3 className={styles.assignmentTopic}> Understanding Design briefs</h3>
                 <p className={styles.assignmentsModulesParagraph}>
-                  Briefs will provide you the freelancer&#8725;full-time designer with everything
-                  they ...
+                  Briefs will provide you the freelancer&#47;full-time designer with everything they
+                  ...
                 </p>
                 <div className={styles.assignmentsParagraphsDiv}>
                   <Link to="/lesson-assignments" className={styles.lessonAssignments}>
@@ -64,8 +64,8 @@ const AssignmentModule = () => {
                     Assignments
                   </Link>
                   <Link to="/lesson-assignments" className={styles.assignmentsNotSubmitted}>
-                    <img className={styles.assignmentsSubmittedIcons} src={CalendarNote}></img>2
-                    &#8725; 4 Assignments Submitted
+                    <img className={styles.assignmentsSubmittedIcons} src={CalendarNote}></img>
+                    2&#47;4 Assignments Submitted
                   </Link>
                 </div>
               </div>
@@ -88,8 +88,8 @@ const AssignmentModule = () => {
                     Assignments
                   </Link>
                   <Link to="/lesson-assignments" className={styles.assignmentsNotSubmitted}>
-                    <img className={styles.assignmentsSubmittedIcons} src={CalendarNote}></img>1
-                    &#8725; 4 Assignments Submitted
+                    <img className={styles.assignmentsSubmittedIcons} src={CalendarNote}></img>
+                    1&#47;4 Assignments Submitted
                   </Link>
                 </div>
               </div>
@@ -112,8 +112,8 @@ const AssignmentModule = () => {
                     Assignments
                   </Link>
                   <Link to="/lesson-assignments" className={styles.assignmentsNotSubmitted}>
-                    <img className={styles.assignmentsSubmittedIcons} src={CalendarNote}></img>0
-                    &#8725; 4 Assignments Submitted
+                    <img className={styles.assignmentsSubmittedIcons} src={CalendarNote}></img>
+                    0&#47;4 Assignments Submitted
                   </Link>
                 </div>
               </div>
@@ -136,8 +136,8 @@ const AssignmentModule = () => {
                     Assignments
                   </Link>
                   <Link to="/lesson-assignments" className={styles.assignmentsNotSubmitted}>
-                    <img className={styles.assignmentsSubmittedIcons} src={CalendarNote}></img>4
-                    &#8725; 4 Assignments Submitted
+                    <img className={styles.assignmentsSubmittedIcons} src={CalendarNote}></img>
+                    4&#47;4 Assignments Submitted
                   </Link>
                 </div>
               </div>
@@ -152,8 +152,8 @@ const AssignmentModule = () => {
               <div className={styles.assignmentsParagraphsNotCompleted}>
                 <h3 className={styles.assignmentTopic}> Understanding Design briefs</h3>
                 <p className={styles.assignmentsModulesParagraph}>
-                  Briefs will provide you the freelancer&#8725;full-time designer with everything
-                  they ...
+                  Briefs will provide you the freelancer&#47;full-time designer with everything they
+                  ...
                 </p>
                 <div className={styles.assignmentsParagraphsDiv}>
                   <Link to="/lesson-assignments" className={styles.lessonAssignments}>
@@ -161,8 +161,8 @@ const AssignmentModule = () => {
                     Assignments
                   </Link>
                   <Link to="/lesson-assignments" className={styles.assignmentsNotSubmitted}>
-                    <img className={styles.assignmentsSubmittedIcons} src={CalendarNote}></img>2
-                    &#8725; 4 Assignments Submitted
+                    <img className={styles.assignmentsSubmittedIcons} src={CalendarNote}></img>
+                    2&#47;4 Assignments Submitted
                   </Link>
                 </div>
               </div>
@@ -185,8 +185,8 @@ const AssignmentModule = () => {
                     Assignments
                   </Link>
                   <Link to="/lesson-assignments" className={styles.assignmentsNotSubmitted}>
-                    <img className={styles.assignmentsSubmittedIcons} src={CalendarNote}></img>4
-                    &#8725; 4 Assignments Submitted
+                    <img className={styles.assignmentsSubmittedIcons} src={CalendarNote}></img>
+                    4&#47;4 Assignments Submitted
                   </Link>
                 </div>
               </div>
@@ -201,8 +201,8 @@ const AssignmentModule = () => {
               <div className={styles.assignmentsParagraphsNotCompleted}>
                 <h3 className={styles.assignmentTopic}> Understanding Design briefs</h3>
                 <p className={styles.assignmentsModulesParagraph}>
-                  Briefs will provide you the freelancer&#8725;full-time designer with everything
-                  they ...
+                  Briefs will provide you the freelancer&#47;full-time designer with everything they
+                  ...
                 </p>
                 <div className={styles.assignmentsParagraphsDiv}>
                   <Link to="/lesson-assignments" className={styles.lessonAssignments}>
@@ -210,8 +210,8 @@ const AssignmentModule = () => {
                     Assignments
                   </Link>
                   <Link to="/lesson-assignments" className={styles.assignmentsNotSubmitted}>
-                    <img className={styles.assignmentsSubmittedIcons} src={CalendarNote}></img>2
-                    &#8725; 4 Assignments Submitted
+                    <img className={styles.assignmentsSubmittedIcons} src={CalendarNote}></img>
+                    2&#47;4 Assignments Submitted
                   </Link>
                 </div>
               </div>

@@ -1,3 +1,17 @@
+@font-face {
+  font-family: regular-mont;
+  src: url(//src/components/pages/font/Mont-Regular.ttf);
+}
+
+@font-face {
+  font-family: semi-bold-mont;
+  src: url(//src/components/pages/font/Mont-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: bold-mont;
+  src: url(//src/components/pages/font/Mont-Bold.ttf);
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -46,6 +60,7 @@ body {
 .assignmentHeader{
   margin: 50px 0 20px 100px;
   font-size: 26px;
+  font-family: bold-mont;
 }
 .assignmentModulesMainDiv{
 
@@ -69,28 +84,27 @@ body {
   color: #3A3A3A;
   
 }
-.assignmentModule{
-  font-family: 'Mont';
-}
+
 .assignmentModule{
   display: flex;
   flex-direction: column;
     
 }
 .allModules{
-  margin-top: 15px;
+  margin-top: 20px;
   margin-left: 20px;
   text-align: center;
-  width: 70px;
-  font-weight: 700;
+  width: 90px;
+  font-family: bold-mont;
   font-size: 18px;
   letter-spacing: 0.1rem;
 }
 #assignmentNumber{
-  margin-top: 20px;
+  margin-top: 15px;
   margin-left: 50px;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 25px;
+  font-family: bold-mont;  
+  
 }
 .verticalLine{
   margin-left: 20px;
@@ -99,19 +113,16 @@ body {
   background-image: url('/src/components/pages/dashboardpage/images/Line.png');
 }
 .assignmentTopic{
+  display: inline;
   letter-spacing: 1.5px;
-  font-family: 'Mont';
-  font-style: normal;
-  font-weight: 600;
+  font-family: bold-mont;
   font-size: 24px;
-  line-height: 32px;
 }
 .assignmentsModulesParagraph{
-  font-weight: 600;
-  font-family: 'Mont';
-  font-size: 15px;
-  letter-spacing: 1.5px;
+  font-family: regular-mont;
+  font-size: 16px;
   color: #3a3a3a;
+  padding-top: 5px;
 }
 .assignmentsParagraphsDiv{
   display: flex;
@@ -121,25 +132,28 @@ body {
 .lessonAssignments{
   text-decoration: none;
   color: #252525;
-  font-family: 'Mont';
-  font-weight: 600;
+  font-family: regular-mont;
+  font-size: 16px;
+  padding-top: 5px;
 
 }
 .lessonAssignments:hover{
   text-decoration: none;
-  color: #252525;   
+  color: #252525;
+
 }
 
 .lessonIcon{
   margin-right: 13px;
-  margin-bottom: 3px;
+  margin-bottom: 10px;
 }
 .assignmentsSubmitted{
   text-decoration: none;
   color: #29b85e;
   margin-left: 13px;
-  font-family: 'Mont';
-  font-weight: 600;
+  font-family: regular-mont;
+  font-size: 16px;
+  padding-top: 5px;
   
 }
 .assignmentsSubmitted:hover{
@@ -148,7 +162,8 @@ body {
 }
 .assignmentsSubmittedIcons{
   margin-right: 13px;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
+
     
 }
 .assignmentParagraphs{  
@@ -173,19 +188,23 @@ padding: 1px 20px;
   padding: 1px 20px;
 }
 .assignmentsNotSubmitted{
+  padding-top: 5px;
   text-decoration: none;
   color: #f54f59;
   margin-left: 13px;
-  font-family: 'Mont';
-  font-weight: 600;
+  font-family: regular-mont;
   
 }
 .assignmentsNotSubmitted:hover{
   color: #f54f59;
 }
+.assignmentsSubmittedIcons{
+  margin-bottom: 5px;
+}
   
   
   /* styles for Lesson Assignments Page starts here */
+
 .lessonModulesMainDiv{
 
   margin: 20px 50px 0 100px;
@@ -194,14 +213,14 @@ padding: 1px 20px;
 }
 
 .assignmentHeaderOne{
-  font-family: 'Mont';
-  font-weight: normal;
+  font-family: semi-bold-mont;
+  display: inline;
   font-size: 16px;
   margin: 30px 0 20px 1px;
 }
 
 .assignmentHeaderTwo{
-  font-family: 'Mont';
+  font-family: bold-mont;
   font-weight: normal;
   margin: 50px 0 20px 1px;
   font-size: 26px;
@@ -232,15 +251,13 @@ span{
 .lessonParagraphsGraded{
   height: 7rem;
   padding: 1px 0px 1px 20px;
-  /* margin-right: 5px; */
+  
 }
-/* i {
-  content: "\276F";
-} */
+
 .gradedParagraph{
   color: #1A9447;
-  font-size: medium;
-  font-weight: 500;
+  font-family: regular-mont;
+  font-size: 16px; 
 
 }
 .viewGradeBtn{
@@ -248,12 +265,13 @@ span{
   height: 48px;
   width: 116px;
   text-align: center;
+  font-family: regular-mont;
   font-size: 16px;
   background: #1A9447;
   top: 272px;
   border-radius: 5px;
   padding: 8px 1px 8px;
-  margin: 30px 0 0 10px;
+  margin: 30px 0px 0 80px;
   border: none;
 
 }
@@ -284,21 +302,29 @@ span{
   height: 48px;
   width: 116px;
   text-align: center;
+  font-family: regular-mont;
   font-size: 16px;
   color: #FFFFFF;
   background: #BDBDBD;
   top: 272px;
   border-radius: 5px;
   padding: 8px 1px 8px;
-  margin: 30px 0 0 10px;
+  margin: 30px 0 0 80px;
   border: none;
 
 }
 
-.lessonParagraphsGraded{
-  height: 7rem;
+/* Styles for lesson module 3 starts here */
+
+.lessonParagraphsAwaiting{
+  width: 40rem;
+  margin-right: 10px;
   padding: 1px 0px 1px 20px;
-  /* margin-right: 5px; */
+}
+.lessonTopic{
+  display: inline;
+  font-family: bold-mont;
+  font-size: 24px;
 }
 .awaiting{
   color: #F1A207
@@ -318,18 +344,13 @@ span{
   border: none;
 
 } */
-.lessonParagraphsAwaiting{
-  width: 60rem;
-  margin-right: 10px;
-  height: 7rem;
-  padding: 1px 0px 1px 20px;
-  /* margin-right: 5px; */
-}
+
 .reSubmitBtn{
   outline: none;
   height: 48px;
-  width: 200px;
+  width: 159px;
   text-align: center;
+  font-family: regular-mont;
   font-size: 16px;
   color: #FFFFFF;
   background: #f54f59;
@@ -346,6 +367,8 @@ span{
 
 }
 
+/* Styles for lesson module 4 starts here */
+
 .unStartedDueDate{
   color: #f54f59;
 }
@@ -355,12 +378,13 @@ span{
   height: 48px;
   width: 116px;
   text-align: center;
+  font-family: regular-mont;
   font-size: 16px;
   color: #FFFFFF;
   background: #f54f59;
   border-radius: 5px;
   padding: 8px 16px 8px 16px;
-  margin: 30px 10px 0 20px;
+  margin: 30px 10px 0 85px;
   border: none;
 }
 .unStartedBtn:hover{
@@ -370,9 +394,18 @@ span{
   overflow: hidden;
 }
 
-/* Styles for Lesson grades starts here */
+/* Styles for Lesson grades page starts here */
+
 .gradesDiv{
+  height: 65%;
+  display: flex;
+  flex-direction: column;
   margin-left: 90px;
+  gap: 10px;
+}
+.assignmentHeaderOne{
+  width: 455px;
+  margin: 40px 0 20px 0;
 }
 
 .gradesContentsDiv{
@@ -389,41 +422,52 @@ span{
 
 }
 
+
 .modLessHeader{
   font-size: 24px;
-  font-family: 'Mont';
-  /* margin: 2px 0; */
+  font-family: regular-mont;
+  margin: 0;
 }
 .gradesLine{
+  border: 1px solid #A2A2A280;
   width: 52rem;
-  border: 1px solid #A2A2A280
+  color: #A2A2A280;
+  
 }
 .due-GivenDate{
   /* border: 1px solid red; */
   height: 50px;
-  display:inline-block;
+  font-family: regular-mont;
+  font-size: 18px;
+  display:inline;
   margin: 0 0 10px 0;
   padding: 0;
 }
 .given-date{
+  font-family: regular-mont;
+  font-size: 18px;
   margin: 2px 0;
   padding: 0;
 }
 .acquiredGrades{
   color: #F54F59;
-  font-weight: bold;
+  font-family: bold-mont;
   font-size: 30px;
-  margin-top: 180px;
+  margin-top: 50px;
   margin-bottom:50px;
 
 }
 .remarks{
-  font-weight: bold;
+  font-family: bold-mont;
   margin: 0;
   padding: 0;
   font-size: 20px;
   font-family: 'mont';
 }
+.remarksParagrapghTwo{
+  font-family: regular-mont;
+  margin-bottom: 40px;
+}  
 .viewBreakdown{
   text-decoration: none;
   background-color: #f54f59;
@@ -432,9 +476,13 @@ span{
   height: 48px;
   padding: 8px 28px;
   border-radius: 5px;
-  /* font-family: 'mont';
+  font-family: regular-mont;
   font-size: 18px;
-  text-align: center; */
+  text-align: center;
+}
+.viewBreakdown:hover{
+  background: #d1424c;
+  color: #FFFFFF;
+
 }
 
-   

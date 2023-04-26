@@ -1,0 +1,185 @@
+@font-face {
+    font-family: regular-mont;
+    src: url(//src/components/pages/font/Mont-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: semi-bold-mont;
+    src: url(/src/components/pages/font/Mont-SemiBold.ttf);
+  }
+  
+  @font-face {
+    font-family: bold-mont;
+    src: url(/src/components/pages/font/Mont-Bold.ttf);
+  }
+
+/* .quiz-container h3 {
+    font-family: semi-bold-mont;
+    margin: 25% 29%;
+    font-weight: 700;
+    font-size: 1126px;
+    } */
+
+    #quizzes {
+    font-family: semi-bold-mont;
+    font-size: 26px;
+    margin: 30px 90px;
+    }
+  
+    .modules {
+    height: 754px;
+    margin-left: 90px;
+    overflow-y: scroll;
+    width: 950px;
+    }
+  
+    .module-container {
+    background: #ffff;
+    border-radius: 10px;
+    border-right: 5px solid #1A9447;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+    color: #3A3A3A;
+    cursor: pointer;
+    font-family: 'Mont';
+    display: flex;
+    padding-top: 20px;
+    padding-left: 8px;
+    height: 144px;
+    width: 944px;
+    }
+  
+    #module {
+    font-family: regular-mont;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 20px;
+    text-align: center;
+    width: 70px;
+    }
+  
+    #module1 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 50px;
+    }
+  
+    #line {
+    height: 112px;
+    margin-left: 20px;
+    width: 6px;
+    }
+  
+    #module1-text {
+    font-family: semi-bold-mont;
+    font-size: 24px;
+    line-height: 32px;
+    margin-left: 20px;
+    }
+  
+    #module1-text1 {
+    font-family: regular-mont;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 20px;
+    }
+  
+    .module1-sub-container {
+    display: flex;
+    margin-left: 8px;
+    padding-top: 5px;
+    width: 530px;
+    }
+  
+    #module-image {
+    height: 24px;
+    width: 18.03px;
+    }
+  
+    #module-image-paragraph {
+    color: #252525;
+    font-family: regular-mont;
+    margin-left: 13px;
+    }
+  
+    #module-image-paragraph2 {
+    color: #1A9447;
+    font-family: regular-mont;
+    left: 190px;
+    margin-left: 13px;
+    position: relative;
+    }
+  
+    .module-2-6-container {
+    background: #ffff;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    color: #3A3A3A;
+    display: flex;
+    font-family: 'Mont';
+    height: 144px;
+    margin-top: 20px;
+    padding-top: 2%;
+    padding-left: 10px;
+    width: 944px;
+    }
+  
+    #module-2-6-image-paragraph2 {
+    color: #F57078;
+    font-family: regular-mont;
+    left: 190px;
+    margin-left: 13px;
+    position: relative;
+    }
+  
+    .hr {
+    width: 944px;
+    }
+  
+    .quiz-module-one-container {
+    /* border: 1px solid red; */
+    }
+  
+    .quiz-moduleone-first-paragraph {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 102px;
+    width: 210px;
+    }
+  
+    #quiz-moduleone-first-paragraph1 {
+    color: #252525;
+    /* font-style: normal; */
+    font-weight: 300;
+    }
+  
+    #quiz-moduleone-first-paragraph3 {
+    color: #F66771;
+    }
+  
+    #quiz-moduleone-first-paragraph4 {
+    margin: 10px 105px;
+    }
+  
+    .quiz1-card {
+    background: #ffff;
+    border: 1px solid red;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+    display: flex;
+    height: 80px;
+    margin: 20px 105px;
+    padding-left: 20px;
+    width: 944px;
+    }
+  
+    .quiz1-card-sub-container {
+    display: flex;
+    }
+
+    ::placeholder {
+    font-family: regular-mont;
+    color: #A2A2A2;
+    font-size: 16px;
+    }
