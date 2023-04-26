@@ -1,28 +1,23 @@
 import React from 'react';
 import styles from './/Dashboard.module.css';
 import Card from 'react-bootstrap/Card';
-import ModuleOne from '..//images/module-1.png';
-import ModuleTwo from '..//images/module-2.png';
-import ModuleThree from '..//images/module-3.png';
-import ModuleFour from '..//images/module-4.png';
-// import Table from 'react-bootstrap/Table';
 import Stars from '..//images/stars.svg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faVideo } from '@fortawesome/free-solid-svg-icons';
-import { faFileLines } from '@fortawesome/free-solid-svg-icons';
-import { faCalendarMinus } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import VideoIcon from '..//images/recording.svg';
+import FileIcon from '..//images/file.svg';
+import CalendarIcon from '../images/CalendarNote.svg';
 import { Link } from 'react-router-dom';
 
 const Modules = () => {
   return (
     <div className={styles.courseWrapper}>
-      <Link to="" className={styles.link}>
+      <Link to="/course-module-one" className={styles.link}>
         <Card id={styles.card} class={styles.activeCard}>
           <Card.Body id={styles.cardBody}>
             <div className={styles.courseFlex}>
               <div>
                 <h2 className={styles.moduleName}>Module 1</h2>
-                <img src={ModuleOne} alt="Design" className={styles.modulePic} />
+                <div className={styles.modulePic}></div>
               </div>
               <div>
                 <div className={styles.header}>
@@ -42,11 +37,11 @@ const Modules = () => {
                     <p>Product Design and Thinking</p>
                   </div>
                   <div>
-                    <p className={styles.tutorName}>Olurotimi Adubi</p>
+                    <p className={styles.tutor}>Olurotimi Adubi</p>
                   </div>
                   <div>
                     <p>
-                      <object data={Stars}></object>
+                      <object data={Stars} className={styles.starIcon}></object>
                     </p>
                   </div>
                 </div>
@@ -55,15 +50,15 @@ const Modules = () => {
 
                 <div className={styles.thirdRow}>
                   <div>
-                    <FontAwesomeIcon icon={faVideo} style={{ color: '#f57078' }} />
+                    <object data={VideoIcon}></object>
                     <span className={styles.spanDetails}>4 Recorded Live Sessions</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faFileLines} style={{ color: '#f57078' }} />
+                  <div className={styles.fileWrapper}>
+                    <object data={FileIcon}></object>
                     <span className={styles.spanDetails}>4 Lessons</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faCalendarMinus} style={{ color: '#f57078' }} />
+                  <div className={styles.calendar}>
+                    <object data={CalendarIcon}></object>
                     <span className={styles.spanDetails}>4 Assignments</span>
                   </div>
                 </div>
@@ -81,7 +76,7 @@ const Modules = () => {
             <div className={styles.courseFlex}>
               <div>
                 <h2 className={styles.moduleName}>Module 2</h2>
-                <img src={ModuleTwo} alt="Design" className={styles.modulePic} />
+                <div className={styles.moduleTwo}></div>
               </div>
               <div>
                 <div className={styles.header}>
@@ -101,11 +96,11 @@ const Modules = () => {
                     <p>Understanding design briefs</p>
                   </div>
                   <div>
-                    <p className={styles.tutorName}>Akinnagbe Akintayo</p>
+                    <p className={styles.tutorAkin}>Akinnagbe Akintayo</p>
                   </div>
                   <div>
                     <p>
-                      <object data={Stars}></object>
+                      <object data={Stars} className={styles.starIcon}></object>
                     </p>
                   </div>
                 </div>
@@ -114,15 +109,15 @@ const Modules = () => {
 
                 <div className={styles.thirdRow}>
                   <div>
-                    <FontAwesomeIcon icon={faVideo} style={{ color: '#f57078' }} />
+                    <object data={VideoIcon}></object>
                     <span className={styles.spanDetails}>4 Recorded Live Sessions</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faFileLines} style={{ color: '#f57078' }} />
+                  <div className={styles.fileWrapper}>
+                    <object data={FileIcon}></object>
                     <span className={styles.spanDetails}>4 Lessons</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faCalendarMinus} style={{ color: '#f57078' }} />
+                  <div className={styles.calendar}>
+                    <object data={CalendarIcon}></object>
                     <span className={styles.spanDetails}>4 Assignments</span>
                   </div>
                 </div>
@@ -140,7 +135,7 @@ const Modules = () => {
             <div className={styles.courseFlex}>
               <div>
                 <h2 className={styles.moduleName}>Module 3</h2>
-                <img src={ModuleThree} alt="Design" className={styles.modulePic} />
+                <div className={styles.moduleThree}></div>
               </div>
               <div>
                 <div className={styles.header}>
@@ -160,11 +155,11 @@ const Modules = () => {
                     <p>Design Sprints</p>
                   </div>
                   <div>
-                    <p className={styles.tutorName}>Olurotimi Adubi</p>
+                    <p className={styles.tutorOlu}>Olurotimi Adubi</p>
                   </div>
                   <div>
                     <p>
-                      <object data={Stars}></object>
+                      <object data={Stars} className={styles.starIcon}></object>
                     </p>
                   </div>
                 </div>
@@ -173,15 +168,15 @@ const Modules = () => {
 
                 <div className={styles.thirdRow}>
                   <div>
-                    <FontAwesomeIcon icon={faVideo} style={{ color: '#f57078' }} />
+                    <object data={VideoIcon}></object>
                     <span className={styles.spanDetails}>4 Recorded Live Sessions</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faFileLines} style={{ color: '#f57078' }} />
+                  <div className={styles.fileWrapper}>
+                    <object data={FileIcon}></object>
                     <span className={styles.spanDetails}>4 Lessons</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faCalendarMinus} style={{ color: '#f57078' }} />
+                  <div className={styles.calendar}>
+                    <object data={CalendarIcon}></object>
                     <span className={styles.spanDetails}>4 Assignments</span>
                   </div>
                 </div>
@@ -199,7 +194,7 @@ const Modules = () => {
             <div className={styles.courseFlex}>
               <div>
                 <h2 className={styles.moduleName}>Module 4</h2>
-                <img src={ModuleFour} alt="Design" className={styles.modulePic} />
+                <div className={styles.moduleFour}></div>
               </div>
               <div>
                 <div className={styles.header}>
@@ -219,11 +214,11 @@ const Modules = () => {
                     <p>Define Phase</p>
                   </div>
                   <div>
-                    <p className={styles.tutorName}>Olurotimi Adubi</p>
+                    <p className={styles.tutorOlu}>Olurotimi Adubi</p>
                   </div>
                   <div>
                     <p>
-                      <object data={Stars}></object>
+                      <object data={Stars} className={styles.starIcon}></object>
                     </p>
                   </div>
                 </div>
@@ -232,15 +227,15 @@ const Modules = () => {
 
                 <div className={styles.thirdRow}>
                   <div>
-                    <FontAwesomeIcon icon={faVideo} style={{ color: '#f57078' }} />
+                    <object data={VideoIcon}></object>
                     <span className={styles.spanDetails}>4 Recorded Live Sessions</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faFileLines} style={{ color: '#f57078' }} />
+                  <div className={styles.fileWrapper}>
+                    <object data={FileIcon}></object>
                     <span className={styles.spanDetails}>4 Lessons</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faCalendarMinus} style={{ color: '#f57078' }} />
+                  <div className={styles.calendar}>
+                    <object data={CalendarIcon}></object>
                     <span className={styles.spanDetails}>4 Assignments</span>
                   </div>
                 </div>
@@ -258,7 +253,7 @@ const Modules = () => {
             <div className={styles.courseFlex}>
               <div>
                 <h2 className={styles.moduleName}>Module 5</h2>
-                <img src={ModuleOne} alt="Design" className={styles.modulePic} />
+                <div className={styles.modulePic}></div>
               </div>
               <div>
                 <div className={styles.header}>
@@ -278,11 +273,11 @@ const Modules = () => {
                     <p>Product Design and Thinking</p>
                   </div>
                   <div>
-                    <p className={styles.tutorName}>Olurotimi Adubi</p>
+                    <p className={styles.tutor}>Olurotimi Adubi</p>
                   </div>
                   <div>
                     <p>
-                      <object data={Stars}></object>
+                      <object data={Stars} className={styles.starIcon}></object>
                     </p>
                   </div>
                 </div>
@@ -291,15 +286,15 @@ const Modules = () => {
 
                 <div className={styles.thirdRow}>
                   <div>
-                    <FontAwesomeIcon icon={faVideo} style={{ color: '#f57078' }} />
+                    <object data={VideoIcon}></object>
                     <span className={styles.spanDetails}>4 Recorded Live Sessions</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faFileLines} style={{ color: '#f57078' }} />
+                  <div className={styles.fileWrapper}>
+                    <object data={FileIcon}></object>
                     <span className={styles.spanDetails}>4 Lessons</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faCalendarMinus} style={{ color: '#f57078' }} />
+                  <div className={styles.calendar}>
+                    <object data={CalendarIcon}></object>
                     <span className={styles.spanDetails}>4 Assignments</span>
                   </div>
                 </div>
@@ -317,7 +312,7 @@ const Modules = () => {
             <div className={styles.courseFlex}>
               <div>
                 <h2 className={styles.moduleName}>Module 6</h2>
-                <img src={ModuleTwo} alt="Design" className={styles.modulePic} />
+                <div className={styles.moduleTwo}></div>
               </div>
               <div>
                 <div className={styles.header}>
@@ -337,11 +332,11 @@ const Modules = () => {
                     <p>Understanding design briefs</p>
                   </div>
                   <div>
-                    <p className={styles.tutorName}>Akinnagbe Akintayo</p>
+                    <p className={styles.tutorAkin}>Akinnagbe Akintayo</p>
                   </div>
                   <div>
                     <p>
-                      <object data={Stars}></object>
+                      <object data={Stars} className={styles.starIcon}></object>
                     </p>
                   </div>
                 </div>
@@ -350,15 +345,15 @@ const Modules = () => {
 
                 <div className={styles.thirdRow}>
                   <div>
-                    <FontAwesomeIcon icon={faVideo} style={{ color: '#f57078' }} />
+                    <object data={VideoIcon}></object>
                     <span className={styles.spanDetails}>4 Recorded Live Sessions</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faFileLines} style={{ color: '#f57078' }} />
+                  <div className={styles.fileWrapper}>
+                    <object data={FileIcon}></object>
                     <span className={styles.spanDetails}>4 Lessons</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faCalendarMinus} style={{ color: '#f57078' }} />
+                  <div className={styles.calendar}>
+                    <object data={CalendarIcon}></object>
                     <span className={styles.spanDetails}>4 Assignments</span>
                   </div>
                 </div>
@@ -376,7 +371,7 @@ const Modules = () => {
             <div className={styles.courseFlex}>
               <div>
                 <h2 className={styles.moduleName}>Module 7</h2>
-                <img src={ModuleThree} alt="Design" className={styles.modulePic} />
+                <div className={styles.moduleThree}></div>
               </div>
               <div>
                 <div className={styles.header}>
@@ -396,11 +391,11 @@ const Modules = () => {
                     <p>Design Sprints</p>
                   </div>
                   <div>
-                    <p className={styles.tutorName}>Olurotimi Adubi</p>
+                    <p className={styles.tutorOlu}>Olurotimi Adubi</p>
                   </div>
                   <div>
                     <p>
-                      <object data={Stars}></object>
+                      <object data={Stars} className={styles.starIcon}></object>
                     </p>
                   </div>
                 </div>
@@ -409,15 +404,15 @@ const Modules = () => {
 
                 <div className={styles.thirdRow}>
                   <div>
-                    <FontAwesomeIcon icon={faVideo} style={{ color: '#f57078' }} />
+                    <object data={VideoIcon}></object>
                     <span className={styles.spanDetails}>4 Recorded Live Sessions</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faFileLines} style={{ color: '#f57078' }} />
+                  <div className={styles.fileWrapper}>
+                    <object data={FileIcon}></object>
                     <span className={styles.spanDetails}>4 Lessons</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faCalendarMinus} style={{ color: '#f57078' }} />
+                  <div className={styles.calendar}>
+                    <object data={CalendarIcon}></object>
                     <span className={styles.spanDetails}>4 Assignments</span>
                   </div>
                 </div>
@@ -435,7 +430,7 @@ const Modules = () => {
             <div className={styles.courseFlex}>
               <div>
                 <h2 className={styles.moduleName}>Module 8</h2>
-                <img src={ModuleFour} alt="Design" className={styles.modulePic} />
+                <div className={styles.moduleFour}></div>
               </div>
               <div>
                 <div className={styles.header}>
@@ -455,11 +450,11 @@ const Modules = () => {
                     <p>Define Phase</p>
                   </div>
                   <div>
-                    <p className={styles.tutorName}>Olurotimi Adubi</p>
+                    <p className={styles.tutorOlu}>Olurotimi Adubi</p>
                   </div>
                   <div>
                     <p>
-                      <object data={Stars}></object>
+                      <object data={Stars} className={styles.starIcon}></object>
                     </p>
                   </div>
                 </div>
@@ -468,15 +463,15 @@ const Modules = () => {
 
                 <div className={styles.thirdRow}>
                   <div>
-                    <FontAwesomeIcon icon={faVideo} style={{ color: '#f57078' }} />
+                    <object data={VideoIcon}></object>
                     <span className={styles.spanDetails}>4 Recorded Live Sessions</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faFileLines} style={{ color: '#f57078' }} />
+                  <div className={styles.fileWrapper}>
+                    <object data={FileIcon}></object>
                     <span className={styles.spanDetails}>4 Lessons</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faCalendarMinus} style={{ color: '#f57078' }} />
+                  <div className={styles.calendar}>
+                    <object data={CalendarIcon}></object>
                     <span className={styles.spanDetails}>4 Assignments</span>
                   </div>
                 </div>
@@ -494,7 +489,7 @@ const Modules = () => {
             <div className={styles.courseFlex}>
               <div>
                 <h2 className={styles.moduleName}>Module 9</h2>
-                <img src={ModuleOne} alt="Design" className={styles.modulePic} />
+                <div className={styles.modulePic}></div>
               </div>
               <div>
                 <div className={styles.header}>
@@ -514,11 +509,11 @@ const Modules = () => {
                     <p>Product Design and Thinking</p>
                   </div>
                   <div>
-                    <p className={styles.tutorName}>Olurotimi Adubi</p>
+                    <p className={styles.tutor}>Olurotimi Adubi</p>
                   </div>
                   <div>
                     <p>
-                      <object data={Stars}></object>
+                      <object data={Stars} className={styles.starIcon}></object>
                     </p>
                   </div>
                 </div>
@@ -527,15 +522,15 @@ const Modules = () => {
 
                 <div className={styles.thirdRow}>
                   <div>
-                    <FontAwesomeIcon icon={faVideo} style={{ color: '#f57078' }} />
+                    <object data={VideoIcon}></object>
                     <span className={styles.spanDetails}>4 Recorded Live Sessions</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faFileLines} style={{ color: '#f57078' }} />
+                  <div className={styles.fileWrapper}>
+                    <object data={FileIcon}></object>
                     <span className={styles.spanDetails}>4 Lessons</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faCalendarMinus} style={{ color: '#f57078' }} />
+                  <div className={styles.calendar}>
+                    <object data={CalendarIcon}></object>
                     <span className={styles.spanDetails}>4 Assignments</span>
                   </div>
                 </div>
@@ -553,7 +548,7 @@ const Modules = () => {
             <div className={styles.courseFlex}>
               <div>
                 <h2 className={styles.moduleName}>Module 10</h2>
-                <img src={ModuleTwo} alt="Design" className={styles.modulePic} />
+                <div className={styles.moduleTwo}></div>
               </div>
               <div>
                 <div className={styles.header}>
@@ -573,11 +568,11 @@ const Modules = () => {
                     <p>Understanding design briefs</p>
                   </div>
                   <div>
-                    <p className={styles.tutorName}>Akinnagbe Akintayo</p>
+                    <p className={styles.tutorAkin}>Akinnagbe Akintayo</p>
                   </div>
                   <div>
                     <p>
-                      <object data={Stars}></object>
+                      <object data={Stars} className={styles.starIcon}></object>
                     </p>
                   </div>
                 </div>
@@ -586,15 +581,15 @@ const Modules = () => {
 
                 <div className={styles.thirdRow}>
                   <div>
-                    <FontAwesomeIcon icon={faVideo} style={{ color: '#f57078' }} />
+                    <object data={VideoIcon}></object>
                     <span className={styles.spanDetails}>4 Recorded Live Sessions</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faFileLines} style={{ color: '#f57078' }} />
+                  <div className={styles.fileWrapper}>
+                    <object data={FileIcon}></object>
                     <span className={styles.spanDetails}>4 Lessons</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faCalendarMinus} style={{ color: '#f57078' }} />
+                  <div className={styles.calendar}>
+                    <object data={CalendarIcon}></object>
                     <span className={styles.spanDetails}>4 Assignments</span>
                   </div>
                 </div>
@@ -612,7 +607,7 @@ const Modules = () => {
             <div className={styles.courseFlex}>
               <div>
                 <h2 className={styles.moduleName}>Module 11</h2>
-                <img src={ModuleThree} alt="Design" className={styles.modulePic} />
+                <div className={styles.moduleThree}></div>
               </div>
               <div>
                 <div className={styles.header}>
@@ -632,11 +627,11 @@ const Modules = () => {
                     <p>Design Sprints</p>
                   </div>
                   <div>
-                    <p className={styles.tutorName}>Olurotimi Adubi</p>
+                    <p className={styles.tutorOlu}>Olurotimi Adubi</p>
                   </div>
                   <div>
                     <p>
-                      <object data={Stars}></object>
+                      <object data={Stars} className={styles.starIcon}></object>
                     </p>
                   </div>
                 </div>
@@ -645,15 +640,15 @@ const Modules = () => {
 
                 <div className={styles.thirdRow}>
                   <div>
-                    <FontAwesomeIcon icon={faVideo} style={{ color: '#f57078' }} />
+                    <object data={VideoIcon}></object>
                     <span className={styles.spanDetails}>4 Recorded Live Sessions</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faFileLines} style={{ color: '#f57078' }} />
+                  <div className={styles.fileWrapper}>
+                    <object data={FileIcon}></object>
                     <span className={styles.spanDetails}>4 Lessons</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faCalendarMinus} style={{ color: '#f57078' }} />
+                  <div className={styles.calendar}>
+                    <object data={CalendarIcon}></object>
                     <span className={styles.spanDetails}>4 Assignments</span>
                   </div>
                 </div>
@@ -671,7 +666,7 @@ const Modules = () => {
             <div className={styles.courseFlex}>
               <div>
                 <h2 className={styles.moduleName}>Module 12</h2>
-                <img src={ModuleFour} alt="Design" className={styles.modulePic} />
+                <div className={styles.moduleFour}></div>
               </div>
               <div>
                 <div className={styles.header}>
@@ -691,11 +686,11 @@ const Modules = () => {
                     <p>Define Phase</p>
                   </div>
                   <div>
-                    <p className={styles.tutorName}>Olurotimi Adubi</p>
+                    <p className={styles.tutorOlu}>Olurotimi Adubi</p>
                   </div>
                   <div>
                     <p>
-                      <object data={Stars}></object>
+                      <object data={Stars} className={styles.starIcon}></object>
                     </p>
                   </div>
                 </div>
@@ -704,15 +699,15 @@ const Modules = () => {
 
                 <div className={styles.thirdRow}>
                   <div>
-                    <FontAwesomeIcon icon={faVideo} style={{ color: '#f57078' }} />
+                    <object data={VideoIcon}></object>
                     <span className={styles.spanDetails}>4 Recorded Live Sessions</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faFileLines} style={{ color: '#f57078' }} />
+                  <div className={styles.fileWrapper}>
+                    <object data={FileIcon}></object>
                     <span className={styles.spanDetails}>4 Lessons</span>
                   </div>
-                  <div>
-                    <FontAwesomeIcon icon={faCalendarMinus} style={{ color: '#f57078' }} />
+                  <div className={styles.calendar}>
+                    <object data={CalendarIcon}></object>
                     <span className={styles.spanDetails}>4 Assignments</span>
                   </div>
                 </div>
