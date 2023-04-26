@@ -9,7 +9,7 @@ const LessonGrades = () => {
   return (
     <div className={styles.wrapper}>
       <NavBar />
-      <div className={styles.aWrapper}>
+      <div className={styles.assignmentsMainWrapper}>
         <SideNavBar />
         <div className={styles.gradesDiv}>
           <h4 className={styles.assignmentHeaderOne}>

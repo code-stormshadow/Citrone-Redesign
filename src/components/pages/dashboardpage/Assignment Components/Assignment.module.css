@@ -28,12 +28,11 @@ body {
   display: block;
   height: 100px;
 } */
-.aWrapper {
+.assignmentsMainWrapper {
   display: flex;
   background: #FEF2F2;
   margin: auto;
-  height: auto;
-  
+  height: 1020px;
   
 }
 .searchBar {
@@ -65,7 +64,7 @@ body {
 .assignmentModulesMainDiv{
 
   margin: 20px 50px 0 100px;
-  height: 50%;
+  height: 73%;
   overflow: scroll;
     
 }

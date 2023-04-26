@@ -7,7 +7,7 @@ const GradesBreakdown = () => {
   return (
     <div className={styles.wrapper}>
       <NavBar />
-      <div className={styles.aWrapper}>
+      <div className={styles.AssignmentsMainWrapper}>
         <SideNavBar />
         <div className={styles.gradesDiv}>
           <h4 className={styles.assignmentHeaderOne}>

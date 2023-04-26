@@ -8,7 +8,7 @@ const LessonAssignments = () => {
   return (
     <div className={styles.wrapper}>
       <NavBar />
-      <div className={styles.aWrapper}>
+      <div className={styles.assignmentsMainWrapper}>
         <SideNavBar />
         <div className={styles.lessonModulesMainDiv}>
           <h4 className={styles.assignmentHeaderOne}>

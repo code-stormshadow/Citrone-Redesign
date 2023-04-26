@@ -14,7 +14,7 @@ const AssignmentModule = () => {
   return (
     <div className={styles.wrapper}>
       <NavBar />
-      <div className={styles.aWrapper}>
+      <div className={styles.assignmentsMainWrapper}>
         <SideNavBar />
         <div>
           <div>
