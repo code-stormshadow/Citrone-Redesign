@@ -17,6 +17,7 @@ import LessonAssignments from './components/pages/dashboardpage/Assignment Compo
 import LessonGrades from './components/pages/dashboardpage/Assignment Components/LessonGrades';
 import ModuleOne from './components/pages/dashboardpage/quizComponents/QuizModuleOne';
 import GradesBreakdown from './components/pages/dashboardpage/Assignment Components/GradesBreakdown';
+import CourseModuleOne from './components/pages/dashboardpage/db_ components/CourseModuleOne';
 import Quiz2Grade from './components/pages/dashboardpage/quizComponents/Quiz2Grade';
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
         <Route path="settings" element={<Settings />}></Route>
         <Route path="logout" element={<LogOut />}></Route>
         <Route path="moduleone" element={<ModuleOne />}></Route>
+        <Route path="course-module-one" element={<CourseModuleOne />}></Route>
         <Route path="quizgrade" element={<Quiz2Grade />}></Route>
       </Routes>
     </div>
