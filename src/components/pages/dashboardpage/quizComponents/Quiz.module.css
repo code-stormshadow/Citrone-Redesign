@@ -33,12 +33,23 @@
   
     .modules {
     height: 754px;
-    margin-left: 90px;
+    margin-left: 20rem;
     overflow-y: scroll;
     width: 950px;
     }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+.modules::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.modules {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  
+} 
   
-    .module-container {
+.module-container {
     background: #ffff;
     border-radius: 10px;
     border-right: 5px solid #1A9447;
@@ -51,36 +62,36 @@
     padding-left: 8px;
     height: 144px;
     width: 944px;
-    }
+}
   
-    #module {
+#module {
     font-family: regular-mont;
     font-size: 18px;
     margin-top: 15px;
     margin-left: 20px;
     text-align: center;
     width: 70px;
-    }
+}
   
-    #module1 {
+#module1 {
     font-weight: bold;
     font-size: 40px;
     margin-top: 20px;
     margin-left: 50px;
-    }
+}
   
-    #line {
+#line {
     height: 112px;
     margin-left: 20px;
     width: 6px;
-    }
+}
   
-    #module1-text {
+#module1-text {
     font-family: semi-bold-mont;
     font-size: 24px;
     line-height: 32px;
     margin-left: 20px;
-    }
+}
   
     #module1-text1 {
     font-family: regular-mont;
@@ -141,15 +152,15 @@
     width: 944px;
     }
   
-    .quiz-module-one-container {
-    /* border: 1px solid red; */
-    }
+    /* .quiz-module-one-container {
+    /* border: 1px solid red; 
+    } */
   
     .quiz-moduleone-first-paragraph {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    margin-left: 102px;
+    margin-left: 20rem;
     width: 210px;
     }
   
@@ -165,7 +176,7 @@
   
     #quiz-moduleone-first-paragraph4 {
     font-family: semi-bold-mont;
-    margin: 10px 105px;
+    margin: 10px 20rem;
     }
   
     .quiz1-card {
@@ -174,7 +185,7 @@
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
     display: flex;
     height: 80px;
-    margin: 20px 105px;
+    margin: 20px 20rem;
     padding-left: 10px;
     width: 944px;
     }

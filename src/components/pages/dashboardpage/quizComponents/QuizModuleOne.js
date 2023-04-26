@@ -15,7 +15,7 @@ const ModuleOne = () => {
         <div className={classes['quiz-module-one-container']}>
           <div>
             <div>
-              <input placeholder="Search module title or lesson" className={styles.searchBar} />
+              <input placeholder="Search module title or lesson" className={styles.searchBarQuiz} />
             </div>
           </div>
           <div className={classes['quiz-moduleone-first-paragraph']}>
