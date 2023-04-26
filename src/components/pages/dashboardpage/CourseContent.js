@@ -11,7 +11,7 @@ const CourseContent = () => {
       <NavBar />
       <div className={styles.wrapper}>
         <SideNavBar />
-        <div>
+        <div className={styles.mainCourseWrapper}>
           <div>
             <SearchBar />
           </div>
