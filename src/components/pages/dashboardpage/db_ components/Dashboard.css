@@ -1,33 +1,6 @@
 
 /* DashBoard styling starts here */ 
 /* Main Styling starts here */
-.wrapper {
-  display: flex;
-  background: #F5D4D6;
-}
-  
-.main-content {
-  width: 148vh;
-  height: 900px;
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
-  margin-top: 1rem;
-}
-  
-  .greetings-container {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .greetings h1 {
-    width: 345px;
-    height: 29px;
-    font-size: 1.4rem;
-    margin-left: 2.8rem;
-    color: #252525;
-    margin-bottom: 0;
-  }
-  
   .greetings span {
     margin-left: 2.8rem;
     font-size: .92rem;

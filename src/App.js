@@ -13,7 +13,10 @@ import Students_Tutors from './components/pages/dashboardpage/Students_Tutors';
 import Faq from './components/pages/dashboardpage/FAQs';
 import Settings from './components/pages/dashboardpage/Settings';
 import LogOut from './components/pages/dashboardpage/LogOut';
+import LessonAssignments from './components/pages/dashboardpage/Assignment Components/LessonAssignments';
+import LessonGrades from './components/pages/dashboardpage/Assignment Components/LessonGrades';
 import ModuleOne from './components/pages/dashboardpage/quizComponents/QuizModuleOne';
+import GradesBreakdown from './components/pages/dashboardpage/Assignment Components/GradesBreakdown';
 
 function App() {
   return (
@@ -22,12 +25,16 @@ function App() {
         <Route path="/" element={<LandingPage />}></Route>
         <Route path="signup" element={<SignUpPage />}></Route>
         <Route path="login" element={<LoginPage />}></Route>
-        <Route path="forgotpassword" element={<ForgotPasswordPage />}></Route>
+        <Route path="forgot-password" element={<ForgotPasswordPage />}></Route>
         <Route path="checkmail" element={<CheckMail />}></Route>
-        <Route path="setpassword" element={<SetPassword />}></Route>
+        <Route path="set-password" element={<SetPassword />}></Route>
         <Route path="dashboard" element={<Dashboard />}></Route>
         <Route path="course-content" element={<CourseContent />}></Route>
         <Route path="assignment" element={<Assignment />}></Route>
+        <Route path="lesson-assignments" element={<LessonAssignments />}></Route>
+        <Route path="lesson-grades" element={<LessonGrades />}></Route>
+        <Route path="grades-breakdown" element={<GradesBreakdown />}></Route>
+
         <Route path="quizzes" element={<Quizzes />}></Route>
         <Route path="students_tutors" element={<Students_Tutors />}></Route>
         <Route path="faq" element={<Faq />}></Route>
