@@ -391,7 +391,6 @@ span{
 .gradesDiv{
   height: inherit;
   width: auto;
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
   margin-top: 84px;
@@ -482,8 +481,26 @@ span{
 
 /* Styles for Grades breakdown page starts here */
 
-
-.gradesHeaderTwo{
+.gradesBreakdownDiv{
+  height: 100%;
+  width: 100%;
+  border: 1px solid green;
   display: flex;
+  flex-direction: column;
+  margin-top: 84px;
+  margin-left: 90px;
+  gap: 10px;
+}
+.gradesHeaderTwo{
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
   flex-direction: row;
+}
+.gradesBreakdownDueDate{
+  font-family: regular-mont;
+  font-size: 16px;
+}
+.dueDateRightHeader{
+  margin-top: 15px;
 }
