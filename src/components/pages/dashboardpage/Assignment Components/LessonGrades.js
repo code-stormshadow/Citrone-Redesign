@@ -9,8 +9,8 @@ const LessonGrades = () => {
   return (
     <div className={styles.wrapper}>
       <NavBar />
-      <div className={styles.assignmentsMainWrapper}>
-        <SideNavBar />
+      <SideNavBar />
+      <div className={styles.assignmentsMainWrapperForGrades}>
         <div className={styles.gradesDiv}>
           <h4 className={styles.assignmentHeaderOne}>
             <span style={{ fontFamily: 'regular-mont' }}>Assignments</span> &#10095; Module 1
@@ -24,7 +24,7 @@ const LessonGrades = () => {
               <p className={styles['given-date']}>Date Given: 19th Sep 2022</p>
               <p>Due Given: 19th Sep 2022</p>
             </div>
-            <img style={{ marginTop: '72px' }} src={lessonGrades}></img>
+            <img style={{ marginTop: '20px' }} src={lessonGrades}></img>
             <p className={styles.acquiredGrades}>90&#47;100</p>
 
             <p className={styles.remarks}>Remarks:</p>

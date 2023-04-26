@@ -8,12 +8,15 @@ const LessonAssignments = () => {
   return (
     <div className={styles.wrapper}>
       <NavBar />
-      <div className={styles.assignmentsMainWrapper}>
+      <div>
         <SideNavBar />
+      </div>
+
+      <div className={styles.assignmentsMainWrapper}>
         <div className={styles.lessonModulesMainDiv}>
           <h4 className={styles.assignmentHeaderOne}>
-            Assignments <span>&#10095; </span>
-            <span className={styles.redHeader}>Module 1 Assignments</span>
+            Assignments &#10095;
+            <span className={styles.redHeader}> Module 1 Assignments</span>
           </h4>
           <h2 className={styles.assignmentHeaderTwo}>Module 1 Assignments;</h2>
           <div className={styles.assignmentLessons}>
@@ -36,7 +39,7 @@ const LessonAssignments = () => {
               </Link>
             </button>
           </div>
-          <hr></hr>
+          <hr className={styles.hrForAssignments}></hr>
           <div className={styles.assignmentLessons}>
             <div className={styles.assignmentModule}>
               <h3 className={styles.allModules}>Lesson</h3>
@@ -57,7 +60,7 @@ const LessonAssignments = () => {
             </div>
             <button className={styles.elapsedBtn}>Start</button>
           </div>
-          <hr></hr>
+          <hr className={styles.hrForAssignments}></hr>
           <div className={styles.assignmentLessons}>
             <div className={styles.assignmentModule}>
               <h3 className={styles.allModules}>Lesson</h3>
@@ -76,7 +79,7 @@ const LessonAssignments = () => {
             </div>
             <button className={styles.reSubmitBtn}>Re-submit</button>
           </div>
-          <hr></hr>
+          <hr className={styles.hrForAssignments}></hr>
           <div className={styles.assignmentLessons}>
             <div className={styles.assignmentModule}>
               <h3 className={styles.allModules}>Lesson</h3>
@@ -92,7 +95,7 @@ const LessonAssignments = () => {
             </div>
             <button className={styles.unStartedBtn}>Start</button>
           </div>
-          <hr></hr>
+          <hr className={styles.hrForAssignments}></hr>
         </div>
       </div>
     </div>
