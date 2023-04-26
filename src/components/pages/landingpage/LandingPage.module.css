@@ -1,3 +1,20 @@
+@font-face {
+  font-family: regular-mont;
+  src: url(../font/Mont-Regular.ttf);
+}
+
+@font-face {
+  font-family: semi-bold-mont;
+  src: url(../font/Mont-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: bold-mont;
+  src: url(../font/Mont-Bold.ttf);
+}
+
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -52,8 +69,8 @@
 .first-paragraph {
     width: 693px;
     height: 128px;
-    font-family: 'Montserrat-bold', sans-serif;
-    font-size: 45px;
+    font-family: bold-mont;
+    font-size: 42px;
     font-weight: 800;
     letter-spacing: 0.01em;
     line-height: 60px;
@@ -76,7 +93,8 @@
   }
   
 .start-career-button {
-    font-family: 'Montserrat';
+    font-family: regular-mont;
+    font-weight: 900;
     font-size: 18px;
     color: #ffff;
     line-height: 24px;
@@ -128,9 +146,12 @@
   
 .learning-process-container {
     background: #ffff;
+    border: 1px solid red;
     box-shadow: 2px 4px 6px 0.9px rgb(233, 233, 233);
-    height: 128px;
-    width: 1248px;
+    /* height: 128px; */
+    height: 50%;
+    /* width: 1248px; */
+    width: 85%;
     color:#F54F59;
     margin: -63px auto;
     padding-top: 30px;
@@ -147,12 +168,11 @@
   }
   
 #learning-process-text {
-    font-family: 'Mont';
+    font-family: regular-mont;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    letter-spacing: 0.10rem;
   }
   
 #learning-process-text2 {
@@ -177,6 +197,7 @@
   
 #second-container-heading {
     color:#F54F59;
+    font-family: bold-mont;
     margin-top: 80px;
     font-weight: 800;
     font-size: 32px;
@@ -231,7 +252,7 @@
   }
 
 #carousel-images h4 {
-    font-family: 'Montserrat-Bold', sans-serif;
+    font-family: semi-bold-mont;
     font-style: normal;
     font-weight: 800;
     font-size: 26px;
@@ -301,6 +322,7 @@
   
 .third-section-heading {
     color: #F54F59;
+    font-family: bold-mont;
     font-weight: 800;
     font-size: 32px;
     line-height: 42px;
@@ -343,6 +365,10 @@ footer {
     margin: 30px auto;
   }
 
+  .footer-text h2 {
+    font-family: bold-mont;
+  }
+
 .footerImage {
     width: 49px;
     height: 33.13px;
@@ -355,10 +381,10 @@ footer {
     border: none;
     border-radius: 5px;
     color: #ffff;
-    width: 320px;
-    height: 66px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: regular-mont;
     font-weight: 700;
+    height: 66px;
+    width: 320px;
   }
 
 .footer-button:hover {
@@ -367,13 +393,30 @@ footer {
     transition: 0.2s;
   }
 
-  /* @media only screen and ( max-width: 1284px ) {
-    .first-container {
+  @media only screen and ( min-width: 1757px ) {
+    /* .first-container {
       width: 100%;
-    }
+    } */
 
     .login-button {
-      margin-left: 900px;
+      margin-left: 800px;
     }
 
-  } */
+    .portrait {
+      margin: 20px 5px;
+      width: 330px;
+      height: 500px;
+  }
+
+  .cap {
+    margin-top: -35px;
+    margin-left: -265px;
+    width: 150px;
+  }
+
+  .learning-process-container {
+    margin: -43px 20px;
+    padding-top: 30px;
+  }
+
+  }

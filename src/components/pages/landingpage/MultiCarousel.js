@@ -42,6 +42,7 @@ const MultiCarousel = () => {
             {`You'll learn how to transform user research to high-fidelity interactive designs...`}
           </p>
           <Link
+            style={{ textDecoration: 'none' }}
             className={classes['carousel-links']}
             to="https://www.stutern.com/beginners-course/ui_ux_design.html">
             <div id={classes['carousel-image-button']}>
@@ -60,8 +61,9 @@ const MultiCarousel = () => {
             {`You’ll`} build exciting portfolios while learning the fundamentals of HTML, CSS...
           </p>
           <Link
+            style={{ textDecoration: 'none' }}
             className={classes['carousel-links']}
-            to="https://www.stutern.com/beginners-course/ui_ux_design.html">
+            to="https://www.stutern.com/intermediate-course/frontend_development.html">
             <div id={classes['carousel-image-button']}>
               <div>
                 <p>Learn more</p>
@@ -76,8 +78,9 @@ const MultiCarousel = () => {
           <h4>Backend Development</h4>
           <p>{`You'll learn the fundamentals of backend development, build a job ready port...`}</p>
           <Link
+            style={{ textDecoration: 'none' }}
             className={classes['carousel-links']}
-            to="https://www.stutern.com/beginners-course/ui_ux_design.html">
+            to="https://www.stutern.com/intermediate-course/backend_development.html">
             <div id={classes['carousel-image-button']}>
               <div>
                 <p>Learn more</p>
@@ -92,8 +95,9 @@ const MultiCarousel = () => {
           <h4>Data Science</h4>
           <p>{` You’ll learn the fundamentals of Python, data science and machine learning...`}</p>
           <Link
+            style={{ textDecoration: 'none' }}
             className={classes['carousel-links']}
-            to="https://www.stutern.com/beginners-course/ui_ux_design.html">
+            to="https://www.stutern.com/intermediate-course/data_science.html">
             <div id={classes['carousel-image-button']}>
               <div>
                 <p>Learn more</p>
@@ -108,8 +112,9 @@ const MultiCarousel = () => {
           <h4>Mobile Development</h4>
           <p>{`You'll learn the best practices for mobile development, build a portfolio of...`}</p>
           <Link
+            style={{ textDecoration: 'none' }}
             className={classes['carousel-links']}
-            to="https://www.stutern.com/beginners-course/ui_ux_design.html">
+            to="https://www.stutern.com/intermediate-course/mobile_development.html">
             <div id={classes['carousel-image-button']}>
               <div>
                 <p>Learn more</p>
@@ -125,9 +130,7 @@ const MultiCarousel = () => {
           <p>
             {`You'll learn to ensure that products match expected requirements while free of defects.`}
           </p>
-          <Link
-            className={classes['carousel-links']}
-            to="https://www.stutern.com/beginners-course/ui_ux_design.html">
+          <Link style={{ textDecoration: 'none' }} className={classes['carousel-links']} to="">
             <div id={classes['carousel-image-button']}>
               <div>
                 <p>Learn more</p>
