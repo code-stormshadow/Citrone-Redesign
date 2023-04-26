@@ -56,9 +56,11 @@ const ModuleOne = () => {
                 </div>
               </div>
             </div>
-            <div className={classes.graded}>
-              <p>Graded</p>
-            </div>
+            <Link to="/quizgrade" style={{ textDecoration: 'none' }}>
+              <div className={classes.graded}>
+                <p>Graded</p>
+              </div>
+            </Link>
           </div>
           <div className={classes['quiz1-card2-5']}>
             <div className={classes.quiz1}>
