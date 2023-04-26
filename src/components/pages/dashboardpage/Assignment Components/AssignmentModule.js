@@ -18,7 +18,7 @@ const AssignmentModule = () => {
         <SideNavBar />
         <div>
           <div>
-            <input placeholder="Search assignment title" className={styles.searchBar} />
+            <input placeholder="Search assignment title" className={styles.searchBarAssignment} />
           </div>
           <h2 className={styles.assignmentHeader}>Assignments</h2>
           <div className={styles.assignmentModulesMainDiv}>
