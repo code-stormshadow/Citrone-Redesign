@@ -19,6 +19,7 @@ import ModuleOne from './components/pages/dashboardpage/quizComponents/QuizModul
 import GradesBreakdown from './components/pages/dashboardpage/Assignment Components/GradesBreakdown';
 import CourseModuleOne from './components/pages/dashboardpage/db_ components/CourseModuleOne';
 import CompletedModules from './components/pages/dashboardpage/db_ components/CompletedModules';
+import Quiz2Grade from './components/pages/dashboardpage/quizComponents/Quiz2Grade';
 
 function App() {
   return (
@@ -36,7 +37,6 @@ function App() {
         <Route path="lesson-assignments" element={<LessonAssignments />}></Route>
         <Route path="lesson-grades" element={<LessonGrades />}></Route>
         <Route path="grades-breakdown" element={<GradesBreakdown />}></Route>
-
         <Route path="quizzes" element={<Quizzes />}></Route>
         <Route path="students_tutors" element={<Students_Tutors />}></Route>
         <Route path="faq" element={<Faq />}></Route>
@@ -45,6 +45,7 @@ function App() {
         <Route path="moduleone" element={<ModuleOne />}></Route>
         <Route path="course-module-one" element={<CourseModuleOne />}></Route>
         <Route path="/dashboard/completed-modules" element={<CompletedModules />}></Route>
+        <Route path="quizgrade" element={<Quiz2Grade />}></Route>
       </Routes>
     </div>
   );

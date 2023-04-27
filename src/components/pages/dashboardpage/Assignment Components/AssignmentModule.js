@@ -14,8 +14,8 @@ const AssignmentModule = () => {
   return (
     <div className={styles.wrapper}>
       <NavBar />
-      <div className={styles.aWrapper}>
-        <SideNavBar />
+      <SideNavBar />
+      <div className={styles.assignmentsMainWrapper}>
         <div>
           <div>
             <input placeholder="Search assignment title" className={styles.searchBarAssignment} />
@@ -45,7 +45,7 @@ const AssignmentModule = () => {
                 </div>
               </div>
             </div>
-            <hr></hr>
+            <hr className={styles.hrForAssignments}></hr>
             <div className={styles.assignmentModuleAndTopicNotCompleted}>
               <div className={styles.assignmentModule}>
                 <h3 className={styles.allModules}>Module</h3>
@@ -70,7 +70,7 @@ const AssignmentModule = () => {
                 </div>
               </div>
             </div>
-            <hr></hr>
+            <hr className={styles.hrForAssignments}></hr>
             <div className={styles.assignmentModuleAndTopicNotCompleted}>
               <div className={styles.assignmentModule}>
                 <h3 className={styles.allModules}>Module</h3>
@@ -94,7 +94,7 @@ const AssignmentModule = () => {
                 </div>
               </div>
             </div>
-            <hr></hr>
+            <hr className={styles.hrForAssignments}></hr>
             <div className={styles.assignmentModuleAndTopicNotCompleted}>
               <div className={styles.assignmentModule}>
                 <h3 className={styles.allModules}>Module</h3>
@@ -118,7 +118,7 @@ const AssignmentModule = () => {
                 </div>
               </div>
             </div>
-            <hr></hr>
+            <hr className={styles.hrForAssignments}></hr>
             <div className={styles.assignmentModuleAndTopicNotCompleted}>
               <div className={styles.assignmentModule}>
                 <h3 className={styles.allModules}>Module</h3>
@@ -142,7 +142,7 @@ const AssignmentModule = () => {
                 </div>
               </div>
             </div>
-            <hr></hr>
+            <hr className={styles.hrForAssignments}></hr>
             <div className={styles.assignmentModuleAndTopicNotCompleted}>
               <div className={styles.assignmentModule}>
                 <h3 className={styles.allModules}>Module</h3>
@@ -167,7 +167,7 @@ const AssignmentModule = () => {
                 </div>
               </div>
             </div>
-            <hr></hr>
+            <hr className={styles.hrForAssignments}></hr>
             <div className={styles.assignmentModuleAndTopicNotCompleted}>
               <div className={styles.assignmentModule}>
                 <h3 className={styles.allModules}>Module</h3>
@@ -191,7 +191,7 @@ const AssignmentModule = () => {
                 </div>
               </div>
             </div>
-            <hr></hr>
+            <hr className={styles.hrForAssignments}></hr>
             <div className={styles.assignmentModuleAndTopicNotCompleted}>
               <div className={styles.assignmentModule}>
                 <h3 className={styles.allModules}>Module</h3>
@@ -216,7 +216,6 @@ const AssignmentModule = () => {
                 </div>
               </div>
             </div>
-            <hr></hr>
           </div>
         </div>
       </div>
