@@ -280,8 +280,13 @@
         text-decoration: none;
     } */
 
-.quiz-grade-container {
+/* .quiz-grade-container {
     background: #1A9447;
+} */
+
+.quiz2grade-container {
+    background: #1A9447;
+    margin: 500px  500px;
 }
 
 ::placeholder {
