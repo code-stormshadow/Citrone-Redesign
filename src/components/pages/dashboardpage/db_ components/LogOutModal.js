@@ -2,7 +2,7 @@
 import ModalIcon from '../images/modal-icon.svg';
 import Modal from 'react-bootstrap/Modal';
 import styles from './/Dashboard.module.css';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function LogOutModal(props) {
   return (
@@ -22,7 +22,9 @@ function LogOutModal(props) {
           </button>
         </div>
         <div>
-          <button className={styles.btnYes}>Yes</button>
+          <Link to="/">
+            <button className={styles.btnYes}>Yes</button>
+          </Link>
         </div>
       </div>
       {/* <Modal.Body>
