@@ -19,14 +19,18 @@
 }
 
 
-.aWrapper {
+.assignmentsMainWrapper {
   display: flex;
   background: #FEF2F2;
-  margin: auto;
+  margin-left: 250px;
+  margin-right: 0;
+  width: auto;
+  height: inherit;
+  
 }
 
 .searchBarAssignment {
-  margin-left: 28rem;
+  margin-left: 15rem;
   margin-top: 7rem;
   width: 712px;
   height: 48px;
@@ -47,27 +51,20 @@
   outline: none;
 }
 .assignmentHeader{
-  margin: 50px 0 20px 20rem;
+  margin: 50px 0 20px 6.5rem;
   font-size: 26px;
   font-family: bold-mont;
 }
 
 .assignmentModulesMainDiv{
-  margin: 20px 50px 0 20rem;
-  height: 50%;
-  overflow: scroll;   
-}
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.assignmentModulesMainDiv::-webkit-scrollbar {
-  display: none;
+  margin: 20px 50px 0 100px;
+  height: 73%;
+  overflow: scroll;
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
+    
 }
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.assignmentModulesMainDiv {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  
-} 
   
 .assignmentModuleAndTopicCompleted { 
   background: #ffff;
@@ -78,6 +75,7 @@
   flex-direction: row;
   padding-top: 2%;
   padding-left: 10px;
+  margin-right: 10px;
   width: 944px;
   height: 144px;
   color: #3A3A3A;
@@ -169,6 +167,9 @@
 height: 7rem;
 padding: 1px 20px;
 }
+.hrForAssignments{
+  margin: 1rem 1rem 1rem 0.2rem;
+}
 
 .assignmentModuleAndTopicNotCompleted { 
   background: #ffff;
@@ -206,29 +207,29 @@ padding: 1px 20px;
 
 .lessonModulesMainDiv{
 
-  margin: 20px 50px 0 100px;
-  height: 50%;
+  margin: 83px 50px 0 100px;
+  height: 80%;
+  padding-top: 30px;
       
 }
 
 .assignmentHeaderOne{
-  font-family: semi-bold-mont;
+  font-family: regular-mont;
   display: inline;
   font-size: 16px;
-  margin: 20rem 0 30px 25rem;
+  margin: 50px 0 20px 1px;
 }
 
 .assignmentHeaderTwo{
-  font-family: bold-mont;
-  font-weight: normal;
-  margin: 50px 0 20px 15rem;
+  font-family: semi-bold-mont;
+  margin: 30px 0 20px 1px;
   font-size: 26px;
 }
 
  
 .redHeader{
   color: #f54f59;
-  font-weight: 300;
+  font-family: semi-bold-mont;
   font-size: 16px;
   
 }
@@ -246,7 +247,7 @@ span{
   width: 944px;
   height: 144px;
   color: #3A3A3A;
-  margin-left: 15rem;
+  /* margin-left: 15rem; */
 }
 .lessonParagraphsGraded{
   height: 7rem;
@@ -329,21 +330,6 @@ span{
 .awaiting{
   color: #F1A207
 }
-/* .elapsedBtn{
-  outline: none;
-  height: 48px;
-  width: 116px;
-  text-align: center;
-  font-size: 16px;
-  color: #FFFFFF;
-  background: #f54f59;
-  top: 272px;
-  border-radius: 5px;
-  padding: 8px 1px 8px;
-  margin: 30px 0 0 10px;
-  border: none;
-
-} */
 
 .reSubmitBtn{
   outline: none;
@@ -390,38 +376,45 @@ span{
 .unStartedBtn:hover{
   background: #d1424c;
 }
-.lessonSideBar{
-  overflow: hidden;
-}
+
 
 /* Styles for Lesson grades page starts here */
 
+.assignmentsMainWrapperForGrades {
+  display: flex;
+  background: #FEF2F2;
+  margin-left: 250px;
+  width: 100vw;
+  height: 100vh;
+  
+}
+
 .gradesDiv{
-  height: 65%;
+  height: inherit;
+  width: auto;
   display: flex;
   flex-direction: column;
+  margin-top: 84px;
   margin-left: 90px;
   gap: 10px;
 }
 .assignmentHeaderOne{
   width: 455px;
-  margin: 40px 0 20px 0;
+  margin: 20px 0 20px 0;
 }
 
 .gradesContentsDiv{
   display: flex;
   flex-direction: column;
-  width: 944px;
-  height: 700px;
+  width: auto;
+  height: auto;
   border:1px solid#F99DA2;
   background: #ffffff;
   justify-items: center;
   align-items: center;
   padding: 20px 0;
   border-radius: 10px;
-
 }
-
 
 .modLessHeader{
   font-size: 24px;
@@ -453,8 +446,8 @@ span{
   color: #F54F59;
   font-family: bold-mont;
   font-size: 30px;
-  margin-top: 50px;
-  margin-bottom:50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
 }
 .remarks{
@@ -466,7 +459,7 @@ span{
 }
 .remarksParagrapghTwo{
   font-family: regular-mont;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }  
 .viewBreakdown{
   text-decoration: none;
@@ -479,6 +472,7 @@ span{
   font-family: regular-mont;
   font-size: 18px;
   text-align: center;
+  margin: 20px 0;
 }
 .viewBreakdown:hover{
   background: #d1424c;
@@ -486,3 +480,28 @@ span{
 
 }
 
+/* Styles for Grades breakdown page starts here */
+
+.gradesBreakdownDiv{
+  height: 100%;
+  width: 100%;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  margin-top: 84px;
+  margin-left: 90px;
+  gap: 10px;
+}
+.gradesHeaderTwo{
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.gradesBreakdownDueDate{
+  font-family: regular-mont;
+  font-size: 16px;
+}
+.dueDateRightHeader{
+  margin-top: 15px;
+}
