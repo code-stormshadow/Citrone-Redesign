@@ -9,6 +9,7 @@ const Settings = () => {
       <NavBar />
       <div className={styles.wrapper}>
         <SideNavBar />
+        <div></div>
       </div>
     </div>
   );
