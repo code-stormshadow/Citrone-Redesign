@@ -80,6 +80,7 @@ body {
   
 .left_nav .bell_icon {
   margin-right: 1rem;
+  margin-top: -2.4rem;
 }
 
 .coloredBell {
@@ -101,6 +102,7 @@ body {
 #dropdown_arrow {
   margin-bottom: .8rem;
   cursor: pointer;
+  margin-top: .7rem;
 }
 
 .dropdown_arrow_up {
@@ -148,8 +150,7 @@ body {
 }
 
 .profileCard h2 {
-  font-family: 'bold-mont';
-  font-weight: 800;
+  font-family: bold-mont;
   font-size: 1.1rem;
   line-height: 24px;
   color: #252525;
@@ -161,7 +162,7 @@ body {
 
 .profileCard span {
   margin-left: 1rem;
-  font-family: 'light-mont';
+  font-family: light-mont;
   font-weight: 600;
   font-size: 0.87rem;
   line-height: 18px;
@@ -179,7 +180,7 @@ body {
 
 .spanLink {
   margin-left: 1.5rem;
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: normal;
   font-weight: 500;
   font-size: 1.1rem;
@@ -210,7 +211,7 @@ body {
 }
 
 .colorMode p {
-  font-family: 'light-mont';
+  font-family: light-mont;
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
@@ -234,7 +235,7 @@ body {
   margin-left: 3.5rem;
   font-size: 1rem;
   font-family: bold-mont;
-  font-weight: 800;
+  /* font-weight: 800; */
   color: #252525;
   margin-top: 0.2rem;
 }
@@ -328,17 +329,17 @@ body {
 .menu_link {
   margin-left: 2rem;
   font-weight: 500;
-  font-family: 'regular-mont';
+  font-family: regular-mont;
 }
 
 .menu_logout {
   margin-left: 1.5rem;
   font-weight: 500;
-  font-family: 'regular-mont';
+  font-family: regular-mont;
 }
 
 .logout_item {
-  margin-top: 2rem;
+  margin-top: .2rem;
 }
 /* SideBar Styling ends here */
   
@@ -347,6 +348,7 @@ body {
   display: flex;
   background: #FEF2F2;
   margin: auto;
+  height: 1200px;
  }
   
 .main_content {
@@ -445,11 +447,6 @@ body {
     margin-bottom: 1rem;
   }
 
-/*  
-  .ongoing {
-    margin-right: 1rem;
-  }
-   */
   .live-details {
     width: 171px;
     height: 16px;
@@ -492,7 +489,7 @@ body {
 .task_title h2 {
   color: #252525;
   font-size: 1.2rem;
-  font-family: 'semi-bold-mont';
+  font-family: semi-bold-mont;
   font-weight: 700;
 }
 
@@ -506,7 +503,7 @@ body {
   margin-top: 1rem;
   margin-right: 1rem;
   padding-left: 1rem;
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   color: #3A3A3A;
   font-size: 1.1rem;
   font-weight: 500;
@@ -548,7 +545,7 @@ body {
 }
 
 .header {
-  font-family: 'Mont';
+  font-family: regular-mont;
   font-style: normal;
   font-weight: 600;
   font-size: 1.2rem;
@@ -557,7 +554,7 @@ body {
 }
 
 .tableData {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-weight: 500;
   font-size: 1rem;
   color: #3A3A3A;
@@ -571,7 +568,7 @@ body {
 
 .tableDate {
   width: 80px;
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: normal;
   font-weight: 500;
   font-size: 0.8rem;
@@ -580,7 +577,7 @@ body {
 }
 
 .pending {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: italic;
   font-weight: 500;
   font-size: 0.8rem;
@@ -589,7 +586,7 @@ body {
 }
 
 .graded {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: italic;
   font-weight: 500;
   font-size: 0.8rem;
@@ -598,7 +595,7 @@ body {
 }
 
 .awaiting {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: italic;
   font-weight: 500;
   font-size: 0.8rem;
@@ -607,7 +604,7 @@ body {
 }
 
 .tableLink {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
 font-style: normal;
 font-weight: 500;
 font-size: 0.8rem;
@@ -719,14 +716,14 @@ color: #3A3A3A;
 } 
 
 .card_title {
-  font-family: 'semi-bold-mont';
+  font-family: semi-bold-mont;
   font-weight: 700;
   font-size: 1.1rem;
   color: #030303;
 }
 
 .card_text {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: normal;
   font-weight: 600;
   font-size: 0.8rem;
@@ -747,7 +744,7 @@ color: #3A3A3A;
 
 .modal h2 {
   margin-top: 3.5rem;
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-weight: 550;
   font-size: 1.75rem;
   line-height: 24px;
@@ -776,7 +773,7 @@ color: #3A3A3A;
   border: 1px solid #F54F59;
   border-radius: 5px;
   margin-bottom: 3.5rem;
-  font-family: 'semi-bold-mont';
+  font-family: semi-bold-mont;
   font-style: normal;
   font-weight: 700;
   font-size: 1rem;
@@ -796,7 +793,7 @@ color: #3A3A3A;
   border: none;
   color: #ffff;
   margin-bottom: 3.5rem;
-  font-family: 'semi-bold-mont';
+  font-family: semi-bold-mont;
   font-style: normal;
   font-weight: 700;
   font-size: 1rem;
@@ -873,7 +870,7 @@ body #accordionWrapper {
   background: #FFFFFF;
   border: 1px solid #A2A2A2;
   border-radius: 10px;
-  font-family: 'regular-font';
+  font-family: regular-font;
   font-style: normal;
   font-weight: 500;
   font-size: 1.2rem;
@@ -889,9 +886,8 @@ body #accordionWrapper {
 .courseTitle {
   width: 240px;
   height: 34px;
-  font-family: 'semi-bold-mont';
+  font-family: semi-bold-mont;
   font-style: normal;
-  font-weight: 700;
   font-size: 1.7rem;
   line-height: 34px;
   color: #252525;
@@ -906,6 +902,9 @@ body #accordionWrapper {
 
 .mainCourseWrapper {
   margin-left: 15rem;
+  outline: 1px solid red;
+  background: #FEF2F2;
+  width: 100%;
 }
 
 #card {
@@ -1037,7 +1036,7 @@ body #accordionWrapper {
   margin-top: 0.9rem;
 }
 .header p {
-  font-family: 'semi-bold-mont';
+  font-family: semi-bold-mont;
 font-style: normal;
 font-weight: 700;
 line-height: 21px;
@@ -1065,9 +1064,8 @@ color: #3A3A3A;
 
 .includes {
   padding-left: 1.7rem;
-  font-family: 'semi-bold-mont';
+  font-family: semi-bold-mont;
   font-style: normal;
-  font-weight: 700;
   font-size: .8rem;
   line-height: 16px;
   color: #252525;
@@ -1118,7 +1116,7 @@ padding-top: .1rem;
 .courseWrapper {
   overflow-y: scroll; /* Add the ability to scroll */
   width: 1062px;
-  height: 954px;
+  height: 934px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -1145,13 +1143,18 @@ padding-top: .1rem;
 }
 
 .courseLink {
-  font-family: 'light-mont';
+  font-family: light-mont;
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
   line-height: 24px;
   color: #252525;
   text-decoration: none;
+}
+
+.courseLink:hover {
+  text-shadow: -1px 3px 25px rgba(245, 112, 120, 1);
+  color: #252525;
 }
 
 .greaterThan {
@@ -1162,7 +1165,7 @@ padding-top: .1rem;
 }
 
 .courseModule {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
@@ -1177,7 +1180,7 @@ padding-top: .1rem;
 }
 
 .moduleLessons {
-  font-family: 'semi-bold-mont';
+  font-family: semi-bold-mont;
   font-style: normal;
   font-weight: 700;
   font-size: 1.6rem;
@@ -1201,27 +1204,38 @@ padding-top: .1rem;
 
 .cardCourseContainer {
   /* outline: 1px solid red; */
-  width: 970px;
-  height: 810px;
+  width: 950px;
+  height: 970px;
   overflow-y: scroll;
   margin-top: 0.9rem;
-  position: relative;
 }
+
+.cardCourseContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.cardCourseContainer {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  
+} 
+
 
 .moduleCard {
   /* outline: 1px solid blue; */
-  width: 970px;
+  /* width: 970px; */
   height: 548px;
   background: #FFFFFF;
   border-left: 5px solid #F57078;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
+  margin-bottom: 2rem;
 }
 
 .moduleDate {
   padding-left: 1rem;
   padding-top: 1rem;
-  font-family: 'light-mont';
+  font-family: light-mont;
   font-style: normal;
   font-weight: 500;
   font-size: 0.87rem;
@@ -1230,7 +1244,7 @@ padding-top: .1rem;
 }
 
 .moduleCourseTitle {
-  font-family: 'semi-bold-mont';
+  font-family: semi-bold-mont;
   font-style: normal;
   font-weight: 700;
   font-size: 1rem;
@@ -1240,7 +1254,7 @@ padding-top: .1rem;
 }
 
 .moduleCourseText {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
@@ -1271,17 +1285,11 @@ padding-top: .1rem;
   top: -.3rem;
 }
 
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-/* .table::-webkit-scrollbar {
-display: none;
-} */
-
-/* Hide scrollbar for IE, Edge and Firefox */
-/* .table {
--ms-overflow-style: none;  /* IE and Edge *
-scrollbar-width: none;  /* Firefox 
-} */
+.courseAssignmentLink {
+  margin-top: -4rem;
+  position: relative;
+  top: -.2rem;
+}
 
 .lessonImage {
   background-image: url(..//images/lesson-image.png);
@@ -1295,6 +1303,148 @@ scrollbar-width: none;  /* Firefox
   margin-bottom: 2rem;
 }
 
+.lessonImage::after {
+  content: "";
+  position: absolute;
+  top:6.9rem;
+  left: 26rem;
+  background-image: url('..//images/youtube-icon.svg');
+  background-repeat: no-repeat;
+  /* margin: auto; */
+  width: 69px;
+  height: 45px;
+}
+
+.moduleCommentCard {
+  background: #FFFFFF;
+border-top: 5px solid #F57078;
+box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+border-radius: 10px;
+height: 548px;
+}
+
+.commentsFlex {
+  display: flex;
+  margin-top: 1rem;
+  gap: 38.6rem;
+}
+
+.commentTitle {
+  padding-left: 1rem;
+  font-family: semi-bold-mont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 34px;
+  color: #252525;
+}
+
+.ratingText {
+  font-family: regular-mont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 21px;
+  color: #252525;
+}
+
+.starComment {
+  margin-left: .7rem;
+}
+
+.moduleComment {
+  margin-left: 2rem;
+}
+
+.commentPic {
+  border-radius: 50%;
+  border: 3px solid #F54F59;
+  margin-right: 2rem;
+}
+
+.commentSearchBar {
+  width: 580px;
+  height: 48px;  
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  border: 1px solid #A2A2A2;
+  padding-left: 1rem;
+  font-family: light-mont;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 18px;
+  color: #A2A2A2;
+  background-image: url('..//images/smiley.svg');
+  background-repeat: no-repeat;
+  background-position-x: 33.8rem;
+  background-position-y: 0.6rem;
+}
+/* Course Module One styling ends here */
+
+/* Completed module styling */
+.completedModuleTitle{
+  margin-top: 2.5rem;
+  font-family: semi-bold-mont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 34px;
+  color: #252525;
+}
+
+.completedModuleCard {
+  display: flex;
+  width: 944px;
+  height: 173px;
+  /* outline: 1px solid red; */
+  background: #FFFAFA;
+  border-right: 5px solid #1A9447;
+  box-shadow: 0px 1px 10px -1px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.pendingModuleTitle {
+  font-family: semi-bold-mont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 34px;
+  color: #F54F59;
+  margin-top: 2.5rem;
+}
+
+.pendingModuleWrapper {
+  width: 994px;
+  /* height: 522px; */
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.pendingModuleWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.pendingModuleWrapper {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.pendingModuleCard {
+  display: flex;
+  width: 944px;
+  height: 173px;
+  background: #FFFAFA;
+  box-shadow: 0px 1px 10px -1px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.hrModule {
+  border: 1px solid rgba(91, 89, 89, 0.4);
+  width: 943px;
+}
 
 /*  Quizzes styling starts here */
 .searchBarQuiz {
@@ -1306,7 +1456,7 @@ scrollbar-width: none;  /* Firefox
   background: #FFFFFF;
   border: 1px solid #A2A2A2;
   border-radius: 10px;
-  font-family: 'Mont';
+  font-family: light-mont;
   font-style: normal;
   font-weight: 500;
   font-size: 1.2rem;
@@ -1319,3 +1469,168 @@ scrollbar-width: none;  /* Firefox
   outline: none;
 }
 /*  Quizzes styling ends here */
+
+/* Notification Dropdown styling starts here */
+.bellIconToggle {
+  /* background: #F54F59; */
+  background-image: url('..//images/colored-bell.svg');
+}
+
+.notificationPolygon {
+  margin-left: 1rem;
+  margin-top: -.6rem;
+}
+
+.notificationCard {
+  margin-left: -12rem; 
+  margin-top: .2rem;
+  width: 344px;
+  height: 582px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.notificationTitleFlex {
+  display: flex;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  gap: 6.5rem;
+}
+
+.notificationTitle {
+  font-family: semi-bold-font;
+font-style: normal;
+font-weight: 700;
+font-size: 0.87rem;
+line-height: 18px;
+color: #1E1E1E;
+}
+
+.notificationMark {
+font-family: semi-bold-mont;
+font-style: normal;
+font-weight: 700;
+font-size: 0.87rem;
+line-height: 18px;
+text-align: right;
+color: #F54F59;
+}
+
+.notificationPostContainer {
+  /* outline: 1px solid blue; */
+  width: 312px;
+  height: 433px;
+  margin-left: 1rem;
+
+}
+
+.notificationPost {
+  /* outline: 1px solid black; */
+  width: 312px;
+  height: 61px;
+  display: flex;
+
+}
+
+.notificationPost h4 {
+  font-family: bold-mont;
+  font-style: normal;
+  font-weight: 800;
+  font-size: .8rem;
+  line-height: 19px;
+  color: #252525;
+}
+
+.notificationReact {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: .75rem;
+  line-height: 14px;
+  color: #3A3A3A;
+  margin-top: -.5rem;
+}
+
+.notificationComment {
+  width: 182px;
+  height: 20px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: .75rem;
+  line-height: 14px;
+  color: #3A3A3A;
+  padding-left: .8rem;
+  border-left: 2px solid #F57078;
+  margin-top: -.7rem;
+}
+
+.notificationDetails {
+  /* outline: 1px solid red; */
+  height: 61px;
+  margin-left: 1rem;
+}
+
+.notificationTime {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: .62rem;
+  line-height: 12px;
+  color: #F54F59;
+  margin-left: .75rem;
+}
+
+#notificationTimeColor {
+  color: #3A3A3A;
+}
+
+.notificationLinkContainer {
+  width: 344px;
+  height: 43px;
+  margin-top: 2rem;
+  background: #F54F59;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.notificationLinkContainer:hover {
+  cursor: pointer;
+  background: #db4d56;
+}
+
+.notificationLink {
+  text-decoration: none;
+  font-family: semi-bold-mont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  /* margin: 1rem 8.7rem .68rem 8.7rem; */
+  padding: .68rem 8.7rem .68rem 8.7rem;
+  width: 63px;
+  height: 21px;
+}
+
+.notificationLink:hover {
+  color: #FFFFFF;
+}
+/* Notification Dropdown styling ends here */
+
+.accordion {
+  outline: 1px solid red;
+  width: 976px;
+  height: 800px;
+  margin-left: 19rem;
+  margin-top: 3rem;
+}
+
+
+.accordionQuestionFlex {
+  display: flex;
+  gap: 41rem;
+  outline: 1px solid red;
+  
+}
