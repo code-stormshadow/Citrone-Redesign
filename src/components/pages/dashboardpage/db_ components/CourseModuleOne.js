@@ -7,6 +7,8 @@ import FileIcon from '..//images/file.svg';
 import CalendarIcon from '..//images/CalendarNote.svg';
 import Star from '..//images/stars.svg';
 import TimiPic from '..//images/comment-pic.png';
+import MariamPic from '..//images/mariam.png';
+import DameePic from '..//images/damee.png';
 
 const CourseModuleOne = () => {
   return (
@@ -49,12 +51,12 @@ const CourseModuleOne = () => {
                   <div className={styles.courseLessonLink}>
                     <object data={FileIcon} className={styles.moduleIcon}></object>
                     <Link to="" className={styles.lessonLink}>
-                      <span>Lesson slide here(PDF)</span>
+                      <span className={styles.lessonLinkSpan}>Lesson slide here(PDF)</span>
                     </Link>
                   </div>
                   <div>
                     <object data={CalendarIcon}></object>
-                    <Link to="" className={styles.lessonLink}>
+                    <Link to="/lesson-1-assignment" className={styles.lessonLink}>
                       <span className={styles.courseAssignmentLink}>Assignment here(PDF)</span>
                     </Link>
                   </div>
@@ -80,7 +82,7 @@ const CourseModuleOne = () => {
                   <div className={styles.courseLessonLink}>
                     <object data={FileIcon} className={styles.moduleIcon}></object>
                     <Link to="" className={styles.lessonLink}>
-                      <span>Lesson slide here(PDF)</span>
+                      <span className={styles.lessonLinkSpan}>Lesson slide here(PDF)</span>
                     </Link>
                   </div>
                   <div>
@@ -111,7 +113,7 @@ const CourseModuleOne = () => {
                   <div className={styles.courseLessonLink}>
                     <object data={FileIcon} className={styles.moduleIcon}></object>
                     <Link to="" className={styles.lessonLink}>
-                      <span>Lesson slide here(PDF)</span>
+                      <span className={styles.lessonLinkSpan}>Lesson slide here(PDF)</span>
                     </Link>
                   </div>
                   <div>
@@ -142,7 +144,7 @@ const CourseModuleOne = () => {
                   <div className={styles.courseLessonLink}>
                     <object data={FileIcon} className={styles.moduleIcon}></object>
                     <Link to="" className={styles.lessonLink}>
-                      <span>Lesson slide here(PDF)</span>
+                      <span className={styles.lessonLinkSpan}>Lesson slide here(PDF)</span>
                     </Link>
                   </div>
                   <div>
@@ -175,6 +177,47 @@ const CourseModuleOne = () => {
                     placeholder="Leave a comment about the module"
                     type="text"
                   />
+
+                  <div className={styles.moduleChatBox}>
+                    <div className={styles.moduleChatFlex}>
+                      <div className={styles.moduleChatComment}>
+                        <h3 className={styles.moduleChatName}>Abdulkareem Mariam</h3>
+                        <p className={styles.moduleChatText}>
+                          Thank you so much for the very detailed explanation. I thought I wasn’t
+                          going to understand since I missed the class but the video did justice.
+                        </p>
+                      </div>
+                      <div>
+                        <img src={MariamPic} alt="" className={styles.chatPic} />
+                      </div>
+                    </div>
+
+                    <div className={styles.moduleChatReactionFlex}>
+                      <p className={styles.moduleChatDate}>5d ago</p>
+                      <p className={styles.moduleChatReaction}>Like</p>
+                      <p className={styles.moduleChatReaction}>Reply</p>
+                    </div>
+
+                    <div className={styles.moduleChatFlex}>
+                      <div className={styles.moduleChatCommentSmall}>
+                        <h3 className={styles.moduleChatName}>Damee</h3>
+                        <p className={styles.moduleChatText}>Thank you so much🔥⭐</p>
+                      </div>
+                      <div>
+                        <img src={DameePic} alt="" className={styles.chatPic} />
+                      </div>
+                    </div>
+
+                    <div className={styles.moduleChatReactionFlexSecond}>
+                      <p className={styles.moduleChatDate}>5d ago</p>
+                      <p className={styles.moduleChatReaction}>Like</p>
+                      <p className={styles.moduleChatReaction}>Reply</p>
+                    </div>
+                  </div>
+
+                  <Link to="" className={styles.moduleLinkComment}>
+                    View more comments
+                  </Link>
                 </div>
               </div>
             </div>
