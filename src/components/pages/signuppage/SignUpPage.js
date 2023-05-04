@@ -12,6 +12,8 @@ const SignUpPage = () => {
   const [password, setPassword] = useState('');
   console.log(firstName, lastName, email, password);
 
+
+
   const handleSubmit = () => {
     console.log(firstName, lastName, email, password);
   };
