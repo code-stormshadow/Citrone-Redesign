@@ -3,12 +3,20 @@ import Logo from './images/Mask group.png';
 import Eye from './images/Eye.png';
 import classes from '../signuppage/SignUp.module.css';
 import { Link } from 'react-router-dom';
+import { useForm } from 'react-hook-form';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   // const handleSubmit = () => {
 
+  //Hooks for form validation
+  const {
+    register,
+    formState: { errors },
+    handleSubmit
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
   // };
 
   return (
@@ -17,7 +25,7 @@ const LoginPage = () => {
         <img id={classes.logInLogoImg} src={Logo}></img>
         <h1 id={classes.citroneTextHeader}>citrone</h1>
       </header>
-      <form id={classes.logInForm}>
+      <form id={classes.logInForm} onSubmit={handleSubmit(onSubmit)}>
         <h1 id={classes.logInHeader}>Log into your account</h1>
         <div id={classes.greetingDiv}>
           <h1 id={classes.greetingHeader}>
@@ -39,7 +47,15 @@ const LoginPage = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                {...register('email', {
+                  required: true,
+                  pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/i
+                })}
               />
+              <div className={classes.emailRequired}>
+                {errors.email?.type === 'required' && 'Email is required'}
+                {errors.email?.type === 'pattern' && 'Entered email is in wrong format'}
+              </div>
             </div>
             <div className={classes.loginPassword}>
               <div className={classes.passwordLabelsForLogin}>
@@ -58,7 +74,14 @@ const LoginPage = () => {
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                {...register('password', {
+                  required: true
+                })}
               />
+              <div className={classes.passwordRequired}>
+                {errors.password?.type === 'required' && 'password is required'}
+              </div>
+
               <i className={classes.showPassword}>
                 <img id={classes.changePasswordEye} src={Eye}></img>
                 <br />

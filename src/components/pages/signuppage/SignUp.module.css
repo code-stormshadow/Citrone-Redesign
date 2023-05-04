@@ -348,6 +348,11 @@
     border-width: thin;
     border-color: #3a3a3a;
 }
+.emailRequired{
+    color: red;
+    font-size: small;
+}
+
 .passwordLabelsForLogin{
     display: flex;
     flex-direction: row;

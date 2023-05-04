@@ -4,6 +4,7 @@ import Eye from './images/Eye.png';
 // import Asterisk from './images/Asterisk.png';
 import classes from './SignUp.module.css';
 import { Link } from 'react-router-dom';
+// import { useForm } from 'react-hook-form'
 
 const SignUpPage = () => {
   const [firstName, setFirstName] = useState('');
