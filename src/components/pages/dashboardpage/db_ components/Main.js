@@ -4,6 +4,7 @@ import RealTime from './RealTime';
 import IncompleteTask from './IncompleteTasks';
 import CourseProgress from './CourseProgress';
 import styles from './/Dashboard.module.css';
+import { Link } from 'react-router-dom';
 
 const Main = () => {
   return (
@@ -17,7 +18,7 @@ const Main = () => {
         <div className={styles.resume_lesson}>
           <div>
             <p>
-              <a href="">Resume previous lesson</a>
+              <Link to="/course-module-one">Resume previous lesson</Link>
             </p>
           </div>
           <div>

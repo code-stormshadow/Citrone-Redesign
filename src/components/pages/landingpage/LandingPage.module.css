@@ -146,9 +146,12 @@
   
 .learning-process-container {
     background: #ffff;
+    border: 1px solid red;
     box-shadow: 2px 4px 6px 0.9px rgb(233, 233, 233);
-    height: 128px;
-    width: 1248px;
+    /* height: 128px; */
+    height: 50%;
+    /* width: 1248px; */
+    width: 85%;
     color:#F54F59;
     margin: -63px auto;
     padding-top: 30px;
@@ -390,10 +393,10 @@ footer {
     transition: 0.2s;
   }
 
-  /* @media only screen and ( min-width: 1200px ) {
-    .first-container {
+  @media only screen and ( min-width: 1757px ) {
+    /* .first-container {
       width: 100%;
-    }
+    } */
 
     .login-button {
       margin-left: 800px;
@@ -401,13 +404,19 @@ footer {
 
     .portrait {
       margin: 20px 5px;
-      width: 350px;
+      width: 330px;
       height: 500px;
   }
 
   .cap {
-    margin-top: -50px;
-    margin-left: -410px;
+    margin-top: -35px;
+    margin-left: -265px;
+    width: 150px;
   }
 
-  } */
+  .learning-process-container {
+    margin: -43px 20px;
+    padding-top: 30px;
+  }
+
+  }
