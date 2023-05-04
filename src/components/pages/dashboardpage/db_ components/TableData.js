@@ -41,7 +41,9 @@ const TableData = () => {
             <td className="graded">Graded successfully</td>
             <td className="tableGrade">95/100</td>
             <td>
-              <Link className="tableLink">View more</Link>
+              <Link to="/lesson-assignments" className="tableLink">
+                View more
+              </Link>
             </td>
           </tr>
           <tr>

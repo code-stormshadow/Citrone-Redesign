@@ -1,5 +1,25 @@
 
-/* DashBoard styling starts here */ 
+@font-face {
+  font-family: regular-mont;
+  src: url(//src/components/pages/font/Mont-Regular.ttf);
+}
+
+@font-face {
+  font-family: semi-bold-mont;
+  src: url(/src/components/pages/font/Mont-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: bold-mont;
+  src: url(/src/components/pages/font/Mont-Bold.ttf);
+}
+
+@font-face {
+  font-family: light-mont;
+  src: url(/src/components/pages/font/Mont-Light.ttf);
+}
+
+* DashBoard styling starts here */ 
 /* Main Styling starts here */
   .greetings span {
     margin-left: 2.8rem;
@@ -116,7 +136,7 @@
 .task-title h2 {
   color: #252525;
   font-size: 1.2rem;
-  font-family: 'Mont';
+  font-family: semi-bold-mont;
   font-weight: 700;
 }
 
@@ -130,7 +150,7 @@
   margin-top: 1rem;
   margin-right: 1rem;
   padding-left: 1rem;
-  font-family: 'Mont';
+  font-family: regular-mont;
   color: #3A3A3A;
   font-size: 1.1rem;
   font-weight: 500;
@@ -173,7 +193,7 @@
 }
 
 .header {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
@@ -182,7 +202,7 @@
 }
 
 .tableData {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-weight: 500;
   font-size: 0.9rem;
   color: #3A3A3A;
@@ -212,7 +232,7 @@
 
 .tableDate {
   width: 100px;
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: normal;
   font-weight: 500;
   font-size: 0.9rem;
@@ -224,7 +244,7 @@
 
 
 .tableGrade {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: normal;
   font-weight: 500;
   font-size: 0.9rem;
@@ -234,7 +254,7 @@
 }
 
 .pending {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: italic;
   font-weight: 500;
   font-size: 0.9rem;
@@ -244,7 +264,7 @@
 }
 
 .graded {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: italic;
   font-weight: 500;
   font-size: 0.9rem;
@@ -254,7 +274,7 @@
 }
 
 .awaiting {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: italic;
   font-weight: 500;
   font-size: 0.9rem;
@@ -268,7 +288,7 @@
 }
 
 .tableLink {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
 font-style: normal;
 font-weight: 500;
 font-size: 0.9rem;
@@ -276,5 +296,10 @@ line-height: 16px;
 text-decoration-line: underline;
 color: #3A3A3A;
 padding-top: 1rem;
+}
+
+.tableLink:hover {
+  cursor: pointer;
+  color: #3A3A3A;
 }
 /* Table styling ends */

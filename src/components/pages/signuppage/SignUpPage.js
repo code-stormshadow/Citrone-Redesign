@@ -12,8 +12,6 @@ const SignUpPage = () => {
   const [password, setPassword] = useState('');
   console.log(firstName, lastName, email, password);
 
-
-
   const handleSubmit = () => {
     console.log(firstName, lastName, email, password);
   };
@@ -126,9 +124,11 @@ const SignUpPage = () => {
               Privacy Policy.
             </Link>
           </h6>
-          <button className={classes.signupBtn} onClick={handleSubmit}>
-            Sign Up
-          </button>
+          <Link to="/login">
+            <button className={classes.signupBtn} onClick={handleSubmit}>
+              Sign Up
+            </button>
+          </Link>
           <p id={classes.lastPara}>
             Already have an account?{' '}
             <Link className={classes.logInLink} to="/login">
