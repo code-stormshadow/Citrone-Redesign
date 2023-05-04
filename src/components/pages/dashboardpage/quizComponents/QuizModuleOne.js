@@ -14,9 +14,7 @@ const ModuleOne = () => {
         <SideNavBar />
         <div className={classes['quiz-module-one-container']}>
           <div>
-            <div>
-              <input placeholder="Search module title or lesson" className={styles.searchBarQuiz} />
-            </div>
+            <input placeholder="Search module title or lesson" className={styles.searchBarQuiz} />
           </div>
           <div className={classes['quiz-moduleone-first-paragraph']}>
             <Link to="/quizzes" style={{ textDecoration: 'none' }}>

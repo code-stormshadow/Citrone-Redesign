@@ -12,7 +12,7 @@ function LogOutModal(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
       className={styles.modal}>
-      <h2>Log Out?</h2>
+      <h2 className={styles.logOutText}>Log Out?</h2>
       <object data={ModalIcon}></object>
       <div className={styles.buttons}>
         <div>

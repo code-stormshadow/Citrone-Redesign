@@ -42,6 +42,13 @@ const SideNavBar = (props) => {
   const [isActiveFaq, setIsActiveFaq] = useState(false);
   const [isActiveSettings, setIsActiveSettings] = useState(false);
 
+  // useEffect hook to update the active state of each menu item whenever
+  // the corresponding state changes.
+  useEffect(() => {
+    const path = window.location.pathname;
+    setIsActiveDashboard(path === '/dashboard');
+  }, [setIsActiveDashboard]);
+
   const activeDashboardClick = () => {
     setIsActiveDashboard(true);
     setIsActiveCourse(false);
@@ -52,31 +59,61 @@ const SideNavBar = (props) => {
     setIsActiveCourse(true);
   };
 
+  useEffect(() => {
+    const path = window.location.pathname;
+    setIsActiveCourse(path === '/course-content');
+  }, [setIsActiveCourse]);
+
   const activeAssignmentClick = () => {
     setIsActiveDashboard(false);
     setIsActiveCourse(false);
     setIsActiveAssignment(true);
   };
 
+  useEffect(() => {
+    const path = window.location.pathname;
+    setIsActiveAssignment(path === '/assignment');
+  }, [setIsActiveAssignment]);
+
   const activeQuizClick = () => {
     setIsActiveAssignment(false);
     setIsActiveQuiz(true);
   };
+
+  useEffect(() => {
+    const path = window.location.pathname;
+    setIsActiveQuiz(path === '/quizzes');
+  }, [setIsActiveQuiz]);
 
   const activeStClick = () => {
     setIsActiveQuiz(false);
     setIsActiveSt(true);
   };
 
+  useEffect(() => {
+    const path = window.location.pathname;
+    setIsActiveSt(path === '/students_tutors');
+  }, [setIsActiveSt]);
+
   const activeFaqClick = () => {
     setIsActiveSt(false);
     setIsActiveFaq(true);
   };
 
+  useEffect(() => {
+    const path = window.location.pathname;
+    setIsActiveFaq(path === '/faq');
+  }, [setIsActiveFaq]);
+
   const activeSettingsClick = () => {
     setIsActiveFaq(false);
     setIsActiveSettings(true);
   };
+
+  useEffect(() => {
+    const path = window.location.pathname;
+    setIsActiveSettings(path === '/settings');
+  }, [setIsActiveSettings]);
 
   return (
     <div id="app" style={{ height: '100%' }}>

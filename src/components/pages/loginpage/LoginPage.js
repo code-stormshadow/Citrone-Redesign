@@ -73,7 +73,9 @@ const LoginPage = () => {
               </div>
             </div>
           </div>
-          <button className={classes.loginBtn}>Log In</button>
+          <Link to="/dashboard">
+            <button className={classes.loginBtn}>Log In</button>
+          </Link>
           <p id={classes.lastPara}>
             Don&#39;t have an account?{' '}
             <Link className={classes.signUpLink} to="/signup">
