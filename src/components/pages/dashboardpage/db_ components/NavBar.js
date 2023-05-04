@@ -10,7 +10,6 @@ import { Menu, useProSidebar } from 'react-pro-sidebar';
 import BarIcon from '../images/fa-bars.svg';
 import { MenuItem } from 'react-pro-sidebar';
 import { Link } from 'react-router-dom';
-// import ReactSwitch from 'react-switch';
 import SwitchComponent from '../images/switch.png';
 import DropdownProfilePic from '../images/profile-pic.png';
 import ProfileIcon from '../images/profile-icon.svg';
@@ -18,13 +17,15 @@ import SettingsIcon from '../images/settings-filled.svg';
 import Border from '../images/border.svg';
 import LogOutIcon from '../images/logout-icon.svg';
 import Polygon from '../images/polygon.svg';
+import Notification from './Notification';
 
 const NavBar = () => {
   const { collapseSidebar } = useProSidebar();
 
   const [collapsed, setCollapsed] = useState(false);
 
-  // to display the dropdown profile and to toggle the dropdown arrow down and up
+  // dropdown profile
+  // add state variable to control the toggle of the dropdown arrow down and up
   const [open, setOpen] = useState(false);
 
   const handleButtonClick = () => {
@@ -52,6 +53,24 @@ const NavBar = () => {
     };
   }, [container]);
 
+  // Bell toggle notification
+  // add state variable to control the toggle of the bell icon
+  const [bellOpen, setBellOpen] = useState(false);
+
+  // function to toggle the bell open state variable
+  const handleBellIconClick = () => {
+    setIsBellOpen(!isBellOpen);
+    setBellOpen(!bellOpen);
+  };
+
+  // add state variable to check if the bell is toggled in order to change the color
+  const [isBellOpen, setIsBellOpen] = useState(false);
+
+  // function to check if the bell is toggled
+  // const handleBellIcon = () => {
+  //   setIsBellOpen(!setIsBellOpen);
+  // };
+
   return (
     <div>
       <header className={styles.top_navbar}>
@@ -66,7 +85,6 @@ const NavBar = () => {
                 setCollapsed(!collapsed);
               }}
             />{' '}
-            {/* <img src={ColoredBellIcon} alt="Icon" className="coloredBell" />{' '} */}
           </Menu>
           <div className={styles.logo_container}>
             <img src={Logo} alt="Logo Citrone" className={styles.logo_img} />
@@ -75,17 +93,35 @@ const NavBar = () => {
         </div>
 
         <div className={styles.left_nav} ref={container}>
-          <object data={BellIcon} className={styles.bell_icon}></object>
-          <img
-            src={ProfilePic}
-            className={styles.profile_pic}
-            alt="Profile Picture"
-            onClick={() => handleButtonClick()}
-          />
-          <object
-            data={DropDownArrow}
-            id={styles.dropdown_arrow}
-            className={`${styles.dropdown_arrow} ${dropdownArrowClass}`}></object>
+          <div className={styles.leftNav}>
+            <div>
+              <img
+                src={BellIcon}
+                className={`${styles.bell_icon} ${isBellOpen ? styles.bellIconToggle : ''}`}
+                onClick={() => handleBellIconClick()}
+              />
+            </div>
+
+            <div className={styles.profileArrow} onClick={() => handleButtonClick()}>
+              <img
+                src={ProfilePic}
+                className={styles.profile_pic}
+                alt="Profile Picture"
+                // onClick={() => handleButtonClick()}
+              />
+              <img
+                src={DropDownArrow}
+                id={styles.dropdown_arrow}
+                // onClick={() => handleButtonClick()}
+                className={`${styles.dropdown_arrow} ${dropdownArrowClass}`}
+              />
+            </div>
+          </div>
+          {bellOpen && (
+            <>
+              <Notification />
+            </>
+          )}
           {open && (
             <>
               <img src={Polygon} alt="icon" className={styles.polygon} />

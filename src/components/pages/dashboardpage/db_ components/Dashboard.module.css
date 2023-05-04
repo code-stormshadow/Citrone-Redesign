@@ -72,6 +72,10 @@ body {
   font-size: 1.9rem;
   font-family: semi-bold-mont;
 }
+
+.leftNav {
+  display: flex;
+}
   
 .left_nav {
   width: 170px;
@@ -80,6 +84,8 @@ body {
   
 .left_nav .bell_icon {
   margin-right: 1rem;
+  margin-top: .1rem;
+  cursor: pointer;
 }
 
 .coloredBell {
@@ -89,22 +95,28 @@ body {
   position: absolute;
   left: 9.5rem;
 }
+
+.profileArrow {
+  cursor: pointer;
+}
   
 .profile_pic{
-  margin-top: -2.2rem;
+  margin-top: .1rem;
   margin-right: 0.5rem;
   border-radius: 50%;
   border: 3px solid #F54F59;
-  cursor: pointer;
 }
   
 #dropdown_arrow {
   margin-bottom: .8rem;
-  cursor: pointer;
+  margin-top: .7rem;
 }
+
+
 
 .dropdown_arrow_up {
   transform: rotate(-180deg);
+  /* cursor: pointer; */
 }
 
 .dropdown_arrow_down {
@@ -148,8 +160,7 @@ body {
 }
 
 .profileCard h2 {
-  font-family: 'bold-mont';
-  font-weight: 800;
+  font-family: bold-mont;
   font-size: 1.1rem;
   line-height: 24px;
   color: #252525;
@@ -161,7 +172,7 @@ body {
 
 .profileCard span {
   margin-left: 1rem;
-  font-family: 'light-mont';
+  font-family: regular-mont;
   font-weight: 600;
   font-size: 0.87rem;
   line-height: 18px;
@@ -179,7 +190,7 @@ body {
 
 .spanLink {
   margin-left: 1.5rem;
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: normal;
   font-weight: 500;
   font-size: 1.1rem;
@@ -210,7 +221,7 @@ body {
 }
 
 .colorMode p {
-  font-family: 'light-mont';
+  font-family: light-mont;
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
@@ -234,7 +245,7 @@ body {
   margin-left: 3.5rem;
   font-size: 1rem;
   font-family: bold-mont;
-  font-weight: 800;
+  /* font-weight: 800; */
   color: #252525;
   margin-top: 0.2rem;
 }
@@ -243,7 +254,7 @@ body {
   font-size: .87rem;
   color: #3A3A3A;
   font-weight: 500;
-  font-family: light-mont;
+  font-family: regular-mont;
   margin-left: 4rem;
   position: absolute;
   top: 9.1rem;
@@ -328,17 +339,17 @@ body {
 .menu_link {
   margin-left: 2rem;
   font-weight: 500;
-  font-family: 'regular-mont';
+  font-family: regular-mont;
 }
 
 .menu_logout {
   margin-left: 1.5rem;
   font-weight: 500;
-  font-family: 'regular-mont';
+  font-family: regular-mont;
 }
 
 .logout_item {
-  margin-top: 2rem;
+  margin-top: .2rem;
 }
 /* SideBar Styling ends here */
   
@@ -347,6 +358,7 @@ body {
   display: flex;
   background: #FEF2F2;
   margin: auto;
+  /* height: 1200px; */
  }
   
 .main_content {
@@ -445,11 +457,6 @@ body {
     margin-bottom: 1rem;
   }
 
-/*  
-  .ongoing {
-    margin-right: 1rem;
-  }
-   */
   .live-details {
     width: 171px;
     height: 16px;
@@ -492,7 +499,7 @@ body {
 .task_title h2 {
   color: #252525;
   font-size: 1.2rem;
-  font-family: 'semi-bold-mont';
+  font-family: semi-bold-mont;
   font-weight: 700;
 }
 
@@ -506,7 +513,7 @@ body {
   margin-top: 1rem;
   margin-right: 1rem;
   padding-left: 1rem;
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   color: #3A3A3A;
   font-size: 1.1rem;
   font-weight: 500;
@@ -548,7 +555,7 @@ body {
 }
 
 .header {
-  font-family: 'Mont';
+  font-family: regular-mont;
   font-style: normal;
   font-weight: 600;
   font-size: 1.2rem;
@@ -557,7 +564,7 @@ body {
 }
 
 .tableData {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-weight: 500;
   font-size: 1rem;
   color: #3A3A3A;
@@ -571,7 +578,7 @@ body {
 
 .tableDate {
   width: 80px;
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: normal;
   font-weight: 500;
   font-size: 0.8rem;
@@ -580,7 +587,7 @@ body {
 }
 
 .pending {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: italic;
   font-weight: 500;
   font-size: 0.8rem;
@@ -589,7 +596,7 @@ body {
 }
 
 .graded {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: italic;
   font-weight: 500;
   font-size: 0.8rem;
@@ -598,7 +605,7 @@ body {
 }
 
 .awaiting {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: italic;
   font-weight: 500;
   font-size: 0.8rem;
@@ -607,13 +614,18 @@ body {
 }
 
 .tableLink {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
 font-style: normal;
 font-weight: 500;
 font-size: 0.8rem;
 line-height: 16px;
 text-decoration-line: underline;
 color: #3A3A3A;
+}
+
+.tableLink:hover {
+  cursor: pointer;
+  color: #3A3A3A;
 }
 /* Table styling ends */
 
@@ -719,14 +731,14 @@ color: #3A3A3A;
 } 
 
 .card_title {
-  font-family: 'semi-bold-mont';
+  font-family: semi-bold-mont;
   font-weight: 700;
   font-size: 1.1rem;
   color: #030303;
 }
 
 .card_text {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: normal;
   font-weight: 600;
   font-size: 0.8rem;
@@ -745,9 +757,9 @@ color: #3A3A3A;
   margin-left: 31rem !important;
 }
 
-.modal h2 {
+.logOutText {
   margin-top: 3.5rem;
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-weight: 550;
   font-size: 1.75rem;
   line-height: 24px;
@@ -776,7 +788,7 @@ color: #3A3A3A;
   border: 1px solid #F54F59;
   border-radius: 5px;
   margin-bottom: 3.5rem;
-  font-family: 'semi-bold-mont';
+  font-family: semi-bold-mont;
   font-style: normal;
   font-weight: 700;
   font-size: 1rem;
@@ -796,7 +808,7 @@ color: #3A3A3A;
   border: none;
   color: #ffff;
   margin-bottom: 3.5rem;
-  font-family: 'semi-bold-mont';
+  font-family: semi-bold-mont;
   font-style: normal;
   font-weight: 700;
   font-size: 1rem;
@@ -810,31 +822,7 @@ color: #3A3A3A;
   }
 } */
 /* DashBoard styling ends here */
-/* FAQ styling starts here */
-.faqWrapper {
-  background: #FEF2F2;
-  width: 100%; 
-}
 
-.faqBanner {
-  margin-top: 5.2rem;
-  margin-left: 15.7rem;
-  /* outline: 1px solid red; */
-  width: 1097px;
-  height: 96px;
-  background:  url('..//images/faqbanner.svg') no-repeat;
-  background-position-x: -3rem;
-}
-
-body #accordionWrapper {
-  /* outline: 1px solid blue; */
-  margin-top: 3rem;
-  margin-left: 21rem;
-  width: 900px;
-  overflow-x: hidden;
-  background: #FEF2F2;
-  border: none;
-}
 
 .faqHeader {
   font-family: 'Lato';
@@ -873,7 +861,7 @@ body #accordionWrapper {
   background: #FFFFFF;
   border: 1px solid #A2A2A2;
   border-radius: 10px;
-  font-family: 'regular-font';
+  font-family: regular-font;
   font-style: normal;
   font-weight: 500;
   font-size: 1.2rem;
@@ -889,9 +877,8 @@ body #accordionWrapper {
 .courseTitle {
   width: 240px;
   height: 34px;
-  font-family: 'semi-bold-mont';
+  font-family: semi-bold-mont;
   font-style: normal;
-  font-weight: 700;
   font-size: 1.7rem;
   line-height: 34px;
   color: #252525;
@@ -906,6 +893,9 @@ body #accordionWrapper {
 
 .mainCourseWrapper {
   margin-left: 15rem;
+  outline: 1px solid red;
+  background: #FEF2F2;
+  width: 100%;
 }
 
 #card {
@@ -1037,7 +1027,7 @@ body #accordionWrapper {
   margin-top: 0.9rem;
 }
 .header p {
-  font-family: 'semi-bold-mont';
+  font-family: semi-bold-mont;
 font-style: normal;
 font-weight: 700;
 line-height: 21px;
@@ -1065,9 +1055,8 @@ color: #3A3A3A;
 
 .includes {
   padding-left: 1.7rem;
-  font-family: 'semi-bold-mont';
+  font-family: semi-bold-mont;
   font-style: normal;
-  font-weight: 700;
   font-size: .8rem;
   line-height: 16px;
   color: #252525;
@@ -1118,7 +1107,7 @@ padding-top: .1rem;
 .courseWrapper {
   overflow-y: scroll; /* Add the ability to scroll */
   width: 1062px;
-  height: 954px;
+  height: 934px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -1145,13 +1134,18 @@ padding-top: .1rem;
 }
 
 .courseLink {
-  font-family: 'light-mont';
+  font-family: light-mont;
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
   line-height: 24px;
   color: #252525;
   text-decoration: none;
+}
+
+.courseLink:hover {
+  text-shadow: -1px 3px 25px rgba(245, 112, 120, 1);
+  color: #252525;
 }
 
 .greaterThan {
@@ -1162,7 +1156,7 @@ padding-top: .1rem;
 }
 
 .courseModule {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
@@ -1172,12 +1166,12 @@ padding-top: .1rem;
 
 .moduleFlex {
   display: flex;
-  gap: 30rem;
+  gap: 35rem;
   margin-top: 1.5rem;
 }
 
 .moduleLessons {
-  font-family: 'semi-bold-mont';
+  font-family: semi-bold-mont;
   font-style: normal;
   font-weight: 700;
   font-size: 1.6rem;
@@ -1199,29 +1193,44 @@ padding-top: .1rem;
   color: #333333;
 }
 
+.btnLesson:active {
+
+}
+
 .cardCourseContainer {
   /* outline: 1px solid red; */
-  width: 970px;
-  height: 810px;
+  width: 950px;
+  height: 970px;
   overflow-y: scroll;
   margin-top: 0.9rem;
-  position: relative;
 }
+
+.cardCourseContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.cardCourseContainer {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  
+} 
+
 
 .moduleCard {
   /* outline: 1px solid blue; */
-  width: 970px;
+  /* width: 970px; */
   height: 548px;
   background: #FFFFFF;
   border-left: 5px solid #F57078;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
+  margin-bottom: 2rem;
 }
 
 .moduleDate {
   padding-left: 1rem;
   padding-top: 1rem;
-  font-family: 'light-mont';
+  font-family: light-mont;
   font-style: normal;
   font-weight: 500;
   font-size: 0.87rem;
@@ -1230,7 +1239,7 @@ padding-top: .1rem;
 }
 
 .moduleCourseTitle {
-  font-family: 'semi-bold-mont';
+  font-family: semi-bold-mont;
   font-style: normal;
   font-weight: 700;
   font-size: 1rem;
@@ -1240,7 +1249,7 @@ padding-top: .1rem;
 }
 
 .moduleCourseText {
-  font-family: 'regular-mont';
+  font-family: regular-mont;
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
@@ -1271,17 +1280,26 @@ padding-top: .1rem;
   top: -.3rem;
 }
 
+.lessonLink:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #F57078;
+}
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-/* .table::-webkit-scrollbar {
-display: none;
-} */
+.lessonLinkSpan:hover {
+  color: #F57078;
+}
 
-/* Hide scrollbar for IE, Edge and Firefox */
-/* .table {
--ms-overflow-style: none;  /* IE and Edge *
-scrollbar-width: none;  /* Firefox 
-} */
+
+.courseAssignmentLink:hover {
+  color: #F57078;
+}
+
+.courseAssignmentLink {
+  margin-top: -4rem;
+  position: relative;
+  top: -.2rem;
+}
 
 .lessonImage {
   background-image: url(..//images/lesson-image.png);
@@ -1295,6 +1313,292 @@ scrollbar-width: none;  /* Firefox
   margin-bottom: 2rem;
 }
 
+.lessonImage::after {
+  content: "";
+  position: absolute;
+  top:6.9rem;
+  left: 26rem;
+  background-image: url('..//images/youtube-icon.svg');
+  background-repeat: no-repeat;
+  /* margin: auto; */
+  width: 69px;
+  height: 45px;
+}
+
+/* .lessonTwoImage {
+  background-image: url('..//images/lesson-two.png');
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 270px;
+  backdrop-filter: blur(2.5px);
+  border-radius: 5px;
+  margin-top: .87rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem; 
+} */
+
+.moduleCommentCard {
+  background: #FFFFFF;
+  border-top: 5px solid #F57078;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  height: 480px;
+  margin-bottom: 2rem;
+}
+
+.commentsFlex {
+  display: flex;
+  margin-top: 1rem;
+  gap: 38.6rem;
+}
+
+.commentTitle {
+  padding-left: 1rem;
+  font-family: semi-bold-mont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 34px;
+  color: #252525;
+}
+
+.ratingText {
+  font-family: regular-mont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 21px;
+  color: #252525;
+}
+
+.starComment {
+  margin-left: .7rem;
+}
+
+.moduleComment {
+  margin-left: 2rem;
+}
+
+.commentPic {
+  border-radius: 50%;
+  border: 3px solid #F54F59;
+  margin-right: 2rem;
+}
+
+.commentSearchBar {
+  width: 580px;
+  height: 48px;  
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  border: 1px solid #A2A2A2;
+  padding-left: 1rem;
+  font-family: light-mont;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 18px;
+  color: #A2A2A2;
+  background-image: url('..//images/smiley.svg');
+  background-repeat: no-repeat;
+  background-position-x: 33.8rem;
+  background-position-y: 0.6rem;
+}
+
+.moduleChatBox {
+  /* outline: 1px solid red; */
+  width: 507px;
+  height: 208px;
+  margin-top: 2rem;
+  margin-left: 22.2rem;
+  margin-bottom: 2rem;
+}
+
+.moduleChatFlex {
+  display: flex;
+  gap: 2rem;
+}
+
+.moduleChatComment {
+  /* outline: 1px solid blue; */
+  background: #FEECED;
+  border-radius: 10px;
+  width: 395px;
+  height: 96px;
+}
+
+.moduleChatCommentSmall {
+  background: #FEECED;
+  border-radius: 10px;
+  width: 181px;
+  height: 60px;
+  margin-left: 13.35rem;
+}
+
+.moduleChatName {
+  font-family: semi-bold-mont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: .87rem;
+  line-height: 18px;
+  color: #252525;
+  padding-top: .5rem;
+  padding-left: .5rem;
+}
+
+.moduleChatText {
+  font-family: regular-mont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: .87rem;
+  line-height: 18px;
+  color: #3A3A3A;
+  padding-left: .5rem;
+  width: 385px;
+}
+
+.chatPic {
+  border: 3px solid #F54F59;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.moduleChatReactionFlex {
+  display: flex;
+  margin-left: 14rem;
+  gap: 1.5rem;
+}
+
+.moduleChatReactionFlexSecond {
+  display: flex;
+  margin-left: 14rem;
+  gap: 1.5rem;
+  width: 151px;
+  margin-top: -1.3rem;
+}
+
+.moduleChatDate {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: .87rem;
+  line-height: 17px;
+  color: #3A3A3A;
+}
+
+.moduleChatReaction {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: .87rem;
+  line-height: 17px;
+  color: #3A3A3A;
+}
+
+.moduleLinkComment {
+  font-family: semi-bold-mont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: .87rem;
+  line-height: 18px;
+  color: #F54F59;
+  text-decoration: none;
+  margin-left: 44.3rem;
+  margin-top: 2rem;
+}
+
+.moduleLinkComment:hover {
+  text-decoration: underline;
+  color: #F54F59;
+}
+
+/* Course Module One styling ends here */
+
+/* Module 1 Lesson 1 Assignment styling starts here */
+.moduleOneAssignmentWrapper {
+  background: #FEF2F2;
+  padding-left: 20rem;
+  height: 850px;
+}
+
+.assignmentDeadline {
+  height: 24px;
+  margin-top: -2rem;
+}
+
+.assignmentDeadlineTime {
+  font-family: regular-mont;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 21px;
+  color: #000000;
+  margin-left: .8rem;
+}
+
+/* Completed module styling */
+.completedModuleTitle{
+  margin-top: 2.5rem;
+  font-family: semi-bold-mont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 34px;
+  color: #252525;
+}
+
+.completedModuleCard {
+  display: flex;
+  width: 944px;
+  height: 173px;
+  /* outline: 1px solid red; */
+  background: #FFFAFA;
+  border-right: 5px solid #1A9447;
+  box-shadow: 0px 1px 10px -1px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.pendingModuleTitle {
+  font-family: semi-bold-mont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 34px;
+  color: #F54F59;
+  margin-top: 2.5rem;
+}
+
+.pendingModuleWrapper {
+  width: 994px;
+  /* height: 522px; */
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.pendingModuleWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.pendingModuleWrapper {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.pendingModuleCard {
+  display: flex;
+  width: 944px;
+  height: 173px;
+  background: #FFFAFA;
+  box-shadow: 0px 1px 10px -1px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.hrModule {
+  border: 1px solid rgba(91, 89, 89, 0.4);
+  width: 943px;
+}
 
 /*  Quizzes styling starts here */
 .searchBarQuiz {
@@ -1306,7 +1610,7 @@ scrollbar-width: none;  /* Firefox
   background: #FFFFFF;
   border: 1px solid #A2A2A2;
   border-radius: 10px;
-  font-family: 'Mont';
+  font-family: light-mont;
   font-style: normal;
   font-weight: 500;
   font-size: 1.2rem;
@@ -1319,3 +1623,571 @@ scrollbar-width: none;  /* Firefox
   outline: none;
 }
 /*  Quizzes styling ends here */
+
+/* Notification Dropdown styling starts here */
+.bellIconToggle {
+  /* background: #F54F59; */
+  background-image: url('..//images/colored-bell.svg');
+}
+
+.notificationPolygon {
+  margin-left: 1rem;
+  margin-top: -.6rem;
+}
+
+.notificationCard {
+  margin-left: -12rem; 
+  margin-top: .2rem;
+  width: 344px;
+  height: 582px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.notificationTitleFlex {
+  display: flex;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  gap: 6.5rem;
+}
+
+.notificationTitle {
+  font-family: semi-bold-font;
+  /* outline: 1px solid red; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 18px;
+  color: #1E1E1E;
+}
+
+.notificationMark {
+font-family: semi-bold-mont;
+font-style: normal;
+font-weight: 700;
+font-size: 0.87rem;
+line-height: 18px;
+text-align: right;
+color: #F54F59;
+}
+
+.notificationPostContainer {
+  /* outline: 1px solid blue; */
+  width: 312px;
+  height: 433px;
+  margin-left: 1rem;
+
+}
+
+.notificationPost {
+  /* outline: 1px solid black; */
+  width: 312px;
+  height: 61px;
+  display: flex;
+
+}
+
+.notificationPost h4 {
+  font-family: bold-mont;
+  font-style: normal;
+  font-weight: 800;
+  font-size: .8rem;
+  line-height: 19px;
+  color: #252525;
+}
+
+.notificationReact {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: .75rem;
+  line-height: 14px;
+  color: #3A3A3A;
+  margin-top: -.5rem;
+}
+
+.notificationComment {
+  width: 182px;
+  height: 20px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: .75rem;
+  line-height: 14px;
+  color: #3A3A3A;
+  padding-left: .8rem;
+  border-left: 2px solid #F57078;
+  margin-top: -.7rem;
+}
+
+.notificationDetails {
+  /* outline: 1px solid red; */
+  height: 61px;
+  margin-left: 1rem;
+}
+
+.notificationTime {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: .62rem;
+  line-height: 12px;
+  color: #F54F59;
+  margin-left: .75rem;
+}
+
+#notificationTimeColor {
+  color: #3A3A3A;
+}
+
+.notificationLinkContainer {
+  width: 344px;
+  height: 43px;
+  margin-top: 2rem;
+  background: #F54F59;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.notificationLinkContainer:hover {
+  cursor: pointer;
+  background-color: #ef3744;
+}
+
+.notificationLink {
+  text-decoration: none;
+  font-family: semi-bold-mont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  /* margin: 1rem 8.7rem .68rem 8.7rem; */
+  padding: .68rem 8.7rem .68rem 8.7rem;
+  width: 63px;
+  height: 21px;
+}
+
+.notificationLink:hover {
+  color: #FFFFFF;
+}
+/* Notification Dropdown styling ends here */
+
+/* FAQ styling starts here */
+.faqWrapper {
+  background: #FEF2F2;
+  width: 100%;
+}
+
+.faqBanner {
+  margin-top: 5.2rem;
+  margin-left: 15.7rem;
+  width: 1097px;
+  height: 96px;
+  background:  url('..//images/faqbanner.svg') no-repeat;
+  background-position-x: -3rem;
+}
+
+
+.accordion {
+  /* outline: 1px solid red; */
+  width: 976px;
+  height: 970px;
+  margin-left: 19rem;
+  margin-top: 3rem;
+  /* overflow-y: scroll; */
+}
+
+
+.accordionQuestionFlex {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.accordionTitle {
+  width: 613px;
+  height: 26px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 26px;
+  color: #252525;
+}
+
+.moreQuestionsWrapper {
+  width: 976px;
+  height: 112px;
+  margin-top: 13rem;
+  background: #FDDCDE;
+  border-radius: 5px;
+}
+
+.moreQuestionFlex {
+  display: flex;
+}
+
+.youngPic {
+  margin-left: .9rem;
+  margin-top: 1rem;
+}
+
+.youngWomanPic {
+  width: 60.7;
+  height: 80px;
+}
+
+.questionText {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 24px;
+  color: #F54F59;
+  margin-top: 1rem;
+  margin-left: .897rem;
+}
+
+.questionDescription {
+  font-family: regular-mont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: .87rem;
+  line-height: 18px;
+  color: #3A3A3A;
+  width: 612px;
+  height: 36px;
+  margin-left: .897rem;
+}
+
+.questionMark {
+  margin-top: -.7rem;
+}
+
+.btnAskQuestion {
+  margin-left: 7.5rem;
+  margin-top: 2rem;
+  background: #F54F59;
+  border-radius: 5px;
+  width: 132px;
+  height: 48px;
+  font-family: semi-bold-mont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  border: none;
+}
+
+.btnAskQuestion:hover {
+  cursor: pointer;
+  background-color: #ef3744;
+}
+
+/* Lesson One Assignment styling */
+.moduleLessonOneQuestionOne {
+  font-family: regular-mont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #3A3A3A;
+}
+
+.moduleLessonOneQuestionTwo {
+  font-family: regular-mont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #3A3A3A;
+  margin-top: -.5rem;
+
+} 
+
+.moduleLessonOneAnswer {
+  font-family: semi-bold-mont;
+font-style: normal;
+font-weight: 700;
+font-size: 1.4rem;
+line-height: 32px;
+color: #252525;
+
+}
+
+.textEditor {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  max-width: 930px;
+  height: 176px;
+  overflow-y: scroll !important;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.textEditor::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.textEditor {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.attachContainer {
+  width: 930px;
+  height: 250px;
+  background: #FDDCDE;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+.attachFileFlex {
+  display: flex;
+}
+
+.attachFileFlexItem {
+  margin-left: 1rem;
+}
+
+.attachAssignment {
+  margin-top: 1rem;
+  font-family: regular-mont;
+font-style: normal;
+font-weight: 600;
+font-size: 1rem;
+line-height: 24px;
+color: #252525;
+
+}
+
+.btnChoose {
+  background: #F54F59;
+  box-shadow: 0px 0px 0px 4px rgba(181, 200, 214, 0.4);
+  border-radius: 4px;
+  width: 168px;
+  height: 48px;
+  font-family: semi-bold-mont;
+  font-size: 1rem;
+  line-height: 21px;
+  color: #ffff;
+  border: none;
+  outline: none;
+
+}
+
+.attachFileFlexItemTwo {
+  font-family: regular-mont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #3A3A3A;
+  margin-left: 1.6rem;
+  margin-top: 1rem;
+}
+
+.attachBold {
+  font-family: semi-bold-mont;
+}
+
+.uploadFile {
+  width: 900px;
+  height: 80px;
+  margin-left: 1rem;
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  padding-left: 2.8rem;
+  padding-top: 1rem;
+  font-family: regular-mont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #252525;
+  display: flex;
+  justify-content: space-between;
+}
+
+.deleteIcon {
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.fileSize {
+  font-family: light-mont;
+font-style: normal;
+font-weight: 500;
+font-size: .9rem;
+line-height: 21px;
+color: #747474;
+
+}
+
+.error {
+  font-family: semi-bold-mont;
+  font-size: 1rem;
+  color: #ef3744;
+}
+
+.lessonSubmit {
+  border: none;
+  background: #F54F59;
+  border-radius: 5px;
+  font-family: semi-bold-mont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 160px;
+  height: 50px;
+  margin-top: 2rem;
+  margin-left: 48rem;
+}
+
+.lessonSubmit:hover {
+  background-color: #ef3744;
+}
+
+/* Submit Modal styling */
+.submitQuestion {
+  color: #252525;
+  font-size: 1.2rem;
+  font-family: regular-mont;
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* submitted modal styling */
+.submittedGif {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.submittedText {
+  font-family: regular-mont;
+font-style: normal;
+font-weight: 600;
+font-size: 1.2rem;
+line-height: 24px;
+text-align: center;
+color: #F54F59;
+margin-top: -12rem;
+}
+
+.btnEdit {
+  background: #FFFFFF;
+  border: 1px solid #F54F59;
+  border-radius: 5px;
+  font-family: semi-bold-mont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: .9rem;
+  line-height: 21px;
+  text-align: center;
+  width: 95px;
+  height: 48px;
+  color: #F54F59;
+  margin-bottom: 4rem;
+  margin-top: -3rem;
+}
+
+.btnModule {
+  background: #F54F59;
+  margin-top: -3rem;
+  margin-bottom: 4rem;
+  border: none;
+  border-radius: 5px;
+  width: 191px;
+  height: 48px;
+  font-family: semi-bold-mont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: .9rem;
+  line-height: 21px;
+  text-align: center;
+  color: #ffff;
+}
+
+.btnModule:hover {
+  background-color: #ef3744;
+}
+
+/* Notification modal styling */
+/* .modalNotification {
+  outline: 1px solid red !important;
+} */
+
+.notificationFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notificatioPopTitle { 
+  font-family: bold-mont;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 35px;
+  color: #252525;
+}
+
+.notificationClose {
+  margin-right: 2.3rem;
+  font-family: regular-mont;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 24px;
+  color: #252525;
+  margin-top: .4rem;
+}
+
+.close {
+  font-family: semi-bold-mont;
+}
+
+.notificationIcon {
+  margin-left: 1rem;
+  position: relative;
+  top: .2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

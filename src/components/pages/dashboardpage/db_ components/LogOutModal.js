@@ -2,7 +2,7 @@
 import ModalIcon from '../images/modal-icon.svg';
 import Modal from 'react-bootstrap/Modal';
 import styles from './/Dashboard.module.css';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function LogOutModal(props) {
   return (
@@ -12,7 +12,7 @@ function LogOutModal(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
       className={styles.modal}>
-      <h2>Log Out?</h2>
+      <h2 className={styles.logOutText}>Log Out?</h2>
       <object data={ModalIcon}></object>
       <div className={styles.buttons}>
         <div>
@@ -22,7 +22,9 @@ function LogOutModal(props) {
           </button>
         </div>
         <div>
-          <button className={styles.btnYes}>Yes</button>
+          <Link to="/">
+            <button className={styles.btnYes}>Yes</button>
+          </Link>
         </div>
       </div>
       {/* <Modal.Body>
