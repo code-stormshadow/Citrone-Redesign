@@ -12,7 +12,7 @@ const LoginPage = () => {
   // };
 
   return (
-    <div id={classes.loginDiv}>
+    <div className={classes.loginDiv}>
       <header id={classes.logInFormHeader}>
         <img id={classes.logInLogoImg} src={Logo}></img>
         <h1 id={classes.citroneTextHeader}>citrone</h1>
@@ -28,7 +28,7 @@ const LoginPage = () => {
         <div className={classes['loginform-Content']}>
           <div className={classes.emailPasswordContainer}>
             <div className={classes.email}>
-              <label id={classes.emailLabelForLogin} htmlFor="Email">
+              <label id={classes.signUpLabels} htmlFor="Email">
                 Email Address
               </label>{' '}
               <br />
@@ -49,7 +49,7 @@ const LoginPage = () => {
                 <Link id={classes.forgotPassword} to="/forgotpassword">
                   Forgot your password?
                 </Link>
-                ? <br />
+                <br />
               </div>
               <input
                 id={classes.passwordInputForLogin}
@@ -74,7 +74,7 @@ const LoginPage = () => {
             </div>
           </div>
           <button className={classes.loginBtn}>Log In</button>
-          <p id={classes.lastPara}>
+          <p id={classes.loginLastPara}>
             Don&#39;t have an account?{' '}
             <Link className={classes.signUpLink} to="/signup">
               Sign Up

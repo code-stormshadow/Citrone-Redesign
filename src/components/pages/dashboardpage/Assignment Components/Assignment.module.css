@@ -53,7 +53,7 @@
 .assignmentHeader{
   margin: 50px 0 20px 6.5rem;
   font-size: 26px;
-  font-family: bold-mont;
+  font-family: semi-bold-mont;
 }
 
 .assignmentModulesMainDiv{
@@ -206,7 +206,7 @@ padding: 1px 20px;
   /* styles for Lesson Assignments Page starts here */
 
 .lessonModulesMainDiv{
-
+  
   margin: 83px 50px 0 100px;
   height: 80%;
   padding-top: 30px;
@@ -383,9 +383,9 @@ span{
 .assignmentsMainWrapperForGrades {
   display: flex;
   background: #FEF2F2;
-  margin-left: 250px;
+  /* margin-left: 50px; */
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   
 }
 
@@ -455,7 +455,7 @@ span{
   margin: 0;
   padding: 0;
   font-size: 20px;
-  font-family: 'mont';
+  font-family: semi-bold-mont;
 }
 .remarksParagrapghTwo{
   font-family: regular-mont;
@@ -490,6 +490,7 @@ span{
   flex-direction: column;
   margin-top: 84px;
   margin-left: 90px;
+  padding-right: 70px;
   gap: 10px;
 }
 .gradesHeaderTwo{

@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Dashboard from './components/pages/dashboardpage/Dashboard';
 import LandingPage from './components/pages/landingpage/LandingPage';
-import LoginPage from './components/pages/loginpage/LoginPage';
+import LoginPage from './components/pages/signuppage/LoginPage';
 import SignUpPage from './components/pages/signuppage/SignUpPage';
 import ForgotPasswordPage from './components/pages/signuppage/ForgotPasswordPage';
 import CheckMail from './components/pages/signuppage/CheckMail';

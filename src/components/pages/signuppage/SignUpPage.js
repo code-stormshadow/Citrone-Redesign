@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Logo from './images/Mask group.png';
 import Eye from './images/Eye.png';
-import Asterisk from './images/Asterisk.png';
+// import Asterisk from './images/Asterisk.png';
 import classes from './SignUp.module.css';
 import { Link } from 'react-router-dom';
 
@@ -10,11 +10,22 @@ const SignUpPage = () => {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  console.log(firstName, lastName, email, password);
 
-  const handleSubmit = () => {
-    console.log(firstName, lastName, email, password);
+  const handleFetch = async (e) => {
+    e.preventDefault();
+    let result = await fetch('https://citrone-lms.onrender.com/api/auth/signup', {
+      crossDomain: true,
+      method: 'POST',
+      body: JSON.stringify({ firstName, lastName, email, password, track: 'UI/UX' }),
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      }
+    });
+    result = await result.json();
+    console.log('result', result);
   };
+
   return (
     <div className={classes['signUp-container']}>
       <div className={classes.contentContainer}>
@@ -25,40 +36,36 @@ const SignUpPage = () => {
         <form id={classes.formSignUp}>
           <h1 className={classes.headerTwo}>Create a new account</h1>
           <div className={classes.inputsContainer}>
-            <div className={classes.labelNames}>
+            {/* <div className={classes.labelNames}>
               <label htmlFor="fname">First Name</label>
               <label htmlFor="lname">Last name</label>
-              {/* <input
-                  className={classes.namesInputs}
-                  type="text"
+            </div> */}
+            <div className={classes.namesInputs}>
+              <div className={classes.fnameLabelInput}>
+                <label className={classes.labelNames} htmlFor="fname">
+                  First Name
+                </label>
+                <br />
+                <input
                   placeholder="Enter your first name"
-                  required
+                  className={classes.fNameInput}
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
-                /> */}
-            </div>
-            <div className={classes.namesInputs}>
-              <input
-                placeholder="Enter your first name"
-                className={classes.fnameInput}
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
-              />
-              <input
-                placeholder="Enter your last name"
-                className={classes.fnameInput}
-                value={lastName}
-                onChange={(e) => setLastName(e.target.value)}
-              />
+                />
+              </div>
+              <div className={classes.lnameLabelInput}>
+                <label className={classes.labelNames} htmlFor="lname">
+                  Last name
+                </label>
+                <br />
 
-              {/* <input
-                  className={classes.namesInputs}
-                  type="text"
+                <input
                   placeholder="Enter your last name"
-                  required
+                  className={classes.lNameInput}
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
-                /> */}
+                />
+              </div>
             </div>
 
             <div className={classes.emailPasswordContainer}>
@@ -96,7 +103,7 @@ const SignUpPage = () => {
             </div>
           </div>
 
-          <div id={classes['uniqueCodes-container']}>
+          {/* <div id={classes['uniqueCodes-container']}>
             <label id={classes.signUpLabels} htmlFor="uniquecode">
               Unique Codes
               <i className={classes.showPassword}>
@@ -112,7 +119,7 @@ const SignUpPage = () => {
               <input className={classes.uniqueCodes} type="text" />
               <h6 id={classes.uniqueCodeText}>Unique code can be found in your welcome mail</h6>
             </div>
-          </div>
+          </div> */}
           <h6 className={classes.termsAndPrivacy}>
             * By signing up, you agree to our{' '}
             <Link className={classes.termsLink} to="/">
@@ -124,7 +131,7 @@ const SignUpPage = () => {
               Privacy Policy.
             </Link>
           </h6>
-          <button className={classes.signupBtn} onClick={handleSubmit}>
+          <button className={classes.signupBtn} onClick={handleFetch}>
             Sign Up
           </button>
           <p id={classes.lastPara}>
