@@ -243,6 +243,7 @@
 }
 
 .quiz1-card2-5 {
+    /* border: 1px solid red; */
     background: #ffff;
     border-radius: 10px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
@@ -280,8 +281,22 @@
         text-decoration: none;
     } */
 
-.quiz-grade-container {
+/* .quiz-grade-container {
     background: #1A9447;
+} */
+
+/* .quiz1grade-container {
+    background: #1A9447;
+    margin: 500px  500px;
+} */
+
+.quiz2-first-paragraph {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+    margin-left: 20rem;
+    width: 210px;
 }
 
 ::placeholder {

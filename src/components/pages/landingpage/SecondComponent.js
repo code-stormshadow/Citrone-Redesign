@@ -63,7 +63,7 @@ const SecondComponent = () => {
             <p id={classes['learning-process-text']}>Learn online </p>
             <p id={classes['learning-process-text2']}>at a flexible pace</p>
           </div>
-          <div>
+          <div className={classes.line}>
             <img src={Line} alt="" />
           </div>
           <div>
@@ -73,7 +73,7 @@ const SecondComponent = () => {
             <p id={classes['learning-process-text']}>Engage industry certified mentors </p>
             <p id={classes['learning-process-text2']}>to share ideas to learn faster </p>
           </div>
-          <div>
+          <div className={classes.line}>
             <img src={Line} alt="" />
           </div>
           <div>
