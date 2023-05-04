@@ -93,22 +93,30 @@ const NavBar = () => {
         </div>
 
         <div className={styles.left_nav} ref={container}>
-          <img
-            src={BellIcon}
-            className={`${styles.bell_icon} ${isBellOpen ? styles.bellIconToggle : ''}`}
-            onClick={() => handleBellIconClick()}
-          />
+          <div className={styles.leftNav}>
+            <div>
+              <img
+                src={BellIcon}
+                className={`${styles.bell_icon} ${isBellOpen ? styles.bellIconToggle : ''}`}
+                onClick={() => handleBellIconClick()}
+              />
+            </div>
 
-          <img
-            src={ProfilePic}
-            className={styles.profile_pic}
-            alt="Profile Picture"
-            onClick={() => handleButtonClick()}
-          />
-          <object
-            data={DropDownArrow}
-            id={styles.dropdown_arrow}
-            className={`${styles.dropdown_arrow} ${dropdownArrowClass}`}></object>
+            <div className={styles.profileArrow} onClick={() => handleButtonClick()}>
+              <img
+                src={ProfilePic}
+                className={styles.profile_pic}
+                alt="Profile Picture"
+                // onClick={() => handleButtonClick()}
+              />
+              <img
+                src={DropDownArrow}
+                id={styles.dropdown_arrow}
+                // onClick={() => handleButtonClick()}
+                className={`${styles.dropdown_arrow} ${dropdownArrowClass}`}
+              />
+            </div>
+          </div>
           {bellOpen && (
             <>
               <Notification />

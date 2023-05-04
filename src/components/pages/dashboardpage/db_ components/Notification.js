@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import Polygon from '../images/polygon.svg';
 import styles from './/Dashboard.module.css';
 import TimiNotification from '..//images/notificationTimi.png';
@@ -7,8 +8,12 @@ import TobbayasPic from '..//images/notificationPicTwo.png';
 import Mariam from '..//images/notificationPicThree.png';
 import Damee from '..//images/notificationPicFour.png';
 import TeamPic from '..//images/notificationTeamPic.png';
+import NotificationModal from './NotificationModal';
 
 const Notification = () => {
+  // to open the popup
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <div>
       <img src={Polygon} alt="icon" className={styles.notificationPolygon} />
@@ -112,11 +117,12 @@ const Notification = () => {
         </div>
 
         <div className={styles.notificationLinkContainer}>
-          <Link to="" className={styles.notificationLink}>
+          <Link to="" className={styles.notificationLink} onClick={() => setModalShow(true)}>
             View all
           </Link>
         </div>
       </div>
+      <NotificationModal show={modalShow} onHide={() => setModalShow(false)} />
     </div>
   );
 };
