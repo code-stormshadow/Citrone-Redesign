@@ -292,9 +292,17 @@ body {
   margin-top: 1.4rem !important;
 }
 
-.menu {
-  outline: 1px solid red;
+#menuItem:hover {
+  background-color: #FEF2F2;
 }
+
+#menuItemLink:hover {
+  background-color: #FEF2F2;
+}
+
+/* .menu {
+  outline: 1px solid red;
+} */
 
 .navIcon {
   width: 23px;
@@ -2145,11 +2153,16 @@ margin-top: -12rem;
   font-size: 1.1rem;
   line-height: 24px;
   color: #252525;
-  margin-top: .4rem;
+  margin-top: .9rem;
+  cursor: pointer;
 }
 
 .close {
   font-family: semi-bold-mont;
+}
+
+.notificationClose:hover {
+  color: #F54F59;
 }
 
 .notificationIcon {
@@ -2158,6 +2171,15 @@ margin-top: -12rem;
   top: .2rem;
 }
 
+.notificationModalLink {
+  color: #252525;
+  text-decoration: none;
+}
+
+.notificationModalLink:hover {
+  text-decoration: underline;
+  color: #F54F59;
+}
 
 
 

@@ -1,6 +1,7 @@
 import Modal from 'react-bootstrap/Modal';
 import styles from './/Dashboard.module.css';
 import NotificationIcon from '..//images/notificationIcon.svg';
+import { Link } from 'react-router-dom';
 // import { useState } from 'react';
 // import SubmittedModal from './SubmittedModal';
 
@@ -16,9 +17,9 @@ function NotificationModal(props) {
             </h2>
           </div>
           <div className={styles.notificationClose}>
-            <p>
-              <span className={styles.close}>X</span> Close
-            </p>
+            <Link to="" className={styles.notificationModalLink}>
+              X Close
+            </Link>
           </div>
         </div>
       </Modal>
