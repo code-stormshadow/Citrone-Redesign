@@ -1193,9 +1193,9 @@ padding-top: .1rem;
   color: #333333;
 }
 
-.btnLesson:active {
+/* .btnLesson:active {
 
-}
+} */
 
 .cardCourseContainer {
   /* outline: 1px solid red; */
@@ -2129,7 +2129,7 @@ margin-top: -12rem;
   justify-content: space-between;
 }
 
-.notificatioPopTitle { 
+.notificationPopTitle { 
   font-family: bold-mont;
   font-style: normal;
   font-weight: 800;
