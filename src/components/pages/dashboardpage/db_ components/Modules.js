@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './/Dashboard.module.css';
 import Card from 'react-bootstrap/Card';
 import Stars from '..//images/stars.svg';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+/* import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; */
 import VideoIcon from '..//images/recording.svg';
 import FileIcon from '..//images/file.svg';
 import CalendarIcon from '../images/CalendarNote.svg';

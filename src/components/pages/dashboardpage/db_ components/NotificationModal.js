@@ -1,8 +1,8 @@
 import Modal from 'react-bootstrap/Modal';
 import styles from './/Dashboard.module.css';
 import NotificationIcon from '..//images/notificationIcon.svg';
-// import { useState } from 'react';
-// import SubmittedModal from './SubmittedModal';
+/* import { useState } from 'react';
+import SubmittedModal from './SubmittedModal'; */
 
 function NotificationModal(props) {
   return (

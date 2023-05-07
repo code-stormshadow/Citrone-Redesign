@@ -46,7 +46,7 @@ const ThirdComponent = () => {
             <img className={classes.footerImage} src={Question} alt="" />
           </div>
           <Link to="https://www.stutern.com/">
-            <button className={classes['footer-button']}>Get Started</button>
+            <button className={classes['footer-button']}>Start Tech Career</button>
           </Link>
         </footer>
       </section>
