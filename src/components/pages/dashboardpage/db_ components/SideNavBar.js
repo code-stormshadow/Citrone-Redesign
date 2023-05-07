@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { Link, useAsyncError } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import classNames from 'classnames';
-// import 'react-pro-sidebar/dist/css/styles.css';
+/* import 'react-pro-sidebar/dist/css/styles.css'; */
 import ActiveDashboardIcon from '../images/dashboard-colored.svg';
 import DashboardIcon from '../images/dashboard-default.svg';
 import CourseIcon from '../images/course-icon.svg';
@@ -26,14 +26,14 @@ import styles from './/Dashboard.module.css';
 import LogOutModal from './LogOutModal';
 
 const SideNavBar = (props) => {
-  // to open the popup
+  /* to open the popup */
   const [modalShow, setModalShow] = useState(false);
 
-  // collapsed prop from the useProSidebar hook to conditionally
-  // render the smaller profile picture when the sidebar is collapsed,
+  /* collapsed prop from the useProSidebar hook to conditionally
+  render the smaller profile picture when the sidebar is collapsed, */
   const { collapsed } = useProSidebar();
 
-  // using separate states for each menu item
+  /* using separate states for each menu item */
   const [isActiveDashboard, setIsActiveDashboard] = useState(false);
   const [isActiveCourse, setIsActiveCourse] = useState(false);
   const [isActiveAssignment, setIsActiveAssignment] = useState(false);
@@ -42,8 +42,8 @@ const SideNavBar = (props) => {
   const [isActiveFaq, setIsActiveFaq] = useState(false);
   const [isActiveSettings, setIsActiveSettings] = useState(false);
 
-  // useEffect hook to update the active state of each menu item whenever
-  // the corresponding state changes.
+  /* useEffect hook to update the active state of each menu item whenever
+  the corresponding state changes. */
   useEffect(() => {
     const path = window.location.pathname;
     setIsActiveDashboard(path === '/dashboard');
@@ -226,7 +226,7 @@ const SideNavBar = (props) => {
           </MenuItem>
 
           <MenuItem
-            // component={<Link to="/logout" />}
+            /* component={<Link to="/logout" />} */
             className={styles.logout_item}
             onClick={() => setModalShow(true)}>
             <img src={LogOutIcon} alt="Icon" className={styles.logoutIcon} />

@@ -1,12 +1,12 @@
-// import Button from 'react-bootstrap/Button';
-// import ModalIcon from '../images/modal-icon.svg';
+/*import Button from 'react-bootstrap/Button';
+import ModalIcon from '../images/modal-icon.svg'; */
 import Modal from 'react-bootstrap/Modal';
 import styles from './/Dashboard.module.css';
 import { useState } from 'react';
 import SubmittedModal from './SubmittedModal';
 
 function SubmitModal(props) {
-  // to open the submitted popup
+  /* to open the submitted popup */
   const [modalShow, setModalShow] = useState(false);
 
   return (
