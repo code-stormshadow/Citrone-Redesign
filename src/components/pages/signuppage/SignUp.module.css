@@ -173,8 +173,7 @@
     height: 48px;
     border-radius: 5px;
     border-width: thin;
-    border-color: #3a3a3a;
-
+    border: 1px sol #a2a2a2;
 }
 .uniqueCodes:hover{
     background: #F8E8E9;
