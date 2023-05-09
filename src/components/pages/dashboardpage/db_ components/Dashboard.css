@@ -209,22 +209,14 @@
   margin-left: 2rem;
   margin-top: -2rem;
   line-height: 19px;
-  /* border: 1px solid red; */
   width: 310px;
 }
 
 .warningIcon {
-  /* border: 1px solid blue; */
   width: 22px;
   height: 21px;
   margin-top: 0.8rem;
 }
-
-/* .dataWidth {
-  border: 1px solid red;
-  width: 250px;
-  height: 36px;
-} */
 
 .fixed {
   margin-left: 2.3rem;
