@@ -11,7 +11,6 @@ import TeamPic from '..//images/notificationTeamPic.png';
 import NotificationModal from './NotificationModal';
 
 const Notification = () => {
-  // to open the popup
   const [modalShow, setModalShow] = useState(false);
 
   return (

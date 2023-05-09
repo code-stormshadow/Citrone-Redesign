@@ -1,9 +1,11 @@
-import ModalIcon from '../images/modal-icon.svg';
 import Modal from 'react-bootstrap/Modal';
 import styles from './/Dashboard.module.css';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import ResubmittedModal from './ResubmittedModal';
 
-function LogOutModal(props) {
+function Resubmit(props) {
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <Modal
       {...props}
@@ -11,8 +13,7 @@ function LogOutModal(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
       className={styles.modal}>
-      <h2 className={styles.logOutText}>Log Out?</h2>
-      <object data={ModalIcon}></object>
+      <h2 className={styles.submitQuestion}>Re-submit?</h2>
       <div className={styles.buttons}>
         <div>
           {/* eslint-disable-next-line react/prop-types */}
@@ -21,13 +22,14 @@ function LogOutModal(props) {
           </button>
         </div>
         <div>
-          <Link to="/">
-            <button className={styles.btnYes}>Yes</button>
-          </Link>
+          <button className={styles.btnYes} onClick={() => setModalShow(true)}>
+            Yes
+          </button>
         </div>
       </div>
+      <ResubmittedModal show={modalShow} onHide={() => setModalShow(false)} />
     </Modal>
   );
 }
 
-export default LogOutModal;
+export default Resubmit;

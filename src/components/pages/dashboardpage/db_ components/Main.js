@@ -17,16 +17,14 @@ const Main = () => {
 
         <div className={styles.resume_lesson}>
           <div>
-            <p>
-              <Link to="/course-module-one">Resume previous lesson</Link>
+            <p className={styles.resumeLesson}>
+              <Link to="/course-module-one">
+                Resume previous lesson{' '}
+                <span className={styles.sideArrow}>
+                  <img src={SideArrow} alt="" />
+                </span>
+              </Link>
             </p>
-          </div>
-          <div>
-            <span>
-              <a href="">
-                <object data={SideArrow}></object>
-              </a>
-            </span>
           </div>
         </div>
       </div>

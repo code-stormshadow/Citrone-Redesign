@@ -13,8 +13,6 @@
   src: url(../font/Mont-Bold.ttf);
 }
 
-
-
 * {
     margin: 0px;
     padding: 0px;
@@ -147,9 +145,7 @@
 .learning-process-container {
     background: #ffff;
     box-shadow: 2px 4px 6px 0.9px rgb(233, 233, 233);
-    /* height: 128px; */
     height: 50%;
-    /* width: 1248px; */
     width: 85%;
     color:#F54F59;
     margin: -63px auto;
@@ -221,28 +217,27 @@
   }
 
 .carousel-image1 {
-    background-image: url(./images//UiUxImage.png);
+    background-image: url(./images/UiUxImage.png);
   }
 
 .carousel-image2 {
-    background-image: url(./images//Frontend.png);
+    background-image: url(./images/Frontend.png);
   }
 
 .carousel-image3 {
-    background-image: url(./images//Backend.png);
+    background-image: url(./images/Backend.png);
   }
 
 .carousel-image4 {
-    background-image: url(./images//DataScience.png);
+    background-image: url(./images/DataScience.png);
   }
 
 .carousel-image5 {
-    background-image: url(./images//MobileDev.png);
+    background-image: url(./images/MobileDev.png);
   }
 
 .carousel-image6 {
-    background-image: url(./images//SoftwareTesting.png);
-   
+    background-image: url(./images/SoftwareTesting.png);
   }
 
 #carousel-images {
@@ -397,9 +392,6 @@ footer {
   }
 
   @media only screen and ( min-width: 1757px ) {
-    /* .first-container {
-      width: 100%;
-    } */
 
     .login-button {
       margin-left: 800px;

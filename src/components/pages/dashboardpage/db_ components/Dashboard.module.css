@@ -10,7 +10,7 @@ body {
 
 @font-face {
   font-family: regular-mont;
-  src: url(//src/components/pages/font/Mont-Regular.ttf);
+  src: url(/src/components/pages/font/Mont-Regular.ttf);
 }
 
 @font-face {
@@ -28,8 +28,7 @@ body {
   src: url(/src/components/pages/font/Mont-Light.ttf);
 }
 
-/* DashBoard styling starts here */
-/* NavBar Styling starts here */
+
 .top_navbar {
   display: flex;
   position: fixed;
@@ -116,15 +115,12 @@ body {
 
 .dropdown_arrow_up {
   transform: rotate(-180deg);
-  /* cursor: pointer; */
 }
 
 .dropdown_arrow_down {
   transform: rotate(0deg);
 }
-/* NavBar Styling starts ends here */
 
-/* Dropdown Profile styling */
 .dropdownProfile {
   width: 334px;
   height: 385px;
@@ -136,7 +132,6 @@ body {
   z-index: 9;
   box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  /* outline: 1px solid red; */
 }
 
 .polygon {
@@ -228,9 +223,7 @@ body {
   line-height: 21px;
   color: rgba(58, 58, 58, 0.5);
 }
-/* Dropdown Profile styling ends */
-  
-/* SideNavBar Styling starts here*/
+
 .profilePic {
   width: 112px;
   height: 112px;
@@ -245,7 +238,6 @@ body {
   margin-left: 3.5rem;
   font-size: 1rem;
   font-family: bold-mont;
-  /* font-weight: 800; */
   color: #252525;
   margin-top: 0.2rem;
 }
@@ -292,8 +284,12 @@ body {
   margin-top: 1.4rem !important;
 }
 
-.menu {
-  outline: 1px solid red;
+#menuItem:hover {
+  background-color: #FEF2F2;
+}
+
+#menuItemLink:hover {
+  background-color: #FEF2F2;
 }
 
 .navIcon {
@@ -330,9 +326,6 @@ body {
 }
 
 .active .navIcon {
-  /* background-image: url('../images/dashboard-colored.svg'); */
-  /* background-repeat: no-repeat; */
-  /* background-color: #F54F59; */
   z-index: 2;
 } 
 
@@ -351,15 +344,12 @@ body {
 .logout_item {
   margin-top: .2rem;
 }
-/* SideBar Styling ends here */
-  
-/* Main Styling starts here */
+
 .wrapper {
   display: flex;
   background: #FEF2F2;
   margin: auto;
-  /* height: 1200px; */
- }
+}
   
 .main_content {
   width: 148vh;
@@ -398,11 +388,25 @@ body {
   font-family: regular-mont;
   margin-top: 1rem;
   display: flex;
-  }
+  position: relative;
+}
   
 .resume_lesson a {
   text-decoration: none;
   color: #F54F59;
+}
+
+.resumeLesson {
+  width: 190px;
+  height: 21px;
+  margin-left: -3.2rem;
+  cursor: pointer;
+}
+
+.sideArrow {
+  position: absolute;
+  left: 8rem;
+  bottom: .1rem;
 }
   
 .resume_lesson a:hover {
@@ -410,70 +414,68 @@ body {
   cursor: pointer;
   color: #F54F59;
 }
-  
-.resume_lesson span {
-  margin-left: 0.5rem;
-  cursor: pointer;
-  top:0.3rem;
-}
-  
-.flex-container {
+
+.cardContainer {
+  margin-left: -2rem;
   margin-top: 2rem;
   position: relative;
-  height: 216px;
+  display: flex;
+  gap: .75rem;
 }
-  
-.col {
-  width: 203px !important;
-}
-  
-.flex-item {
-  width: 180px !important;
-  height: 219px;
+
+.cardBox {
+  width: 200px;
+  height: 205px;
   background: #FFFFFF;
   border: 1px solid #F2F2F2;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
-  border-radius: 0.9rem;
-  margin-right: 0.75rem;
-  padding-right: 1rem;
+  border-radius: 15px;
+}
+
+.cardText {
+  padding-left: 1rem;
+  padding-top: 2rem;
+  font-family: semi-bold-mont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: .9rem;
+  line-height: 18px;
+  color: #252525;
+}
+
+.blackArrow {
+  margin-left: .5rem;
 }
   
-.flex-p {
-    margin-top: 1rem;
-    font-weight: 600;
-    font-family: regular-mont;
-    font-size: 0.9rem;
-    color: #252525;
+  
+.liveIcon {
+  margin-left: 2.5rem;
+  margin-top: .2rem;
+}
+
+.liveDetails {
+   display: flex;
+   gap: .83rem;
+   margin-left: 1rem;
+   margin-top: 1rem;
+}
+
+.cardSpan {
+  font-family: regular-mont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: .75rem;
+  line-height: 16px;
+  color: #3A3A3A;
+}
+
+.cardCircle {
+  width: 14px;
+  height: 14px;
+  margin-right: .25rem;
 }
   
-  .black-arrow {
-    margin-left: 0.5rem;
-    position: absolute;
-    top: 1.3rem;
-  }
-  
-  .live-icon {
-    padding-left: 1rem;
-    margin-bottom: 1rem;
-  }
 
-  .live-details {
-    width: 171px;
-    height: 16px;
-  }
-  
-  .live-details span {
-    font-size: .7rem;
-    font-family: light-mont;
-    color: #3A3A3A;
-    margin-left: .1.5rem; 
-    margin-top: 8rem;
-    position: relative;
-    top: -0.1rem;
-    margin-right: 1rem;
-  }
-
-/* incomplete task styling */
 .incomplete_task_wrapper {
   width: 895px;
   height: 368px;
@@ -533,25 +535,21 @@ body {
   margin-left: 9.7rem;
 }
 
-/* incomplete task styling ends */
 
-/* Table styling */
 .table {
-  overflow-y: scroll; /* Add the ability to scroll */
+  overflow-y: scroll; 
   width: 100px;
   height: 300px;
   margin-top: .6rem;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 .table::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .table {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }
 
 .header {
@@ -627,9 +625,7 @@ color: #3A3A3A;
   cursor: pointer;
   color: #3A3A3A;
 }
-/* Table styling ends */
 
-/* Course in progress */
 .courses {
   width: 170px;
   height: 24px;
@@ -749,9 +745,7 @@ color: #3A3A3A;
   color: #505050;
   margin-top: 1rem;
 }
-/* Course in progress ends */
 
-/* Log Out Pop up Styling */
 .modal {
   width: 448px !important;
   margin-left: 31rem !important;
@@ -814,14 +808,6 @@ color: #3A3A3A;
   font-size: 1rem;
   line-height: 21px;
 }
-/* Log Out Pop up Styling ends here */
-
-/* @media only screen and (min-width: 1200px) {
-  .flex-container {
-   
-  }
-} */
-/* DashBoard styling ends here */
 
 
 .faqHeader {
@@ -848,10 +834,7 @@ color: #3A3A3A;
   line-height: 22px;
   color: #F54F59;
 }
-/* Faq styling ends here */
 
-/* Course Content styling */
-/* search bar */
 .searchBar {
   margin-left: 13.5rem;
   margin-top: 7rem;
@@ -889,6 +872,7 @@ color: #3A3A3A;
 
 .link {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .mainCourseWrapper {
@@ -899,11 +883,9 @@ color: #3A3A3A;
 }
 
 #card {
-  /* outline: 1px solid red; */
   width: 944px;
   height: 175px;
   border-radius: 10px;
-  /* overflow: hidden; */
   margin-left: 6.2rem;
 }
 
@@ -913,7 +895,6 @@ color: #3A3A3A;
 }
 
 .moduleName {
-  /* outline: 1px solid blue; */
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 69.56%, rgba(255, 255, 255, 0.6) 100%);
   backdrop-filter: blur(30.5px);
   border-radius: 10px 0px 0px 0px;
@@ -931,7 +912,6 @@ color: #3A3A3A;
 }
 
 .modulePic {
-  /* outline: 1px solid red; */
   margin-top: -.8rem;
   background-image: url('..//images/module-1.png');
   background-repeat: no-repeat;
@@ -941,7 +921,7 @@ color: #3A3A3A;
 }
 
 .modulePic:hover {
-  background-image: url('../images/module-1.1.png');
+  background-image: url('..//images/module-1.1.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 200px;
@@ -1105,25 +1085,22 @@ padding-top: .1rem;
 }
 
 .courseWrapper {
-  overflow-y: scroll; /* Add the ability to scroll */
+  overflow-y: scroll; 
   width: 1062px;
   height: 934px;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 .courseWrapper::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .courseWrapper {
-  -ms-overflow-style: none;  /* IE and Edge */
+  -ms-overflow-style: none;  
   scrollbar-width: none;  
 } 
 
 
 
-/* Course Module One styling starts here */
 .courseModuleOneWrapper {
   background: #FEF2F2;
   padding-left: 20rem;
@@ -1193,12 +1170,9 @@ padding-top: .1rem;
   color: #333333;
 }
 
-.btnLesson:active {
 
-}
 
 .cardCourseContainer {
-  /* outline: 1px solid red; */
   width: 950px;
   height: 970px;
   overflow-y: scroll;
@@ -1209,16 +1183,13 @@ padding-top: .1rem;
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .cardCourseContainer {
-  -ms-overflow-style: none;  /* IE and Edge */
+  -ms-overflow-style: none;  
   scrollbar-width: none;  
 } 
 
 
 .moduleCard {
-  /* outline: 1px solid blue; */
-  /* width: 970px; */
   height: 548px;
   background: #FFFFFF;
   border-left: 5px solid #F57078;
@@ -1302,7 +1273,7 @@ padding-top: .1rem;
 }
 
 .lessonImage {
-  background-image: url(..//images/lesson-image.png);
+  background-image: url('..//images/lesson-image.png');
   background-repeat: no-repeat;
   width: 900px;
   height: 270px;
@@ -1320,22 +1291,9 @@ padding-top: .1rem;
   left: 26rem;
   background-image: url('..//images/youtube-icon.svg');
   background-repeat: no-repeat;
-  /* margin: auto; */
   width: 69px;
   height: 45px;
 }
-
-/* .lessonTwoImage {
-  background-image: url('..//images/lesson-two.png');
-  background-repeat: no-repeat;
-  width: 900px;
-  height: 270px;
-  backdrop-filter: blur(2.5px);
-  border-radius: 5px;
-  margin-top: .87rem;
-  margin-left: 1rem;
-  margin-bottom: 2rem; 
-} */
 
 .moduleCommentCard {
   background: #FFFFFF;
@@ -1406,7 +1364,6 @@ padding-top: .1rem;
 }
 
 .moduleChatBox {
-  /* outline: 1px solid red; */
   width: 507px;
   height: 208px;
   margin-top: 2rem;
@@ -1420,7 +1377,6 @@ padding-top: .1rem;
 }
 
 .moduleChatComment {
-  /* outline: 1px solid blue; */
   background: #FEECED;
   border-radius: 10px;
   width: 395px;
@@ -1513,9 +1469,7 @@ padding-top: .1rem;
   color: #F54F59;
 }
 
-/* Course Module One styling ends here */
 
-/* Module 1 Lesson 1 Assignment styling starts here */
 .moduleOneAssignmentWrapper {
   background: #FEF2F2;
   padding-left: 20rem;
@@ -1537,7 +1491,6 @@ padding-top: .1rem;
   margin-left: .8rem;
 }
 
-/* Completed module styling */
 .completedModuleTitle{
   margin-top: 2.5rem;
   font-family: semi-bold-mont;
@@ -1552,7 +1505,6 @@ padding-top: .1rem;
   display: flex;
   width: 944px;
   height: 173px;
-  /* outline: 1px solid red; */
   background: #FFFAFA;
   border-right: 5px solid #1A9447;
   box-shadow: 0px 1px 10px -1px rgba(0, 0, 0, 0.15);
@@ -1571,19 +1523,17 @@ padding-top: .1rem;
 
 .pendingModuleWrapper {
   width: 994px;
-  /* height: 522px; */
   overflow-y: scroll;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 .pendingModuleWrapper::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
+
 .pendingModuleWrapper {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }
 
 .pendingModuleCard {
@@ -1600,7 +1550,6 @@ padding-top: .1rem;
   width: 943px;
 }
 
-/*  Quizzes styling starts here */
 .searchBarQuiz {
   margin-left: 28rem;
   margin-top: 7rem;
@@ -1622,11 +1571,8 @@ padding-top: .1rem;
   background-position-x: 42rem;
   outline: none;
 }
-/*  Quizzes styling ends here */
 
-/* Notification Dropdown styling starts here */
 .bellIconToggle {
-  /* background: #F54F59; */
   background-image: url('..//images/colored-bell.svg');
 }
 
@@ -1654,7 +1600,6 @@ padding-top: .1rem;
 
 .notificationTitle {
   font-family: semi-bold-font;
-  /* outline: 1px solid red; */
   font-style: normal;
   font-weight: 700;
   font-size: 1rem;
@@ -1673,15 +1618,12 @@ color: #F54F59;
 }
 
 .notificationPostContainer {
-  /* outline: 1px solid blue; */
   width: 312px;
   height: 433px;
   margin-left: 1rem;
-
 }
 
 .notificationPost {
-  /* outline: 1px solid black; */
   width: 312px;
   height: 61px;
   display: flex;
@@ -1722,7 +1664,6 @@ color: #F54F59;
 }
 
 .notificationDetails {
-  /* outline: 1px solid red; */
   height: 61px;
   margin-left: 1rem;
 }
@@ -1763,7 +1704,6 @@ color: #F54F59;
   line-height: 21px;
   text-align: center;
   color: #FFFFFF;
-  /* margin: 1rem 8.7rem .68rem 8.7rem; */
   padding: .68rem 8.7rem .68rem 8.7rem;
   width: 63px;
   height: 21px;
@@ -1772,9 +1712,7 @@ color: #F54F59;
 .notificationLink:hover {
   color: #FFFFFF;
 }
-/* Notification Dropdown styling ends here */
 
-/* FAQ styling starts here */
 .faqWrapper {
   background: #FEF2F2;
   width: 100%;
@@ -1791,12 +1729,10 @@ color: #F54F59;
 
 
 .accordion {
-  /* outline: 1px solid red; */
   width: 976px;
   height: 970px;
   margin-left: 19rem;
   margin-top: 3rem;
-  /* overflow-y: scroll; */
 }
 
 
@@ -1886,7 +1822,6 @@ color: #F54F59;
   background-color: #ef3744;
 }
 
-/* Lesson One Assignment styling */
 .moduleLessonOneQuestionOne {
   font-family: regular-mont;
   font-style: normal;
@@ -1925,15 +1860,13 @@ color: #252525;
   height: 176px;
   overflow-y: scroll !important;
 }
-/* Hide scrollbar for Chrome, Safari and Opera */
 .textEditor::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .textEditor {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }
 
 .attachContainer {
@@ -2054,7 +1987,6 @@ color: #747474;
   background-color: #ef3744;
 }
 
-/* Submit Modal styling */
 .submitQuestion {
   color: #252525;
   font-size: 1.2rem;
@@ -2064,21 +1996,24 @@ color: #747474;
   margin-right: auto;
 }
 
-/* submitted modal styling */
 .submittedGif {
-  width: 80%;
-  margin: 2rem auto;
+  width: 304px;
+  height: 180px;
+  margin-top: 1rem;
+  margin-left: 4rem;
 }
 
 .submittedText {
   font-family: regular-mont;
-font-style: normal;
-font-weight: 600;
-font-size: 1.2rem;
-line-height: 24px;
-text-align: center;
-color: #F54F59;
-margin-top: -12rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 24px;
+  text-align: center;
+  color: #F54F59;
+  margin-top: 2rem;
+  margin-left: 1.4rem;
+  width: 390px;
 }
 
 .btnEdit {
@@ -2095,7 +2030,7 @@ margin-top: -12rem;
   height: 48px;
   color: #F54F59;
   margin-bottom: 4rem;
-  margin-top: -3rem;
+  margin-top: -6rem;
 }
 
 .btnModule {
@@ -2119,17 +2054,13 @@ margin-top: -12rem;
   background-color: #ef3744;
 }
 
-/* Notification modal styling */
-/* .modalNotification {
-  outline: 1px solid red !important;
-} */
-
 .notificationFlex {
   display: flex;
   justify-content: space-between;
+  margin-left: 1rem;
 }
 
-.notificatioPopTitle { 
+.notificationPopTitle { 
   font-family: bold-mont;
   font-style: normal;
   font-weight: 800;
@@ -2145,11 +2076,16 @@ margin-top: -12rem;
   font-size: 1.1rem;
   line-height: 24px;
   color: #252525;
-  margin-top: .4rem;
+  margin-top: .9rem;
+  cursor: pointer;
 }
 
 .close {
   font-family: semi-bold-mont;
+}
+
+.notificationClose:hover {
+  color: #F54F59;
 }
 
 .notificationIcon {
@@ -2158,9 +2094,45 @@ margin-top: -12rem;
   top: .2rem;
 }
 
+.notificationModalLink {
+  color: #252525;
+  text-decoration: none;
+}
+
+.notificationModalLink:hover {
+  text-decoration: underline;
+  color: #F54F59;
+}
+
+.tabsContainer {
+  margin: 1.8rem 1.8rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
 
 
+.notificationLine { 
+  border: 1px solid rgba(162, 162, 162, 0.5);
+  margin-top: -.5rem;
+}
 
+.tabs {
+  font-family: semi-bold-mont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 24px;
+  color: #252525;
+}
+
+.tabMark {
+  font-family: se;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #F57078;
+}
 
 
 

@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './/Dashboard.module.css';
 import Card from 'react-bootstrap/Card';
 import Stars from '..//images/stars.svg';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import VideoIcon from '..//images/recording.svg';
 import FileIcon from '..//images/file.svg';
 import CalendarIcon from '../images/CalendarNote.svg';
@@ -11,7 +10,7 @@ import { Link } from 'react-router-dom';
 const Modules = () => {
   return (
     <div className={styles.courseWrapper}>
-      <Link to="/course-module-one" className={styles.link}>
+      <Link to="/course-module-one" className={`${styles.link} active`}>
         <Card id={styles.card} class={styles.activeCard}>
           <Card.Body id={styles.cardBody}>
             <div className={styles.courseFlex}>

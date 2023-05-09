@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom';
 const MultiCarousel = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -35,7 +34,7 @@ const MultiCarousel = () => {
         swipeable={true}
         showDots={true}
         keyBoardControl={true}
-        removeArrowOnDeviceType={['desktop']}>
+        removeArrowOnDeviceType={['mobile']}>
         <div className={classes['carousel-image1']} id={classes['carousel-images']}>
           <h4>UI/UX Design</h4>
           <p>
@@ -148,4 +147,3 @@ const MultiCarousel = () => {
 };
 
 export default MultiCarousel;
-// { carouselImages, setcarouselImages }

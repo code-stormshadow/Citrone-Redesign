@@ -8,14 +8,13 @@ import { Link } from 'react-router-dom';
 import Alarm from '..//images/alarm.svg';
 import Editor from './Editor';
 import DeleteIcon from '..//images/delete.svg';
-import SubmitModal from './SubmitModal';
+import Resubmit from './ResubmitModal';
 
-const LessonOneAssignment = () => {
+const ReSubmit = () => {
   const [fileName, setFileName] = useState('');
   const [fileSize, setFileSize] = useState('');
   const [error, setError] = useState('');
   const fileInputRef = useRef(null);
-  const [submitDisabled, setSubmitDisabled] = useState(true);
 
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
@@ -26,7 +25,6 @@ const LessonOneAssignment = () => {
     setFileName(file.name);
     setFileSize(convertBytes(file.size));
     setError('');
-    setSubmitDisabled(false);
   };
 
   function handleDeleteFile() {
@@ -125,17 +123,14 @@ const LessonOneAssignment = () => {
               )}
             </div>
           </div>
-          <button
-            className={styles.lessonSubmit}
-            onClick={() => setModalShow(true)}
-            disabled={submitDisabled}>
-            Submit
+          <button className={styles.lessonSubmit} onClick={() => setModalShow(true)}>
+            Re-submit
           </button>
-          <SubmitModal show={modalShow} onHide={() => setModalShow(false)} />
+          <Resubmit show={modalShow} onHide={() => setModalShow(false)} />
         </div>
       </div>
     </div>
   );
 };
 
-export default LessonOneAssignment;
+export default ReSubmit;

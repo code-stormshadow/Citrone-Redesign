@@ -29,7 +29,7 @@ const FirstComponent = () => {
             world classroom.
           </p>
           <Link to="/signup">
-            <button className={classes['start-career-button']}>Start Tech Career</button>
+            <button className={classes['start-career-button']}>Get Started</button>
           </Link>
         </div>
         <div>

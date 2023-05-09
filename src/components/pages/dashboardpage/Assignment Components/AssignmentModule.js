@@ -5,10 +5,6 @@ import styles from './Assignment.module.css';
 import lessonNoteIcon from '../images/lessonNoteIcon.png';
 import CalendarNote from '../images/CalendarNote.svg';
 import { Link } from 'react-router-dom';
-// import Line from './components/dashboardpage/images/Line.png';
-// import Line from '..//images/Line.png';
-
-// import styles from './db_ components/Dashboard.module.css';
 
 const AssignmentModule = () => {
   return (
