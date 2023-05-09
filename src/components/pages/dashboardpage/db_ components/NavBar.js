@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { useState, useEffect } from 'react';
 import Logo from '../images/logo-spin.png';
 import BellIcon from '../images/bell-icon.svg';
-// import ColoredBellIcon from './/images/colored-bell.svg';
+/* import ColoredBellIcon from './/images/colored-bell.svg'; */
 import ProfilePic from '../images/profile-pic.png';
 import DropDownArrow from '../images/caret-down.svg';
 import styles from './/Dashboard.module.css';
@@ -24,23 +24,23 @@ const NavBar = () => {
 
   const [collapsed, setCollapsed] = useState(false);
 
-  // dropdown profile
-  // add state variable to control the toggle of the dropdown arrow down and up
+  /* dropdown profile
+  add state variable to control the toggle of the dropdown arrow down and up */
   const [open, setOpen] = useState(false);
 
   const handleButtonClick = () => {
     setOpen(!open);
   };
 
-  // CSS classes to define the styling for the arrow up and arrow down
+  /* CSS classes to define the styling for the arrow up and arrow down */
   const dropdownArrowClass = open ? styles.dropdown_arrow_up : styles.dropdown_arrow_down;
 
-  //to register a click on the document, and when a user clicks anywhere we check if the click occurred in the container.
+  /* to register a click on the document, and when a user clicks anywhere we check if the click occurred in the container. */
   const container = useRef(null);
 
-  // use the useEffect hook to add an event listener to the DOM object
-  // to listen for click events.(mousedown). if the event happens outside the
-  // container the dropdown will be closed
+  /* use the useEffect hook to add an event listener to the DOM object
+  to listen for click events.(mousedown). if the event happens outside the
+  container the dropdown will be closed */
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (container.current && !container.current.contains(event.target)) {
@@ -53,23 +53,23 @@ const NavBar = () => {
     };
   }, [container]);
 
-  // Bell toggle notification
-  // add state variable to control the toggle of the bell icon
+  /* Bell toggle notification
+  add state variable to control the toggle of the bell icon */
   const [bellOpen, setBellOpen] = useState(false);
 
-  // function to toggle the bell open state variable
+  /* function to toggle the bell open state variable */
   const handleBellIconClick = () => {
     setIsBellOpen(!isBellOpen);
     setBellOpen(!bellOpen);
   };
 
-  // add state variable to check if the bell is toggled in order to change the color
+  /* add state variable to check if the bell is toggled in order to change the color */
   const [isBellOpen, setIsBellOpen] = useState(false);
 
-  // function to check if the bell is toggled
-  // const handleBellIcon = () => {
-  //   setIsBellOpen(!setIsBellOpen);
-  // };
+  /* function to check if the bell is toggled
+  const handleBellIcon = () => {
+    setIsBellOpen(!setIsBellOpen);
+  }; */
 
   return (
     <div>
@@ -107,12 +107,12 @@ const NavBar = () => {
                 src={ProfilePic}
                 className={styles.profile_pic}
                 alt="Profile Picture"
-                // onClick={() => handleButtonClick()}
+                /* onClick={() => handleButtonClick()} */
               />
               <img
                 src={DropDownArrow}
                 id={styles.dropdown_arrow}
-                // onClick={() => handleButtonClick()}
+                /* onClick={() => handleButtonClick()} */
                 className={`${styles.dropdown_arrow} ${dropdownArrowClass}`}
               />
             </div>

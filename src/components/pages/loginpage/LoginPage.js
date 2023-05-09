@@ -7,9 +7,9 @@ import { Link } from 'react-router-dom';
 const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  // const handleSubmit = () => {
+  /* const handleSubmit = () => {
 
-  // };
+   }; */
 
   return (
     <div id={classes.loginDiv}>
@@ -73,7 +73,9 @@ const LoginPage = () => {
               </div>
             </div>
           </div>
-          <button className={classes.loginBtn}>Log In</button>
+          <Link to="/dashboard">
+            <button className={classes.loginBtn}>Log In</button>
+          </Link>
           <p id={classes.lastPara}>
             Don&#39;t have an account?{' '}
             <Link className={classes.signUpLink} to="/signup">

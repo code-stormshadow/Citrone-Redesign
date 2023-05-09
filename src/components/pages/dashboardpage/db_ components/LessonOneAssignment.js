@@ -11,13 +11,14 @@ import Alarm from '..//images/alarm.svg';
 import Editor from './Editor';
 import DeleteIcon from '..//images/delete.svg';
 import SubmitModal from './SubmitModal';
+/* import PlusIcon from '..//images/plus-modified.png'; */
 
 const LessonOneAssignment = () => {
-  // create state variables
+  /* create state variables */
   const [fileName, setFileName] = useState('');
   const [fileSize, setFileSize] = useState('');
   const [error, setError] = useState('');
-  // useref hook to create a reference to the file input element
+  /* useref hook to create a reference to the file input element */
   const fileInputRef = useRef(null);
   // to prevent the user from submitting a large file
   const [submitDisabled, setSubmitDisabled] = useState(true);
@@ -37,14 +38,14 @@ const LessonOneAssignment = () => {
     setSubmitDisabled(false);
   };
 
-  // function to delete the file
+  /* function to delete the file */
   function handleDeleteFile() {
     setFileName(null);
     setFileSize(null);
   }
 
-  // function to convert the size of the file in bytes and return
-  // a string in KB or MB
+  /* function to convert the size of the file in bytes and return
+  a string in KB or MB */
   function convertBytes(bytes, decimals = 2) {
     if (bytes === 0) {
       return '0 Bytes';
@@ -56,7 +57,7 @@ const LessonOneAssignment = () => {
     return parseFloat((bytes / Math.pow(kB, i)).toFixed(dM)) + ' ' + sizes[i];
   }
 
-  // to open the popup
+  /* to open the popup */
   const [modalShow, setModalShow] = useState(false);
 
   return (

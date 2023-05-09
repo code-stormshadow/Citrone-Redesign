@@ -230,7 +230,7 @@ body {
 }
 /* Dropdown Profile styling ends */
   
-/* SideNavBar Styling starts here*/
+/* SideNavBar Styling starts here */
 .profilePic {
   width: 112px;
   height: 112px;
@@ -2182,7 +2182,7 @@ color: #747474;
   margin-left: 1rem;
 }
 
-.notificatioPopTitle { 
+.notificationPopTitle { 
   font-family: bold-mont;
   font-style: normal;
   font-weight: 800;

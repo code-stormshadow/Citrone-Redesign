@@ -1,7 +1,7 @@
 import React from 'react';
-// import { Quill } from 'react-quill';
+/* import { Quill } from 'react-quill'; */
 
-// Custom Undo button icon component for Quill editor
+/* Custom Undo button icon component for Quill editor */
 const CustomUndo = () => (
   <svg viewBox="0 0 18 18">
     <polygon className="ql-fill ql-stroke" points="6 10 4 12 2 10 6 10" />
@@ -9,7 +9,7 @@ const CustomUndo = () => (
   </svg>
 );
 
-// Redo button icon component for Quill editor
+/* Redo button icon component for Quill editor */
 const CustomRedo = () => (
   <svg viewBox="0 0 18 18">
     <polygon className="ql-fill ql-stroke" points="12 10 14 12 16 10 12 10" />
@@ -17,7 +17,7 @@ const CustomRedo = () => (
   </svg>
 );
 
-// Undo and redo functions for Custom Toolbar
+/* Undo and redo functions for Custom Toolbar */
 function undoChange() {
   this.quill.history.undo();
 }
@@ -25,7 +25,7 @@ function redoChange() {
   this.quill.history.redo();
 }
 
-// Modules object for setting up the Quill editor
+/* Modules object for setting up the Quill editor */
 export const modules = {
   toolbar: {
     container: '#toolbar',
@@ -41,7 +41,7 @@ export const modules = {
   }
 };
 
-// Formats objects for setting up the Quill editor
+/* Formats objects for setting up the Quill editor */
 export const formats = [
   'bold',
   'italic',
@@ -55,7 +55,7 @@ export const formats = [
   'image'
 ];
 
-// Quill Toolbar component
+/* Quill Toolbar component */
 export const QuillToolbar = () => (
   <div id="toolbar">
     <span className="ql-formats">
