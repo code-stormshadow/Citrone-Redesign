@@ -8,10 +8,12 @@ import FileIcon from '..//images/file.svg';
 import CalendarIcon from '../images/CalendarNote.svg';
 import { Link } from 'react-router-dom';
 
+// const [isActiveCourse, setIsActiveCourse] = useState(false);
+
 const Modules = () => {
   return (
     <div className={styles.courseWrapper}>
-      <Link to="/course-module-one" className={styles.link}>
+      <Link to="/course-module-one" className={`${styles.link} active`}>
         <Card id={styles.card} class={styles.activeCard}>
           <Card.Body id={styles.cardBody}>
             <div className={styles.courseFlex}>
