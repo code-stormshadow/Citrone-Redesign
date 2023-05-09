@@ -21,6 +21,7 @@ import CourseModuleOne from './components/pages/dashboardpage/db_ components/Cou
 import CompletedModules from './components/pages/dashboardpage/db_ components/CompletedModules';
 import Quiz2Grade from './components/pages/dashboardpage/quizComponents/Quiz2Grade';
 import LessonOneAssignment from './components/pages/dashboardpage/db_ components/LessonOneAssignment';
+import ReSubmit from './components/pages/dashboardpage/db_ components/Resubmit';
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
         <Route path="/dashboard/completed-modules" element={<CompletedModules />}></Route>
         <Route path="quizgrade" element={<Quiz2Grade />}></Route>
         <Route path="lesson-1-assignment" element={<LessonOneAssignment />}></Route>
+        <Route path="re-submit" element={<ReSubmit />}></Route>
       </Routes>
     </div>
   );

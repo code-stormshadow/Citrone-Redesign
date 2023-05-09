@@ -160,7 +160,8 @@ const SideNavBar = (props) => {
             component={<Link to="/course-content" />}
             key="course"
             className={`${styles.course} ${isActiveCourse ? styles.active : ''}`}
-            onClick={activeCourseClick}>
+            onClick={activeCourseClick}
+            id={styles.menuItemLink}>
             <img
               src={isActiveCourse ? ActiveCourseIcon : CourseIcon}
               alt="Course Icon"
@@ -172,7 +173,8 @@ const SideNavBar = (props) => {
           <MenuItem
             component={<Link to="/assignment" className={styles.sideMenu} />}
             className={isActiveAssignment ? styles.active : ''}
-            onClick={activeAssignmentClick}>
+            onClick={activeAssignmentClick}
+            id={styles.menuItemLink}>
             <img
               src={isActiveAssignment ? ActiveAssignmentIcon : AssignmentIcon}
               alt="Icon"
@@ -184,7 +186,8 @@ const SideNavBar = (props) => {
           <MenuItem
             component={<Link to="/quizzes" className={styles.sideMenu} />}
             className={isActiveQuiz ? styles.active : ''}
-            onClick={activeQuizClick}>
+            onClick={activeQuizClick}
+            id={styles.menuItemLink}>
             <img
               src={isActiveQuiz ? ActiveQuizIcon : QuizIcon}
               alt="Icon"
@@ -196,7 +199,8 @@ const SideNavBar = (props) => {
           <MenuItem
             component={<Link to="/students_tutors" className={styles.sideMenu} />}
             className={isActiveSt ? styles.active : ''}
-            onClick={activeStClick}>
+            onClick={activeStClick}
+            id={styles.menuItemLink}>
             <img src={isActiveSt ? ActiveStIcon : StIcon} alt="Icon" className={styles.navIcon} />
             <span className={styles.menu_link}>Students & Tutors</span>
           </MenuItem>
@@ -204,7 +208,8 @@ const SideNavBar = (props) => {
           <MenuItem
             component={<Link to="/faq" className={styles.sideMenu} />}
             className={isActiveFaq ? styles.active : ''}
-            onClick={activeFaqClick}>
+            onClick={activeFaqClick}
+            id={styles.menuItemLink}>
             <img
               src={isActiveFaq ? ActiveFaqIcon : FaqIcon}
               alt="Icon"
@@ -216,7 +221,8 @@ const SideNavBar = (props) => {
           <MenuItem
             component={<Link to="/settings" />}
             className={isActiveSettings ? styles.active : ''}
-            onClick={activeSettingsClick}>
+            onClick={activeSettingsClick}
+            id={styles.menuItemLink}>
             <img
               src={isActiveSettings ? ActiveSettingsIcon : SettingsIcon}
               alt="Icon"
@@ -228,7 +234,8 @@ const SideNavBar = (props) => {
           <MenuItem
             /* component={<Link to="/logout" />} */
             className={styles.logout_item}
-            onClick={() => setModalShow(true)}>
+            onClick={() => setModalShow(true)}
+            id={styles.menuItemLink}>
             <img src={LogOutIcon} alt="Icon" className={styles.logoutIcon} />
             <span className={styles.menu_logout}>Logout</span>
           </MenuItem>
