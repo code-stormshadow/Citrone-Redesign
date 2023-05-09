@@ -18,7 +18,7 @@ const LessonOneAssignment = () => {
   const [fileName, setFileName] = useState('');
   const [fileSize, setFileSize] = useState('');
   const [error, setError] = useState('');
-  /* useref hook to create a reference to the file input element */
+  /* hook to create a reference to the file input element */
   const fileInputRef = useRef(null);
   // to prevent the user from submitting a large file
   const [submitDisabled, setSubmitDisabled] = useState(true);

@@ -36,8 +36,9 @@ function NotificationModal(props) {
         <div className={styles.tabsContainer}>
           <div className={styles.tabs}>Unread</div>
           <div className={styles.tabs}>All</div>
-          <div className={styles.tabs}>Mark all as read</div>
+          <div className={styles.tabMark}>Mark all as read</div>
         </div>
+        <hr className={styles.notificationLine} />
         <div className={styles.contentTabs}>
           <div className={styles.content}>
             <h2>Content 1</h2>
