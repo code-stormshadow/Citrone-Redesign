@@ -28,8 +28,7 @@ body {
   src: url(/src/components/pages/font/Mont-Light.ttf);
 }
 
-/* DashBoard styling starts here */
-/* NavBar Styling starts here */
+
 .top_navbar {
   display: flex;
   position: fixed;
@@ -121,9 +120,7 @@ body {
 .dropdown_arrow_down {
   transform: rotate(0deg);
 }
-/* NavBar Styling starts ends here */
 
-/* Dropdown Profile styling */
 .dropdownProfile {
   width: 334px;
   height: 385px;
@@ -226,9 +223,7 @@ body {
   line-height: 21px;
   color: rgba(58, 58, 58, 0.5);
 }
-/* Dropdown Profile styling ends */
-  
-/* SideNavBar Styling starts here */
+
 .profilePic {
   width: 112px;
   height: 112px;
@@ -349,9 +344,7 @@ body {
 .logout_item {
   margin-top: .2rem;
 }
-/* SideBar Styling ends here */
-  
-/* Main Styling starts here */
+
 .wrapper {
   display: flex;
   background: #FEF2F2;
@@ -483,7 +476,6 @@ body {
 }
   
 
-/* incomplete task styling */
 .incomplete_task_wrapper {
   width: 895px;
   height: 368px;
@@ -543,25 +535,21 @@ body {
   margin-left: 9.7rem;
 }
 
-/* incomplete task styling ends */
 
-/* Table styling */
 .table {
-  overflow-y: scroll; /* Add the ability to scroll */
+  overflow-y: scroll; 
   width: 100px;
   height: 300px;
   margin-top: .6rem;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 .table::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .table {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }
 
 .header {
@@ -637,9 +625,7 @@ color: #3A3A3A;
   cursor: pointer;
   color: #3A3A3A;
 }
-/* Table styling ends */
 
-/* Course in progress */
 .courses {
   width: 170px;
   height: 24px;
@@ -759,9 +745,7 @@ color: #3A3A3A;
   color: #505050;
   margin-top: 1rem;
 }
-/* Course in progress ends */
 
-/* Log Out Pop up Styling */
 .modal {
   width: 448px !important;
   margin-left: 31rem !important;
@@ -824,9 +808,6 @@ color: #3A3A3A;
   font-size: 1rem;
   line-height: 21px;
 }
-/* Log Out Pop up Styling ends here */
-
-/* DashBoard styling ends here */
 
 
 .faqHeader {
@@ -853,10 +834,7 @@ color: #3A3A3A;
   line-height: 22px;
   color: #F54F59;
 }
-/* Faq styling ends here */
 
-/* Course Content styling */
-/* search bar */
 .searchBar {
   margin-left: 13.5rem;
   margin-top: 7rem;
@@ -1107,25 +1085,22 @@ padding-top: .1rem;
 }
 
 .courseWrapper {
-  overflow-y: scroll; /* Add the ability to scroll */
+  overflow-y: scroll; 
   width: 1062px;
   height: 934px;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 .courseWrapper::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .courseWrapper {
-  -ms-overflow-style: none;  /* IE and Edge */
+  -ms-overflow-style: none;  
   scrollbar-width: none;  
 } 
 
 
 
-/* Course Module One styling starts here */
 .courseModuleOneWrapper {
   background: #FEF2F2;
   padding-left: 20rem;
@@ -1195,9 +1170,7 @@ padding-top: .1rem;
   color: #333333;
 }
 
-/* .btnLesson:active {
 
-} */
 
 .cardCourseContainer {
   width: 950px;
@@ -1210,15 +1183,13 @@ padding-top: .1rem;
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .cardCourseContainer {
-  -ms-overflow-style: none;  /* IE and Edge */
+  -ms-overflow-style: none;  
   scrollbar-width: none;  
 } 
 
 
 .moduleCard {
-  /* width: 970px; */
   height: 548px;
   background: #FFFFFF;
   border-left: 5px solid #F57078;
@@ -1498,9 +1469,7 @@ padding-top: .1rem;
   color: #F54F59;
 }
 
-/* Course Module One styling ends here */
 
-/* Module 1 Lesson 1 Assignment styling starts here */
 .moduleOneAssignmentWrapper {
   background: #FEF2F2;
   padding-left: 20rem;
@@ -1522,7 +1491,6 @@ padding-top: .1rem;
   margin-left: .8rem;
 }
 
-/* Completed module styling */
 .completedModuleTitle{
   margin-top: 2.5rem;
   font-family: semi-bold-mont;
@@ -1558,15 +1526,14 @@ padding-top: .1rem;
   overflow-y: scroll;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 .pendingModuleWrapper::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
+
 .pendingModuleWrapper {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }
 
 .pendingModuleCard {
@@ -1583,7 +1550,6 @@ padding-top: .1rem;
   width: 943px;
 }
 
-/*  Quizzes styling starts here */
 .searchBarQuiz {
   margin-left: 28rem;
   margin-top: 7rem;
@@ -1605,9 +1571,7 @@ padding-top: .1rem;
   background-position-x: 42rem;
   outline: none;
 }
-/*  Quizzes styling ends here */
 
-/* Notification Dropdown styling starts here */
 .bellIconToggle {
   background-image: url('..//images/colored-bell.svg');
 }
@@ -1748,9 +1712,7 @@ color: #F54F59;
 .notificationLink:hover {
   color: #FFFFFF;
 }
-/* Notification Dropdown styling ends here */
 
-/* FAQ styling starts here */
 .faqWrapper {
   background: #FEF2F2;
   width: 100%;
@@ -1860,7 +1822,6 @@ color: #F54F59;
   background-color: #ef3744;
 }
 
-/* Lesson One Assignment styling */
 .moduleLessonOneQuestionOne {
   font-family: regular-mont;
   font-style: normal;
@@ -1899,15 +1860,13 @@ color: #252525;
   height: 176px;
   overflow-y: scroll !important;
 }
-/* Hide scrollbar for Chrome, Safari and Opera */
 .textEditor::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .textEditor {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }
 
 .attachContainer {
@@ -2028,7 +1987,6 @@ color: #747474;
   background-color: #ef3744;
 }
 
-/* Submit Modal styling */
 .submitQuestion {
   color: #252525;
   font-size: 1.2rem;
@@ -2038,7 +1996,6 @@ color: #747474;
   margin-right: auto;
 }
 
-/* submitted modal styling */
 .submittedGif {
   width: 304px;
   height: 180px;
@@ -2097,7 +2054,6 @@ color: #747474;
   background-color: #ef3744;
 }
 
-/* Notification modal styling */
 .notificationFlex {
   display: flex;
   justify-content: space-between;
