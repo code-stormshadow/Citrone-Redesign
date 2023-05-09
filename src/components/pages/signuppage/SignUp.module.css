@@ -26,10 +26,10 @@
   } */
    /* styling for signUp Page starts here*/
 
-.signUp-container, #loginDiv, .forgotPasswordMainDiv, #checkMailMainDiv{  /* parent div style for all pages except the set password page*/
+.signUp-container, .forgotPasswordMainDiv{  /* parent div style for all pages except the set password page*/
     background: #F8E8E9;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     padding-top: 70px;
     padding-bottom: 70px;
     display: flex;
@@ -53,8 +53,7 @@
     height: 50px;
 } 
   
-#logoHeader{               /* Citrone text @logo styles for both signUp and password Pages*/
-    font-weight: 600;                                      
+#logoHeader{               /* Citrone text @logo styles for both signUp and password Pages*/                                      
     font-size: 28px;
     font-family: bold-mont;  
     text-align: center;
@@ -62,7 +61,7 @@
     
 }
   
-#formSignUp, .forgotPassForm{                           /* form styles for both signUp and forgot password Pages*/
+#formSignUp{                           /* form styles for both signUp and forgot password Pages*/
     display: flex;
     flex-direction: column;
     margin-left: 30px;
@@ -74,7 +73,6 @@
 }
 .headerTwo{
     width: 40%;
-    font-weight: 600;
     font-size: 28px;
     margin-bottom: 30px;
     margin-left: 68px;
@@ -88,50 +86,42 @@
     margin-left: 35px;
 }
 #signUpLabels{                             /* All pages share same label styles except the login and set password pages*/
-    font-weight: 600;
+    
     margin-left: 35px;
     font-family: regular-mont;
     font-size: 18px;
 }
 .namesInputs{
-    border: 1px solid red;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
-    width: 89%;
-    gap: 24%;
-    /* height: 50%; */
+    width: 88%;
+    gap: 5%;
+    margin-bottom: 20px;
     color: #3a3a3a;
-    margin-bottom: 5px;
-    font-weight: 600;
     margin-left: 35px;
     
 }
 .labelNames{
-    border: 1px solid rgb(0, 255, 76);
+    flex-direction: row;
+    width: 7rem;
+    justify-content: space-between;
     color: #3a3a3a;
-    margin-bottom: 5px;
+    gap: 20%;
     font-family: regular-mont;
     font-size: 18px;
     
     
 }
-/* .fnameInput,
-/* .namesInputs{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    margin: 0 0 25px 35px;
-} */
+
 .fNameInput, .lNameInput{
-    border:1px solid blue;
     outline: none;
-    width: 160%;
+    border: 1px solid #A2A2A2;
+    width: 100%;
     padding: 10px;
     border-radius: 5px;
     border-width: thin;
-    border-color: #a2a2a2;
     background: #ffffff;
+    /* border-color: #a2a2a2; */
 }
 
 .fNameInput:hover{
@@ -145,22 +135,21 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-bottom: 20px;
-    font-weight: 600;  
+    margin-bottom: 20px;  
 }
-#inputPasswordEmail{
+.inputPasswordEmail{
     width: 88%;
     padding: 10px;
     border-radius: 5px;
-    border-width: thin;
+    /* border-width: thin; */
     margin-left: 35px;
-    border-color: #a2a2a2;
+    border: 1px solid #a2a2a2;
     background: #ffffff;
     outline: none;
 
 
 }
-#inputPasswordEmail:hover{
+.inputPasswordEmail:hover{
     background: #F8E8E9;
 
 }
@@ -171,7 +160,7 @@
     margin-left: -33px;
     margin-top: 13px;
 }
-/* #uniqueCodes-container{
+#admissionCodesWrapper{
     margin-top: 10px;
     gap: 1px;
     padding: 3px 0;
@@ -181,36 +170,37 @@
     margin-bottom: 7px;
     margin-left: 5px;
 }
-#uniqueCodesAndText{
+#admissionCodes{
     margin-bottom: 10px;
     display: flex;
-    flex-direction: rows;
+    /* flex-direction: rows; */
     margin-top: 10px;
     margin-left: 35px;
 }
-.uniqueCodes{
+.admissionCode{
+    border: 1px solid #a2a2a2;
+    outline: none;
     margin-right: 20px;
     width: 77px;
-    font-weight: bold;
+    font-family: semi-bold-mont;
     font-size: 22px;
     text-align: center;
     height: 48px;
     border-radius: 5px;
-    border-width: thin;
-    border-color: #3a3a3a;
+    /* border-width: thin; */
 
 }
-.uniqueCodes:hover{
+.admissionCode:hover{
     background: #F8E8E9;
 }
-#uniqueCodeText{
+#admissionCodeText{
     margin: 10px 5px;
     color: #e20e0e;
     font-size: 15px;
     width: 225px;
     margin-top: 5px;
     font-weight: 600;
-} */
+}
 .termsAndPrivacy{
     font-family: regular-mont;
     font-size: 18px;
@@ -240,7 +230,6 @@
     height: 50px;
     background: #F54F59;
     color: #ffffff;
-    font-weight: 700;
     font-size: 22px;
     text-align: center;
     margin-top: 10px;
@@ -250,19 +239,19 @@
 .signupBtn:hover{
     background-color: #ce3434;
 }
-#lastPara, .forgotPassLastPara{      /* paragraph style for both signUp and login pages*/
+#lastPara{      /* paragraph style for both signUp and login pages*/
     text-align: center;
     width: 40%;
     margin: 0 290px;
     font-family: regular-mont;
     font-size: 18px;
 }
-.logInLink, .signUpLink{              /* login and signup link style*/
+.logInLink, .signUpLink, .forgotPasslogInLink{              /* login and signup link style*/
     cursor: pointer;
     color: #e20e0e;
     text-decoration: none;
 }
-.logInLink:hover, .signUpLink:hover{              
+.logInLink:hover, .signUpLink:hover, .forgotPasslogInLink:hover{              
     cursor: pointer;                            
     color: #e20e0e;
     text-decoration: underline;
@@ -282,6 +271,7 @@
     padding-left: 30px;
 }
 #logInFormHeader, #ForgotPassHeader{
+    /* border: 1px solid red; */
     width: 180px;
     display: flex;
     flex-direction: row;
@@ -340,23 +330,27 @@
     padding-top: 10px;
 }
 
-.emailInputForLogin, #passwordInputForLogin{            /* input styles for login, forgot password and set password Pages*/
+.emailInputForLogin, #passwordInputForLogin{   
+    border: 1px solid #A2A2A2;         /* input styles for login, forgot password and set password Pages*/
     width: 77%;                                          /* passwordInputForlogin is the password input style for the login page*/
     padding: 10px;
     border-radius: 5px;
     margin-left: 35px;
     border-width: thin;
-    border-color: #3a3a3a;
+    /* border-color: #3a3a3a; */
 }
-.emailRequired{
+.errors{
     color: red;
     font-size: small;
+}
+.loginPassword{
+display: flex;
+flex-direction: column;
 }
 
 .passwordLabelsForLogin{
     display: flex;
     flex-direction: row;
-    /* border: 1px solid red; */
     width: 77%;
     margin-left: 35px;
     margin-right: 0;
@@ -370,6 +364,9 @@
     padding-bottom: 10px;
     font-family: regular-mont;
     font-size: 18px;  
+}
+#loginPasswordInputField{
+    display: flex;
 }
 #forgotPassword{
     /* border: 1px solid rgb(0, 17, 255); */
@@ -388,12 +385,21 @@
     text-decoration: underline;
     
 }
+#loginPasswordEye{
+    border: 1px solid red;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    margin-left: 732px;
+    margin-top: -22px;
+}
   .login-checkbox{
     width: 180px;
     padding-left: 1px;
     display: flex;
     margin-left: 35px;
     flex-direction: row;
+    margin-top: 20px;
   }
   .login-checkboxLabel {
     font-family: 'montserrat', sans-serif;
@@ -474,84 +480,139 @@
     margin: 0 250px;
     font-family: regular-mont;
     font-size: 18px;
-    border: 1px solid green;
+    
 }
 
 /* Styling for forgot Password Page Starts here*/
 
 .forgotPassword-container{          /* style for header in form for forgot password  and set password Pages*/
     display: block;
-    width: 30%;
-    font-weight: 600;
+    width: 43%;
     font-size: 28px;
+    font-family: bold-mont;
     margin-bottom: 30px;
     margin-left: 35px;
 }
+.forgotPassForm{
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+    width: 80%;
+    height: 95%;
+    background-color: #fafafa;
+    padding: 60px 60px;
+}
 #forgotPassParagraph{
-    font: 600;
-    font-family: inherit;
+    font-family: regular-mont;
+    line-height: 21px;
     font-size: 16px;
     margin-left: 35px;
     margin-bottom: 30px;
     width: 75%;
 }
-.forgotPassBtn{             /* button styles for both forgot password page and set password page*/
+.forgotPassBtn{             /* button styles for both forgot password page and set password page */
     width: 77%;
     border: none;
     border-radius: 5px;
-    height: 50px;
+    height: 70px;
     background: #F54F59;
     color: #ffffff;
-    font-weight: 700;
+    font-family: semi-bold-mont;
     font-size: 22px;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 30px;
     margin-left: 35px;
+    padding: 20px 0;
+    
 }
 .forgotPassBtn:hover{
     background-color: #ce3434;
 }
+#forgotPasswordBottomParagraph{
+    text-align: center;
+    width: 40%;
+    margin: 0 240px;
+    font-family: regular-mont;
+    font-size: 18px;
+}
 
 
 /* Styling for check mail Page Starts here*/
-
-#checkMailContentDiv{
-    background: #FAFAFA;
-    padding: 40px 30px 40px 50px;
-    width: 90%;
-    border-radius: 5px;
-    margin-left: 80px;
-}
-/* Styling for Set Password Page Starts here*/
-
-#setPassDiv{
+#checkMailMainDiv{  /* parent div style for all pages except the set password page*/
     background: #F8E8E9;
-    width: 100%;
-    height: 100%;
+    width:100vw;
+    height: 100vh;
     padding-top: 70px;
     padding-bottom: 70px;
     display: flex;
     flex-direction: column;
     justify-items: center;
-    padding-left: 120px;
-    font-family: 'Montserrat', sans-serif;
+    padding-left: 50px;
+    
 }
-.setPasswordForm{
+
+#checkMailContentDiv{
+    background: #FAFAFA;
+    padding: 40px 30px 40px 50px;
+    height: 90%;
+    width: 90%;
+    border-radius: 5px;
+    margin-left: 80px;
+}
+.sentContentWrapper{
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 40px;
+}
+#sentEmailDiv{
+    margin: 30px 0;
+}
+#checkMail{
+    margin-bottom: 20px;
+    font-family: semi-bold-mont;
+}
+#checkMailText{
+    /* margin-bottom: 20px; */
+    font-family: regular-mont;
+}
+/* .pt-page-moveToLeft {
+    -webkit-animation: moveToLeft .6s ease both;
+    animation: moveToLeft .6s ease both;
+  } */
+/* Styling for Set Password Page Starts here*/
+
+#setPassDiv{
+    background: #F8E8E9;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding-left: 200px;
+}
+.setPassForm{
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
     width: 70%;
-    height: 90%;
+    height: 95%;
     background-color: #fafafa;
     padding: 30px 40px;
 }
 #setPassLabel{
-    font-weight: 600;
     margin-left: 35px;
     margin-bottom: 10px;
+    font-family: regular-mont;
     font-size: 18px;
+    
 }
+
+
 
 
 

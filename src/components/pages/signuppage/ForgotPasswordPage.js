@@ -11,9 +11,9 @@ const ForgotPasswordPage = () => {
   return (
     <div className={classes.forgotPasswordMainDiv}>
       <div id={classes['forgotPassContent-div']}>
-        <header id={classes.forgotPassHeader}>
+        <header id={classes.logInFormHeader}>
           <img id={classes.forgotPassLogo} src={Logo}></img>
-          <h1 id={classes.citroneTextHeaderForPass}>citrone</h1>
+          <h1 id={classes.citroneTextHeaderForPass}>Citrone</h1>
         </header>
         <form className={classes.forgotPassForm}>
           <header className={classes['forgotPassword-container']}>Forgot Password?</header>
@@ -36,7 +36,7 @@ const ForgotPasswordPage = () => {
             />
           </div>
           <button className={classes.forgotPassBtn}>Next</button>
-          <p id={classes.lastPara}>
+          <p id={classes.forgotPasswordBottomParagraph}>
             Already have an account?{' '}
             <Link className={classes.forgotPasslogInLink} to="/login">
               Log In

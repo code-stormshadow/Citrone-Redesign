@@ -11,22 +11,21 @@ const Quiz2Grade = () => {
       <NavBar />
       <div className={styles.wrapper}>
         <SideNavBar />
-        <div>
-          {/* <div>
-            <input placeholder="Search module title or lesson" className={styles.searchBarQuiz} />
-          </div> */}
-          <div className={classes['quiz-moduleone-first-paragraph']}>
-            <Link to="/quizzes" style={{ textDecoration: 'none' }}>
+        <div className={classes['quiz1grade-container']}>
+          <div className={classes['quiz2-first-paragraph']}>
+            <Link to="/quizzes" style={{ textDecoration: 'none', color: 'black' }}>
               <div>
-                <p id={classes['quiz-moduleone-first-paragraph1']}>Quizzes</p>
+                <p id={classes['quiz2-first-paragraph1']}>Quizzes</p>
               </div>
             </Link>
-            <div className={classes['quiz-moduleone-first-paragraph2']}>
+            <div className={classes['quiz2-first-paragraph2']}>
               <p>&gt;</p>
             </div>
-            <div>
-              <p id={classes['quiz-moduleone-first-paragraph3']}>Module 1 Quizzes</p>
-            </div>
+            <Link to="/moduleone" style={{ textDecoration: 'none', color: 'black' }}>
+              <div>
+                <p id={classes['quiz2-first-paragraph3']}>Module 1 Quizzes</p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

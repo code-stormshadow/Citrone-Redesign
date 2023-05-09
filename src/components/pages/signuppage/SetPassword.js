@@ -10,9 +10,9 @@ const SetPassword = () => {
     <div id={classes.setPassDiv}>
       <header id={classes.forgotPassHeader}>
         <img id={classes.forgotPassLogo} src={Logo}></img>
-        <h1 id={classes.citroneTextHeaderForPass}>citrone</h1>
+        <h1 id={classes.citroneTextHeaderForPass}>Citrone</h1>
       </header>
-      <form className={classes.forgotPassForm}>
+      <form className={classes.setPassForm}>
         <header className={classes['forgotPassword-container']}>Set New Password</header>
         <p id={classes.forgotPassParagraph}>Please enter a new password below</p>
         <div>

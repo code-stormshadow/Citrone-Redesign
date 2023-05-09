@@ -6,9 +6,9 @@ import Alarm from './Assignment Images/Alarm.svg';
 
 const GradesBreakdown = () => {
   return (
-    <div>
+    <div className={styles.wrapper}>
       <NavBar />
-      <div className={styles.wrapper}>
+      <div>
         <SideNavBar />
         <div className={styles.assignmentsMainWrapper}>
           <div className={styles.gradesBreakdownDiv}>

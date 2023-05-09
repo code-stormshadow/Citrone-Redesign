@@ -24,8 +24,8 @@
   background: #FEF2F2;
   margin-left: 250px;
   margin-right: 0;
-  width: auto;
-  height: inherit;
+  width: 100vw;
+  height: 100vh;
   
 }
 
@@ -54,6 +54,12 @@
   margin: 50px 0 20px 6.5rem;
   font-size: 26px;
   font-family: semi-bold-mont;
+  font-size: 1.7rem;
+  line-height: 34px;
+  color: #252525;
+  margin-left: 6.2rem;
+  margin-top: 2rem;
+  margin-bottom: 1.8rem;
 }
 
 .assignmentModulesMainDiv{
@@ -98,7 +104,8 @@
 }
 #assignmentNumber{
   margin-top: 15px;
-  margin-left: 50px;
+  margin-left: 60px;
+  line-height: 26px;
   font-size: 25px;
   font-family: bold-mont;  
   
@@ -484,7 +491,7 @@ span{
 
 .gradesBreakdownDiv{
   height: 100%;
-  width: 100%;
+  width: 90%;
   border: 1px solid green;
   display: flex;
   flex-direction: column;
