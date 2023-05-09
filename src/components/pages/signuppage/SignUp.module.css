@@ -121,7 +121,7 @@
     border-radius: 5px;
     border-width: thin;
     background: #ffffff;
-    /* border-color: #a2a2a2; */
+    
 }
 
 .fNameInput:hover{
@@ -141,7 +141,6 @@
     width: 88%;
     padding: 10px;
     border-radius: 5px;
-    /* border-width: thin; */
     margin-left: 35px;
     border: 1px solid #a2a2a2;
     background: #ffffff;
@@ -173,7 +172,6 @@
 #admissionCodes{
     margin-bottom: 10px;
     display: flex;
-    /* flex-direction: rows; */
     margin-top: 10px;
     margin-left: 35px;
 }
@@ -187,7 +185,6 @@
     text-align: center;
     height: 48px;
     border-radius: 5px;
-    /* border-width: thin; */
 
 }
 .admissionCode:hover{
@@ -271,7 +268,6 @@
     padding-left: 30px;
 }
 #logInFormHeader, #ForgotPassHeader{
-    /* border: 1px solid red; */
     width: 180px;
     display: flex;
     flex-direction: row;
@@ -287,8 +283,8 @@
     font-family: bold-mont;
     text-align: center;
     margin-top: 10px;
-    /* line-height: 19px; */
 }
+
 #logInForm{
     background: #FAFAFA;
     padding: 40px 30px 40px 50px;
@@ -337,7 +333,6 @@
     border-radius: 5px;
     margin-left: 35px;
     border-width: thin;
-    /* border-color: #3a3a3a; */
 }
 .errors{
     color: red;
@@ -369,7 +364,6 @@ flex-direction: column;
     display: flex;
 }
 #forgotPassword{
-    /* border: 1px solid rgb(0, 17, 255); */
     width: 212px;
     font-family: regular-mont;
     font-size: 18px;
@@ -575,13 +569,8 @@ flex-direction: column;
     font-family: semi-bold-mont;
 }
 #checkMailText{
-    /* margin-bottom: 20px; */
     font-family: regular-mont;
 }
-/* .pt-page-moveToLeft {
-    -webkit-animation: moveToLeft .6s ease both;
-    animation: moveToLeft .6s ease both;
-  } */
 /* Styling for Set Password Page Starts here*/
 
 #setPassDiv{
