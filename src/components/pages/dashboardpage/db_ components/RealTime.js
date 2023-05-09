@@ -12,100 +12,97 @@ import { Link } from 'react-router-dom';
 
 const RealTime = () => {
   return (
-    <div className="container flex-container">
-      <div className="row">
-        <div className="col flex-item">
-          <p className="flex-p">
-            Join Live classes <object data={BlackArrow} className="black-arrow"></object>
-          </p>
-          <object data={RecordingIcon} className="live-icon"></object>
+    <div className={styles.cardContainer}>
+      <div className={styles.cardBox}>
+        <p>
+          <span className={styles.cardText}>Join Live classes</span>
+          <img src={BlackArrow} alt="" className={styles.blackArrow} />
+        </p>
+        <img src={RecordingIcon} className={styles.liveIcon} />
+      </div>
 
-          <div className="d-flex justify-content-between live-details">
+      <Link to="./completed-modules" className={styles.link}>
+        <div className={styles.cardBox}>
+          <p>
+            <span className={styles.cardText}>Completed Modules</span>
+            <img src={BlackArrow} alt="" className={styles.blackArrow} />
+          </p>
+          <img src={CirclePercent} className={styles.liveIcon} />
+
+          <div className={styles.liveDetails}>
             <div>
-              <object data={CircleColored}></object>
-              <span>Completed</span>
+              <img src={CircleColored} alt="" className={styles.cardCircle} />
+              <span className={styles.cardSpan}>Completed</span>
             </div>
 
             <div>
-              <object data={CircleGrey} className="circle-grey"></object>
-              <span className="ongoing">Ongoing</span>
+              <img src={CircleGrey} alt="Dot" className={styles.cardCircle} />
+              <span className={styles.cardSpan}>Ongoing</span>
             </div>
           </div>
         </div>
+      </Link>
 
-        <div className="col flex-item">
-          <Link to="./completed-modules" className={styles.link}>
-            <p className="flex-p">
-              Completed Modules <object data={BlackArrow} className="black-arrow"></object>
-            </p>
-            <object data={CirclePercent} className="live-icon"></object>
-
-            <div className="d-flex justify-content-between live-details">
-              <div>
-                <object data={CircleColored}></object>
-                <span>Completed</span>
-              </div>
-
-              <div>
-                <object data={CircleGrey}></object>
-                <span>Ongoing</span>
-              </div>
-            </div>
-          </Link>
-        </div>
-
-        <div className="col flex-item">
-          <p className="flex-p">
-            Completed Assig... <object data={BlackArrow} className="black-arrow"></object>
+      <Link to="" className={styles.link}>
+        <div className={styles.cardBox}>
+          <p>
+            <span className={styles.cardText}>Completed Assig...</span>
+            <img src={BlackArrow} alt="" className={styles.blackArrow} />
           </p>
-          <object data={CirclePercent2} className="live-icon"></object>
+          <img src={CirclePercent2} className={styles.liveIcon} />
 
-          <div className="d-flex justify-content-between live-details">
+          <div className={styles.liveDetails}>
             <div>
-              <object data={CircleColored}></object>
-              <span>Completed</span>
+              <img src={CircleColored} alt="" className={styles.cardCircle} />
+              <span className={styles.cardSpan}>Completed</span>
             </div>
 
             <div>
-              <object data={CircleGrey}></object>
-              <span>Ongoing</span>
+              <img src={CircleGrey} alt="Dot" className={styles.cardCircle} />
+              <span className={styles.cardSpan}>Ongoing</span>
             </div>
           </div>
         </div>
+      </Link>
 
-        <div className="col flex-item">
-          <p className="flex-p">
-            Completed Quizz... <object data={BlackArrow} className="black-arrow"></object>
+      <Link to="./completed-modules" className={styles.link}>
+        <div className={styles.cardBox}>
+          <p>
+            <span className={styles.cardText}>Completed Quiz...</span>
+            <img src={BlackArrow} alt="" className={styles.blackArrow} />
           </p>
-          <object data={CirclePercent} className="live-icon"></object>
+          <img src={CirclePercent2} className={styles.liveIcon} />
 
-          <div className="d-flex justify-content-between live-details">
+          <div className={styles.liveDetails}>
             <div>
-              <object data={CircleColored}></object>
-              <span>Completed</span>
+              <img src={CircleColored} alt="" className={styles.cardCircle} />
+              <span className={styles.cardSpan}>Completed</span>
             </div>
 
             <div>
-              <object data={CircleGrey}></object>
-              <span>Ongoing</span>
+              <img src={CircleGrey} alt="Dot" className={styles.cardCircle} />
+              <span className={styles.cardSpan}>Ongoing</span>
             </div>
           </div>
         </div>
+      </Link>
 
-        <div className="col flex-item">
-          <p className="flex-p">Course Activities</p>
-          <object data={CirclePercent3} className="live-icon"></object>
+      <div className={styles.cardBox}>
+        <p>
+          <span className={styles.cardText}>Course Activities</span>
+          <img src={BlackArrow} alt="" className={styles.blackArrow} />
+        </p>
+        <img src={CirclePercent3} className={styles.liveIcon} />
 
-          <div className="d-flex justify-content-between live-details">
-            <div>
-              <object data={CircleColored}></object>
-              <span>Completed</span>
-            </div>
+        <div className={styles.liveDetails}>
+          <div>
+            <img src={CircleColored} alt="" className={styles.cardCircle} />
+            <span className={styles.cardSpan}>Completed</span>
+          </div>
 
-            <div>
-              <object data={CircleGrey}></object>
-              <span>Ongoing</span>
-            </div>
+          <div>
+            <img src={CircleGrey} alt="Dot" className={styles.cardCircle} />
+            <span className={styles.cardSpan}>Ongoing</span>
           </div>
         </div>
       </div>

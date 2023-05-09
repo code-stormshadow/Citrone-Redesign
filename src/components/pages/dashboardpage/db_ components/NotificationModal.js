@@ -6,9 +6,19 @@ import { Link } from 'react-router-dom';
 // import SubmittedModal from './SubmittedModal';
 
 function NotificationModal(props) {
+  // const [toggleState, setToggleState] = useState(1);
+
+  // const toggleTab = () => {
+
+  // }
   return (
     <div className={styles.modalNotification}>
-      <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+      <Modal
+        id={styles.modalWrapper}
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered>
         <div className={styles.notificationFlex}>
           <div>
             <h2 className={styles.notificationPopTitle}>
@@ -20,6 +30,22 @@ function NotificationModal(props) {
             <Link to="" className={styles.notificationModalLink}>
               X Close
             </Link>
+          </div>
+        </div>
+
+        <div className={styles.tabsContainer}>
+          <div className={styles.tabs}>Unread</div>
+          <div className={styles.tabs}>All</div>
+          <div className={styles.tabs}>Mark all as read</div>
+        </div>
+        <div className={styles.contentTabs}>
+          <div className={styles.content}>
+            <h2>Content 1</h2>
+            <p>handleFileUpload</p>
+          </div>
+          <div className={styles.content}>
+            <h2>Content 1</h2>
+            <p>handleFileUpload</p>
           </div>
         </div>
       </Modal>
