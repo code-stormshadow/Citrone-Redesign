@@ -2,8 +2,6 @@ import React from 'react';
 import { useState, useRef } from 'react';
 import NavBar from './NavBar';
 import SideNavBar from './SideNavBar';
-// import ReactQuill from 'react-quill';
-// import EditorToolbar, { modules, formats } from './EditorToolbar';
 import 'react-quill/dist/quill.snow.css';
 import styles from './Dashboard.module.css';
 import { Link } from 'react-router-dom';
@@ -11,21 +9,14 @@ import Alarm from '..//images/alarm.svg';
 import Editor from './Editor';
 import DeleteIcon from '..//images/delete.svg';
 import SubmitModal from './SubmitModal';
-/* import PlusIcon from '..//images/plus-modified.png'; */
 
 const LessonOneAssignment = () => {
-  /* create state variables */
   const [fileName, setFileName] = useState('');
   const [fileSize, setFileSize] = useState('');
   const [error, setError] = useState('');
-  /* hook to create a reference to the file input element */
   const fileInputRef = useRef(null);
-  // to prevent the user from submitting a large file
   const [submitDisabled, setSubmitDisabled] = useState(true);
 
-  // function when the user selects a file
-  // it takes an event as a parameter and extracts the first file in the event target
-  // sets the file name state variable to its name
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
     if (file.size > 2 * 1024 * 1024) {
@@ -38,14 +29,11 @@ const LessonOneAssignment = () => {
     setSubmitDisabled(false);
   };
 
-  /* function to delete the file */
   function handleDeleteFile() {
     setFileName(null);
     setFileSize(null);
   }
 
-  /* function to convert the size of the file in bytes and return
-  a string in KB or MB */
   function convertBytes(bytes, decimals = 2) {
     if (bytes === 0) {
       return '0 Bytes';
@@ -57,7 +45,6 @@ const LessonOneAssignment = () => {
     return parseFloat((bytes / Math.pow(kB, i)).toFixed(dM)) + ' ' + sizes[i];
   }
 
-  /* to open the popup */
   const [modalShow, setModalShow] = useState(false);
 
   return (

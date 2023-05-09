@@ -9,9 +9,6 @@ import YoungWoman from './images/youngwoman.png';
 import QuestionMark from './images/questionmark.svg';
 
 const Faq = () => {
-  /* create a separate isActive state for each accordion item by creating an array of objects,
-  where each object represents an accordion item and has its own isActive state.
-  loop through the array and render the accordion items dynamically. */
   const [accordionItems, setAccordionItems] = useState([
     {
       id: 1,
@@ -75,9 +72,6 @@ const Faq = () => {
     }
   ]);
 
-  /* function to update the state of an array called accordionItems by mapping through each item in the array and
-  updating the isActive property based on the itemId argument. the function checks if the id of the current item is
-  the same as the itemID. If true set the isActive property to false and vice versa then update the state of accordionItems using the setAccordionItems */
   const handleAccordionClick = (itemID) => {
     const updatedAccordionItems = accordionItems.map((item) => {
       if (item.id === itemID) {

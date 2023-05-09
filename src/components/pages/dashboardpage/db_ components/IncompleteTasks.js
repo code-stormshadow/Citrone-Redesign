@@ -4,7 +4,6 @@ import { useState } from 'react';
 import CaretDown from '../images/caret-down2.svg';
 import CaretUp from '../images/caret-up.svg';
 import styles from './/Dashboard.module.css';
-/* import DropDownArrow from './/images/caret-down2.svg'; */
 
 const IncompleteTask = () => {
   const [isOpen, setIsOpen] = useState(false);

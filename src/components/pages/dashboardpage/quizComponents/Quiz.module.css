@@ -18,18 +18,11 @@
     src: url(/src/components/pages/font/Mont-Light.ttf);
   }
 
-/* .quiz-container h3 {
-    font-family: semi-bold-mont;
-    margin: 25% 29%;
-    font-weight: 700;
-    font-size: 1126px;
-    } */
-
 #quizzes {
     font-family: semi-bold-mont;
     font-size: 26px;
     margin: 10px 20rem;
-    }
+}
   
 .modules {
     height: 754px;
@@ -38,14 +31,12 @@
     width: 950px;
 }
 
-    /* Hide scrollbar for Chrome, Safari and Opera */
 .modules::-webkit-scrollbar {
     display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .modules {
-    -ms-overflow-style: none;  /* IE and Edge */
+    -ms-overflow-style: none;  
     scrollbar-width: none;  
 } 
   
@@ -126,6 +117,7 @@
     position: relative;
 }
   
+
 .module-2-6-container {
     background: #ffff;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
@@ -152,9 +144,7 @@
     width: 944px;
 }
   
-/* .quiz-module-one-container {
-    border: 1px solid red;
-} */
+
   
 .quiz-moduleone-first-paragraph {
     display: flex;
@@ -243,7 +233,6 @@
 }
 
 .quiz1-card2-5 {
-    /* border: 1px solid red; */
     background: #ffff;
     border-radius: 10px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
@@ -277,18 +266,7 @@
     transition: 0.2s;
 }
 
-/* Link {
-        text-decoration: none;
-    } */
 
-/* .quiz-grade-container {
-    background: #1A9447;
-} */
-
-/* .quiz1grade-container {
-    background: #1A9447;
-    margin: 500px  500px;
-} */
 
 .quiz2-first-paragraph {
     border: 1px solid red;
