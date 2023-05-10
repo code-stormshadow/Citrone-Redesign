@@ -150,6 +150,7 @@
   }
   
 .learning-process-container {
+  /* border: 1px solid red; */
     background: #ffff;
     box-shadow: 2px 4px 6px 0.9px rgb(233, 233, 233);
     height: 50%;
@@ -555,6 +556,7 @@ footer {
       }
       
     .second-container {
+      border: 1px solid red;
         text-align: center;
         margin-top: 170px;
       }
