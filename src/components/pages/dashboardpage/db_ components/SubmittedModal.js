@@ -15,7 +15,6 @@ function SubmittedModal(props) {
       <h2 className={styles.submittedText}>Assignment successfully submitted</h2>
       <div className={styles.buttons}>
         <div>
-          {/* eslint-disable-next-line react/prop-types */}
           <Link to="/re-submit">
             <button className={styles.btnEdit}>Edit</button>
           </Link>

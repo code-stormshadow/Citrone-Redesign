@@ -1,11 +1,7 @@
 import Card from 'react-bootstrap/Card';
-/* import Image from 'react-bootstrap/Image'; */
 import styles from './/Dashboard.module.css';
-/* import './/Dashboard.css'; */
 import BlackArrow from '../images/black-sidearrow.svg';
 import CardImage from '../images/card-image.png';
-/* import StuternName from '../db_ components/images/stutern.svg'; */
-/* import CourseInView from '../db_ components/images/course-in-view.svg'; */
 
 function CourseProgress() {
   return (

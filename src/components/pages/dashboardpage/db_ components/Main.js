@@ -26,13 +26,6 @@ const Main = () => {
               </Link>
             </p>
           </div>
-          {/* <div>
-            <span>
-              <a href="">
-                <object data={SideArrow}></object>
-              </a>
-            </span>
-          </div> */}
         </div>
       </div>
 

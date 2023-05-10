@@ -4,7 +4,6 @@ import { useState } from 'react';
 import ResubmittedModal from './ResubmittedModal';
 
 function Resubmit(props) {
-  // to open the submitted popup
   const [modalShow, setModalShow] = useState(false);
 
   return (

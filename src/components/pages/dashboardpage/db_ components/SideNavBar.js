@@ -26,14 +26,10 @@ import styles from './/Dashboard.module.css';
 import LogOutModal from './LogOutModal';
 
 const SideNavBar = (props) => {
-  /* to open the popup */
   const [modalShow, setModalShow] = useState(false);
 
-  /* collapsed prop from the useProSidebar hook to conditionally
-  render the smaller profile picture when the sidebar is collapsed, */
   const { collapsed } = useProSidebar();
 
-  /* using separate states for each menu item */
   const [isActiveDashboard, setIsActiveDashboard] = useState(false);
   const [isActiveCourse, setIsActiveCourse] = useState(false);
   const [isActiveAssignment, setIsActiveAssignment] = useState(false);
@@ -42,8 +38,6 @@ const SideNavBar = (props) => {
   const [isActiveFaq, setIsActiveFaq] = useState(false);
   const [isActiveSettings, setIsActiveSettings] = useState(false);
 
-  /* useEffect hook to update the active state of each menu item whenever
-  the corresponding state changes. */
   useEffect(() => {
     const path = window.location.pathname;
     setIsActiveDashboard(path === '/dashboard');
@@ -232,7 +226,6 @@ const SideNavBar = (props) => {
           </MenuItem>
 
           <MenuItem
-            /* component={<Link to="/logout" />} */
             className={styles.logout_item}
             onClick={() => setModalShow(true)}
             id={styles.menuItemLink}>
@@ -241,8 +234,6 @@ const SideNavBar = (props) => {
           </MenuItem>
         </Menu>
       </Sidebar>
-      {/* show the modal based on the state */}
-      {/* if open modal is true open the modal */}
       <LogOutModal show={modalShow} onHide={() => setModalShow(false)} />
     </div>
   );

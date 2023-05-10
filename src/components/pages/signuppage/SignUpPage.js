@@ -28,14 +28,6 @@ const SignUpPage = () => {
             <div className={classes.labelNames}>
               <label htmlFor="fname">First Name</label>
               <label htmlFor="lname">Last name</label>
-              {/* <input
-                  className={classes.namesInputs}
-                  type="text"
-                  placeholder="Enter your first name"
-                  required
-                  value={firstName}
-                  onChange={(e) => setFirstName(e.target.value)}
-                /> */}
             </div>
             <div className={classes.namesInputs}>
               <input
@@ -50,15 +42,6 @@ const SignUpPage = () => {
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
               />
-
-              {/* <input
-                  className={classes.namesInputs}
-                  type="text"
-                  placeholder="Enter your last name"
-                  required
-                  value={lastName}
-                  onChange={(e) => setLastName(e.target.value)}
-                /> */}
             </div>
 
             <div className={classes.emailPasswordContainer}>
