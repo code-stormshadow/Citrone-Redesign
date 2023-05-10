@@ -13,13 +13,13 @@ const ThirdComponent = () => {
       <section className={classes['Third-section-container']}>
         <div className={classes['third-container-heading-container']}>
           <div>
-            <img src={Lightning1} alt="" />
+            <img id={classes.Lightning} src={Lightning1} alt="" />
           </div>
           <div>
             <h1 className={classes['third-section-heading']}>Effective learning</h1>
           </div>
           <div>
-            <img src={Lightning2} alt="" />
+            <img id={classes.Lightning1} src={Lightning2} alt="" />
           </div>
         </div>
         <div className={classes['second-container-paragraph']}>
@@ -34,10 +34,10 @@ const ThirdComponent = () => {
         </div>
         <div className={classes['third-section-image']}>
           <div>
-            <img src={LessonPage} alt="" />
+            <img id={classes['third-container-image-1']} src={LessonPage} alt="" />
           </div>
           <div>
-            <img src={Dashboard} alt="" />
+            <img id={classes['third-container-image-1']} src={Dashboard} alt="" />
           </div>
         </div>
         <footer>
