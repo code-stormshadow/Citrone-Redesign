@@ -2,14 +2,14 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import FirstComponent from './FirstComponent';
 import SecondComponent from './SecondComponent';
-// import ThirdComponent from './ThirdComponent';
+import ThirdComponent from './ThirdComponent';
 
 const LandingPage = () => {
   return (
     <div>
       <FirstComponent />
       <SecondComponent />
-      {/* <ThirdComponent /> */}
+      <ThirdComponent />
     </div>
   );
 };
