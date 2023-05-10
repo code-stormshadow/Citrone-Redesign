@@ -19,7 +19,7 @@
   src: url(/src/components/pages/font/Mont-Light.ttf);
 }
 
-/* DashBoard styling starts here */ 
+ /* DashBoard styling starts here */ 
   .greetings span {
     margin-left: 2.8rem;
     font-size: .92rem;
@@ -275,13 +275,13 @@
 
 .tableLink {
   font-family: regular-mont;
-font-style: normal;
-font-weight: 500;
-font-size: 0.9rem;
-line-height: 16px;
-text-decoration-line: underline;
-color: #3A3A3A;
-padding-top: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 16px;
+  text-decoration-line: underline;
+  color: #3A3A3A;
+  padding-top: 1rem;
 }
 
 .tableLink:hover {
