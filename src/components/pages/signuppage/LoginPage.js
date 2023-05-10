@@ -3,73 +3,73 @@ import Logo from './images/Mask group.png';
 import Eye from './images/Eye.png';
 import classes from '../signuppage/SignUp.module.css';
 import { Link, useNavigate } from 'react-router-dom';
-import { useForm } from 'react-hook-form';
+import Eyedisplay from './images/Eyedisplay.png';
+
+// import { useForm } from 'react-hook-form';
+
 // import { useEffect } from 'react';
 
 const LoginPage = () => {
-  const {
-    register,
-    formState: { errors },
-    handleSubmit
-  } = useForm();
-
+  // Define state variables for email and password inputs, error message, and password visibility
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate();
-  // const navigate = useNavigate();
+  const [error, setError] = useState('');
+  const [showPassword, setPasswordVisible] = useState(false);
 
-  const handleFetch = async (e) => {
-    e.preventDefault();
-    navigate('/login');
-    let result = await fetch('https://citrone-lms.onrender.com/api/auth/signup', {
-      crossDomain: true,
-      method: 'POST',
-      body: JSON.stringify({ firstName, lastName, email, password, track: 'UI/UX' }),
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json'
+  // Use the useHistory hook to access the history object for navigation
+  const navigate = useNavigate();
+
+  // Define event handlers for email and password input changes
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+    setError('');
+  };
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+    setError('');
+  };
+
+  // Define event handler for form submission
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      // Make an API call to validate the user's credentials
+      const response = await fetch('https://example.com/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+      });
+
+      if (response.ok) {
+        // If the response is successful, log in the user and navigate to the home page
+        console.log(`Success! Logged in as ${email}`);
+        navigate('/');
+      } else {
+        // If the response is not successful, set an error message
+        const data = await response.json();
+        setError(data.error);
       }
-    });
-    result = await result.json();
-    console.log('result', result);
-    if (result.success) {
-      // setSignUpSuccess(true);
+    } catch (error) {
+      console.error(error);
+      setError('Error: Something went wrong');
     }
   };
-  // const onSubmit = async (data) => {
-  //   try {
-  //     const response = await fetch('https://citrone-lms.onrender.com/api/auth/login', {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json'
-  //       },
-  //       body: JSON.stringify(data)
-  //     });
 
-  //     if (!response.ok) {
-  //       throw new Error('Login failed!');
-  //     }
-
-  //     navigate('/dashboard');
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-    // function Greeting() {
-    //   const [isNewUser, setIsNewUser] = useState(false);
-
-    //   useEffect(() => {
-    //     const isNew = localStorage.getItem('isNewUser') === 'true';
-    //     setIsNewUser(isNew);
-    //   }, []);
-    // }
+  // Define event handler for password visibility toggle
+  const handlePasswordToggle = () => {
+    setPasswordVisible(!showPassword);
   };
+
+  // Render the login form with email and password inputs, error message, password visibility toggle, and submit button
+
   return (
     <div className={classes.loginDiv}>
       <header id={classes.logInFormHeader}>
         <img id={classes.logInLogoImg} src={Logo}></img>
         <h1 id={classes.citroneTextHeader}>Citrone</h1>
       </header>
-      <form id={classes.logInForm} onSubmit={handleSubmit(onSubmit)}>
+      <form id={classes.logInForm} onSubmit={handleSubmit}>
         <h1 id={classes.logInHeader}>Log into your account</h1>
         <div id={classes.greetingDiv}>
           <h1 id={classes.greetingHeader}>
@@ -85,21 +85,13 @@ const LoginPage = () => {
               </label>{' '}
               <br />
               <input
-                {...register('email', {
-                  required: true,
-                  pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/i
-                })}
                 className={classes.emailInputForLogin}
                 type="email"
                 placeholder="Enter your email"
                 required
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={handleEmailChange}
               />
-              <div className={classes.emailRequired}>
-                {errors.email?.type === 'required' && 'Email is required'}
-                {errors.email?.type === 'pattern' && 'Entered email is in wrong format'}
-              </div>
             </div>
             <div className={classes.loginPassword}>
               <div className={classes.passwordLabelsForLogin}>
@@ -118,20 +110,16 @@ const LoginPage = () => {
                   placeholder="Enter your password"
                   required
                   value={password}
-                  // onBlur={'password'}
-                  onChange={(e) => setPassword(e.target.value)}
-                  // {...register('password', {
-                  //   required: true
-                  // })}
+                  onBlur={(e) => setPassword(e.target.value)}
+                  onChange={handlePasswordChange}
                 />
-                <div>{email && errors.email}</div>
-                <div className={classes.passwordRequired}>
-                  {errors.password?.type === 'required' && 'password is required'}
-                </div>
-
-                <i className={classes.showLPassword}>
-                  <img id={classes.changePasswordEye} src={Eye}></img>
-                </i>
+                <label className={classes.showPassword}>
+                  <img
+                    id={classes.changePasswordEye}
+                    src={showPassword ? Eyedisplay : Eye}
+                    alt="Toggle password visibility"
+                    onClick={handlePasswordToggle}></img>
+                </label>
               </div>
 
               <div className={classes['login-checkbox']}>
@@ -142,7 +130,8 @@ const LoginPage = () => {
               </div>
             </div>
           </div>
-          <button className={classes.loginBtn} type="submit">
+          {error && <div>{error}</div>}
+          <button className={classes.loginBtn} type="submit" onSubmit={handleSubmit}>
             Log In
           </button>
           <p id={classes.loginLastPara}>

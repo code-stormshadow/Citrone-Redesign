@@ -1,12 +1,10 @@
-/*import Button from 'react-bootstrap/Button';
-import ModalIcon from '../images/modal-icon.svg'; */
 import Modal from 'react-bootstrap/Modal';
 import styles from './/Dashboard.module.css';
 import { useState } from 'react';
-import SubmittedModal from './SubmittedModal';
+import ResubmittedModal from './ResubmittedModal';
 
-function SubmitModal(props) {
-  /* to open the submitted popup */
+function Resubmit(props) {
+  // to open the submitted popup
   const [modalShow, setModalShow] = useState(false);
 
   return (
@@ -16,7 +14,7 @@ function SubmitModal(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
       className={styles.modal}>
-      <h2 className={styles.submitQuestion}>Are you sure you want to submit?</h2>
+      <h2 className={styles.submitQuestion}>Re-submit?</h2>
       <div className={styles.buttons}>
         <div>
           {/* eslint-disable-next-line react/prop-types */}
@@ -30,9 +28,9 @@ function SubmitModal(props) {
           </button>
         </div>
       </div>
-      <SubmittedModal show={modalShow} onHide={() => setModalShow(false)} />
+      <ResubmittedModal show={modalShow} onHide={() => setModalShow(false)} />
     </Modal>
   );
 }
 
-export default SubmitModal;
+export default Resubmit;

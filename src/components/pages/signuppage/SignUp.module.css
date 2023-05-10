@@ -24,7 +24,7 @@
     background: #F8E8E9;
 
   } */
-   /* styling for signUp Page starts here*/
+   /* styling for signUp Page starts here */
 
 .signUp-container, .forgotPasswordMainDiv{  /* parent div style for all pages except the set password page*/
     background: #F8E8E9;
@@ -41,15 +41,15 @@
 .contentContainer, #forgotPassContent-div{
     padding-left: 70px;
 }
-#headerLogo, #forgotPassHeader{                         /* header styles for both signup and forgot password Pages*/
-    width: 180px;                                        /* the header here contains the logo and it's accompany text*/
+#headerLogo, #forgotPassHeader{                         /* header styles for both signup and forgot password Pages */
+    width: 180px;                                        /* the header here contains the logo and it's accompany text */
     display: flex;
     flex-direction: row;
     gap: 3px;
     margin-left: 30px;
     margin-bottom: 10px;
 }
-#imgHeaderLogo, #forgotPassLogo{                        /* Citrone logo styles for both signUp and forgot password Pages*/
+#imgHeaderLogo, #forgotPassLogo{                        /* Citrone logo styles for both signUp and forgot password Pages */
     height: 50px;
 } 
   
@@ -127,15 +127,27 @@
 .fNameInput:hover{
     background: #F8E8E9;
 }
+.fNameinput[type="text"]:focus {
+    background-color: yellow;
+  }
 .lNameInput:hover{
     background: #F8E8E9;
 
+}
+.error{
+    color: red;
+    font-size: small;
+    margin-left: 35px;
 }
 .emailPasswordContainer{
     display: flex;
     flex-direction: column;
     gap: 30px;
     margin-bottom: 20px;  
+}
+.signUpFieldPassword{
+    display: flex;
+    flex-direction: row;
 }
 .inputPasswordEmail{
     width: 88%;
@@ -153,7 +165,7 @@
 
 }
 #changePasswordEye{
-    position: absolute;
+    /* position: absolute; */
     width: 20px;
     height: 20px;
     margin-left: -33px;
@@ -254,7 +266,7 @@
     text-decoration: underline;
 }
 
-/* Styling for login Page Starts here*/
+/* Styling for login Page Starts here */
 
 .loginDiv{
     background: #F8E8E9;
@@ -334,10 +346,7 @@
     margin-left: 35px;
     border-width: thin;
 }
-.errors{
-    color: red;
-    font-size: small;
-}
+
 .loginPassword{
 display: flex;
 flex-direction: column;
@@ -474,12 +483,10 @@ flex-direction: column;
     margin: 0 250px;
     font-family: regular-mont;
     font-size: 18px;
-    
-}
+}  
+/* Styling for forgot Password Page Starts here */
 
-/* Styling for forgot Password Page Starts here*/
-
-.forgotPassword-container{          /* style for header in form for forgot password  and set password Pages*/
+.forgotPassword-container{          /* style for header in form for forgot password  and set password Pages */
     display: block;
     width: 43%;
     font-size: 28px;

@@ -13,6 +13,7 @@ function SignUpAndLoginForm() {
   };
 
   const handleSignUp = (data) => {
+    e.preventDefault();
     // Code to submit the sign-up form and create a new user
     setIsNewUser(true);
     localStorage.setItem('newUser', true);

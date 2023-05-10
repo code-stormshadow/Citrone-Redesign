@@ -8,49 +8,49 @@ import House from './images/House.png';
 import Student from './images/Student & Tutors.png';
 import Questions from './images/QUIZ questions 1.png';
 import Carousel from './MultiCarousel';
-// import { useState } from 'react';
+/* import { useState } from 'react'; */
 
 const SecondComponent = () => {
-  // const [carouselImages, setCarouselImages] = useState([
-  //   {
-  //     id: 1,
-  //     imageUrl: './images/UiUxImage.png',
-  //     heading: ' UI/UX Design',
-  //     paragraph:
-  //       "You'll learn how to transform user research to high-fidelity interactive designs..."
-  //   },
-  //   {
-  //     id: 2,
-  //     imageUrl: './images/Frontend.png',
-  //     heading: 'Frontend Development',
-  //     paragraph: 'You’ll build exciting portfolios while learning the fundamentals of HTML, CSS...'
-  //   },
-  //   {
-  //     id: 3,
-  //     imageUrl: './images/Backend.png',
-  //     heading: 'Backend Development',
-  //     paragraph: "You'll learn the fundamentals of backend development, build a job ready port..."
-  //   },
-  //   {
-  //     id: 4,
-  //     imageUrl: './images/DataScience.png',
-  //     heading: 'Data Science',
-  //     paragraph: 'You’ll learn the fundamentals of Python, data science and machine learning...'
-  //   },
-  //   {
-  //     id: 5,
-  //     imageUrl: './images/MobileDev.png',
-  //     heading: 'Mobile Development',
-  //     paragraph: "You'll learn the best practices for mobile development, build a portfolio of..."
-  //   },
-  //   {
-  //     id: 6,
-  //     imageUrl: './images/SoftwareTesting.png',
-  //     heading: 'Software Testing',
-  //     paragraph:
-  //       "You'll learn to ensure that products match expected requirements while free of defects."
-  //   }
-  // ]);
+  /* const [carouselImages, setCarouselImages] = useState([
+    {
+      id: 1,
+      imageUrl: './images/UiUxImage.png',
+      heading: ' UI/UX Design',
+      paragraph:
+        "You'll learn how to transform user research to high-fidelity interactive designs..."
+    },
+    {
+      id: 2,
+      imageUrl: './images/Frontend.png',
+      heading: 'Frontend Development',
+      paragraph: 'You’ll build exciting portfolios while learning the fundamentals of HTML, CSS...'
+    },
+    {
+      id: 3,
+      imageUrl: './images/Backend.png',
+      heading: 'Backend Development',
+      paragraph: "You'll learn the fundamentals of backend development, build a job ready port..."
+    },
+    {
+      id: 4,
+      imageUrl: './images/DataScience.png',
+      heading: 'Data Science',
+      paragraph: 'You’ll learn the fundamentals of Python, data science and machine learning...'
+    },
+    {
+      id: 5,
+      imageUrl: './images/MobileDev.png',
+      heading: 'Mobile Development',
+      paragraph: "You'll learn the best practices for mobile development, build a portfolio of..."
+    },
+    {
+      id: 6,
+      imageUrl: './images/SoftwareTesting.png',
+      heading: 'Software Testing',
+      paragraph:
+        "You'll learn to ensure that products match expected requirements while free of defects."
+    }
+  ]); */
 
   return (
     <div>
@@ -121,4 +121,4 @@ const SecondComponent = () => {
 
 export default SecondComponent;
 
-// carouselImages={carouselImages} setCarouselImages={setCarouselImages}
+/* carouselImages={carouselImages} setCarouselImages={setCarouselImages} */

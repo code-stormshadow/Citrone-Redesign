@@ -2,8 +2,20 @@ import React from 'react';
 import classes from './SignUp.module.css';
 import Logo from './images/Mask group.png';
 import emailSent from './images/emailSent.gif';
+import { useNavigate, useEffect } from 'react';
 
 const CheckMail = () => {
+  const history = useNavigate();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      history.push('/other-page'); // replace with the path of the page you want to navigate to
+    }, 5000);
+
+    // Clear the timeout if the component is unmounted
+    return () => clearTimeout(timer);
+  }, [history]);
+
   return (
     <div id={classes.checkMailMainDiv}>
       <header id={classes.logInFormHeader}>

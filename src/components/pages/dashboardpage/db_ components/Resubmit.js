@@ -10,22 +10,34 @@ import { Link } from 'react-router-dom';
 import Alarm from '..//images/alarm.svg';
 import Editor from './Editor';
 import DeleteIcon from '..//images/delete.svg';
-import SubmitModal from './SubmitModal';
-/* import PlusIcon from '..//images/plus-modified.png'; */
+import Resubmit from './ResubmitModal';
+// import SubmitModal from './SubmitModal';
+// import { useState } from 'react';
+// import PlusIcon from '..//images/plus-modified.png';
 
-const LessonOneAssignment = () => {
-  /* create state variables */
+const ReSubmit = () => {
+  // create state variables
   const [fileName, setFileName] = useState('');
   const [fileSize, setFileSize] = useState('');
   const [error, setError] = useState('');
-  /* hook to create a reference to the file input element */
+  // useref hook to create a reference to the file input element
   const fileInputRef = useRef(null);
-  // to prevent the user from submitting a large file
-  const [submitDisabled, setSubmitDisabled] = useState(true);
 
   // function when the user selects a file
   // it takes an event as a parameter and extracts the first file in the event target
   // sets the file name state variable to its name
+  // function handleFileUpload(event) {
+  //   const files = event.target.files;
+  //   if (files && files.length > 0) {
+  //     const file = files[0];
+  //     setFileInfo({
+  //       name: file.name,
+  //       size: file.size
+  //     });
+  //     // setFileName(files[0].name);
+  //   }
+  // }
+
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
     if (file.size > 2 * 1024 * 1024) {
@@ -35,17 +47,16 @@ const LessonOneAssignment = () => {
     setFileName(file.name);
     setFileSize(convertBytes(file.size));
     setError('');
-    setSubmitDisabled(false);
   };
 
-  /* function to delete the file */
+  // function to delete the file
   function handleDeleteFile() {
     setFileName(null);
     setFileSize(null);
   }
 
-  /* function to convert the size of the file in bytes and return
-  a string in KB or MB */
+  // function to convert the size of the file in bytes and return
+  // a string in KB or MB
   function convertBytes(bytes, decimals = 2) {
     if (bytes === 0) {
       return '0 Bytes';
@@ -57,7 +68,7 @@ const LessonOneAssignment = () => {
     return parseFloat((bytes / Math.pow(kB, i)).toFixed(dM)) + ' ' + sizes[i];
   }
 
-  /* to open the popup */
+  // to open the popup
   const [modalShow, setModalShow] = useState(false);
 
   return (
@@ -138,17 +149,14 @@ const LessonOneAssignment = () => {
               )}
             </div>
           </div>
-          <button
-            className={styles.lessonSubmit}
-            onClick={() => setModalShow(true)}
-            disabled={submitDisabled}>
-            Submit
+          <button className={styles.lessonSubmit} onClick={() => setModalShow(true)}>
+            Re-submit
           </button>
-          <SubmitModal show={modalShow} onHide={() => setModalShow(false)} />
+          <Resubmit show={modalShow} onHide={() => setModalShow(false)} />
         </div>
       </div>
     </div>
   );
 };
 
-export default LessonOneAssignment;
+export default ReSubmit;
