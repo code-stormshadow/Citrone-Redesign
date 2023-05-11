@@ -26,6 +26,25 @@ import { useState, useEffect } from 'react';
 
 function App() {
   const [isNewUser, setIsNewUser] = useState(false);
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const getFirstName = (e) => {
+    setFirstName(e.target.value);
+  };
+
+  const getLastName = (e) => {
+    setLastName(e.target.value);
+  };
+
+  const getEmail = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const getPassword = (e) => {
+    setPassword(e.target.value);
+  };
 
   const Greeting = () => {
     const classes = {
@@ -59,7 +78,20 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<LandingPage />}></Route>
-        <Route path="signup" element={<SignUpPage />}></Route>
+        <Route
+          path="signup"
+          element={
+            <SignUpPage
+              getFirstName={getFirstName}
+              getLastName={getLastName}
+              getEmail={getEmail}
+              getPassword={getPassword}
+              firstName={firstName}
+              lastName={lastName}
+              email={email}
+              password={password}
+            />
+          }></Route>
         <Route path="login" element={<LoginPage isNewUser={isNewUser} />}></Route>
         <Route path="forgot-password" element={<ForgotPasswordPage />}></Route>
         <Route path="checkmail" element={<CheckMail />}></Route>
@@ -81,6 +113,7 @@ function App() {
         <Route path="quizgrade" element={<Quiz2Grade />}></Route>
         <Route path="lesson-1-assignment" element={<LessonOneAssignment />}></Route>
         <Route path="re-submit" element={<ReSubmit />}></Route>
+        <Route path="signuplogin" element={<ReSubmit />}></Route>
       </Routes>
     </div>
   );
