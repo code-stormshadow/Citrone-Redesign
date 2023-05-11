@@ -76,9 +76,11 @@ const ForgotPasswordPage = () => {
             {errorMsg && <div className={classes.errorMsg}>{errorMsg}</div>}
             {successMsg && <div className={classes.successMsg}>{successMsg}</div>}
           </div>
-          <button className={classes.forgotPassBtn} type="submit">
-            Next
-          </button>
+          <Link to="/checkmail">
+            <button className={classes.forgotPassBtn} type="submit">
+              Next
+            </button>
+          </Link>
           <p id={classes.forgotPasswordBottomParagraph}>
             Already have an account?{' '}
             <Link className={classes.forgotPasslogInLink} to="/login">

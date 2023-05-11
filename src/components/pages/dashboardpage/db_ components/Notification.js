@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Polygon from '../images/polygon.svg';
 import styles from './/Dashboard.module.css';
 import TimiNotification from '..//images/notificationTimi.png';
@@ -12,6 +12,20 @@ import NotificationModal from './NotificationModal';
 
 const Notification = () => {
   const [modalShow, setModalShow] = useState(false);
+
+  // eslint-disable-next-line no-unused-vars
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const handleView = () => {
+    setModalShow(true);
+    setShowDropdown(true);
+  };
+
+  useEffect(() => {
+    if (modalShow) {
+      setShowDropdown(true);
+    }
+  }, [modalShow]);
 
   return (
     <div>
@@ -116,9 +130,9 @@ const Notification = () => {
         </div>
 
         <div className={styles.notificationLinkContainer}>
-          <Link to="" className={styles.notificationLink} onClick={() => setModalShow(true)}>
+          <p className={styles.notificationLink} onClick={handleView}>
             View all
-          </Link>
+          </p>
         </div>
       </div>
       <NotificationModal show={modalShow} onHide={() => setModalShow(false)} />
