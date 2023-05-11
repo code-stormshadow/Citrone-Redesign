@@ -101,6 +101,7 @@ const Settings = () => {
                     <input
                       type="text"
                       name="bio"
+                      value="bio"
                       className={styles.formBio}
                       placeholder="I am passionate about creating intuitive and visually appealing products that solve real-world problems for users. I have experience working on mobile and web applications, SaaS platforms, and e-commerce websites."
                     />
