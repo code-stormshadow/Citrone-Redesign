@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: regular-mont;
-  src: url(//src/components/pages/font/Mont-Regular.ttf);
+  src: url(/src/components/pages/font/Mont-Regular.ttf);
 }
 
 @font-face {
@@ -19,8 +19,7 @@
   src: url(/src/components/pages/font/Mont-Light.ttf);
 }
 
-* DashBoard styling starts here */ 
-/* Main Styling starts here */
+ /* DashBoard styling starts here */ 
   .greetings span {
     margin-left: 2.8rem;
     font-size: .92rem;
@@ -110,7 +109,6 @@
     margin-right: 1rem;
   }
 
-/* incomplete task styling */
 .incomplete_task_wrapper {
   width: 850px;
   height: 368px;
@@ -170,25 +168,21 @@
   margin-left: 9.7rem;
 }
 
-/* incomplete task styling ends */
 
-/* Table styling */
 .table {
-  overflow-y: scroll; /* Add the ability to scroll */
+  overflow-y: scroll; 
   width: 100px;
   height: 300px;
   margin-top: .6rem;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 .table::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 .table {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
   padding-left: 1rem !important;
 }
 
@@ -209,22 +203,14 @@
   margin-left: 2rem;
   margin-top: -2rem;
   line-height: 19px;
-  /* border: 1px solid red; */
   width: 310px;
 }
 
 .warningIcon {
-  /* border: 1px solid blue; */
   width: 22px;
   height: 21px;
   margin-top: 0.8rem;
 }
-
-/* .dataWidth {
-  border: 1px solid red;
-  width: 250px;
-  height: 36px;
-} */
 
 .fixed {
   margin-left: 2.3rem;
@@ -289,17 +275,16 @@
 
 .tableLink {
   font-family: regular-mont;
-font-style: normal;
-font-weight: 500;
-font-size: 0.9rem;
-line-height: 16px;
-text-decoration-line: underline;
-color: #3A3A3A;
-padding-top: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 16px;
+  text-decoration-line: underline;
+  color: #3A3A3A;
+  padding-top: 1rem;
 }
 
 .tableLink:hover {
   cursor: pointer;
   color: #3A3A3A;
 }
-/* Table styling ends */

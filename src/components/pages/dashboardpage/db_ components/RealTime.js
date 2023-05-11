@@ -21,7 +21,7 @@ const RealTime = () => {
         <img src={RecordingIcon} className={styles.liveIcon} />
       </div>
 
-      <Link to="./completed-modules" className={styles.link}>
+      <Link to="/completed-modules" className={styles.link}>
         <div className={styles.cardBox}>
           <p>
             <span className={styles.cardText}>Completed Modules</span>
@@ -65,7 +65,7 @@ const RealTime = () => {
         </div>
       </Link>
 
-      <Link to="./completed-modules" className={styles.link}>
+      <Link to="/completed-modules" className={styles.link}>
         <div className={styles.cardBox}>
           <p>
             <span className={styles.cardText}>Completed Quiz...</span>

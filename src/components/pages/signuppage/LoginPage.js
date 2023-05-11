@@ -121,6 +121,7 @@ const LoginPage = () => {
                     onClick={handlePasswordToggle}></img>
                 </label>
               </div>
+              {error && <div className={classes.error}>{error}</div>}
 
               <div className={classes['login-checkbox']}>
                 <input type="checkbox" />
@@ -130,7 +131,6 @@ const LoginPage = () => {
               </div>
             </div>
           </div>
-          {error && <div>{error}</div>}
           <button className={classes.loginBtn} type="submit" onSubmit={handleSubmit}>
             Log In
           </button>

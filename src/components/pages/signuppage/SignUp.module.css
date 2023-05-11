@@ -18,13 +18,7 @@
     padding: 0;
     margin: 0;
   }
-/* body {
-    height: 100%;
-    width: 100%;
-    background: #F8E8E9;
 
-  } */
-   /* styling for signUp Page starts here */
 
 .signUp-container, .forgotPasswordMainDiv{  /* parent div style for all pages except the set password page*/
     background: #F8E8E9;
@@ -41,15 +35,15 @@
 .contentContainer, #forgotPassContent-div{
     padding-left: 70px;
 }
-#headerLogo, #forgotPassHeader{                         /* header styles for both signup and forgot password Pages */
-    width: 180px;                                        /* the header here contains the logo and it's accompany text */
+#headerLogo, #forgotPassHeader{                         
+    width: 180px;                                        
     display: flex;
     flex-direction: row;
     gap: 3px;
     margin-left: 30px;
     margin-bottom: 10px;
 }
-#imgHeaderLogo, #forgotPassLogo{                        /* Citrone logo styles for both signUp and forgot password Pages */
+#imgHeaderLogo, #forgotPassLogo{                        
     height: 50px;
 } 
   
@@ -94,9 +88,8 @@
 .namesInputs{
     display: flex;
     flex-direction: row;
-    width: 88%;
-    gap: 5%;
-    margin-bottom: 20px;
+    
+    gap: 35%;
     color: #3a3a3a;
     margin-left: 35px;
     
@@ -266,7 +259,6 @@
     text-decoration: underline;
 }
 
-/* Styling for login Page Starts here */
 
 .loginDiv{
     background: #F8E8E9;
@@ -416,13 +408,9 @@ flex-direction: column;
   }
   
   input[type="checkbox"] {
-    /* Add if not using autoprefixer */
     -webkit-appearance: none;
-    /* Remove most all native input styles */
     appearance: none;
-    /* For iOS < 15 */
     background-color: var(--form-background);
-    /* Not removed via appearance */
     margin-top: 5px;
   
     font: inherit;
@@ -444,7 +432,6 @@ flex-direction: column;
     transform-origin: bottom left;
     transition: 120ms transform ease-in-out;
     box-shadow: inset 1em 1em var(--form-control-color);
-    /* Windows High Contrast Mode */
     background-color: CanvasText;
   }
   
@@ -486,7 +473,7 @@ flex-direction: column;
 }  
 /* Styling for forgot Password Page Starts here */
 
-.forgotPassword-container{          /* style for header in form for forgot password  and set password Pages */
+.forgotPassword-container{          
     display: block;
     width: 43%;
     font-size: 28px;
@@ -511,7 +498,15 @@ flex-direction: column;
     margin-bottom: 30px;
     width: 75%;
 }
-.forgotPassBtn{             /* button styles for both forgot password page and set password page */
+#confirmNewPassword{   
+    border: 1px solid #A2A2A2;         /* input styles for login, forgot password and set password Pages*/
+    width: 77%;                                          /* passwordInputForlogin is the password input style for the login page*/
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 35px;
+    border-width: thin;
+}
+.forgotPassBtn{            
     width: 77%;
     border: none;
     border-radius: 5px;

@@ -1,16 +1,16 @@
 @font-face {
   font-family: regular-mont;
-  src: url(//src/components/pages/font/Mont-Regular.ttf);
+  src: url(/src/components/pages/font/Mont-Regular.ttf);
 }
 
 @font-face {
   font-family: semi-bold-mont;
-  src: url(//src/components/pages/font/Mont-SemiBold.ttf);
+  src: url(/src/components/pages/font/Mont-SemiBold.ttf);
 }
 
 @font-face {
   font-family: bold-mont;
-  src: url(//src/components/pages/font/Mont-Bold.ttf);
+  src: url(/src/components/pages/font/Mont-Bold.ttf);
 }
 * {
   box-sizing: border-box;
@@ -67,8 +67,7 @@
   margin: 20px 50px 0 100px;
   height: 73%;
   overflow: scroll;
-  /* overflow-y: scroll;
-  overflow-x: hidden; */
+  
     
 }
   
@@ -210,7 +209,6 @@ padding: 1px 20px;
 }
   
   
-  /* styles for Lesson Assignments Page starts here */
 
 .lessonModulesMainDiv{
   
@@ -238,7 +236,6 @@ padding: 1px 20px;
   color: #f54f59;
   font-family: semi-bold-mont;
   font-size: 16px;
-  
 }
 span{
   color: #252525;
@@ -259,14 +256,12 @@ span{
 .lessonParagraphsGraded{
   height: 7rem;
   padding: 1px 0px 1px 20px;
-  
 }
 
 .gradedParagraph{
   color: #1A9447;
   font-family: regular-mont;
   font-size: 16px; 
-
 }
 .viewGradeBtn{
   outline: none;
@@ -281,11 +276,9 @@ span{
   padding: 8px 1px 8px;
   margin: 30px 0px 0 80px;
   border: none;
-
 }
 .viewGradeBtn:hover{
   background: #078134;
-
 }
 .viewGradeLink{
   text-decoration: none;
@@ -296,7 +289,6 @@ span{
   color: #ffffff;
 }
 
-/* Styles for lesson module 2 starts here */
 
 .lessonParagraphsElapsed{
   height: 7rem;
@@ -319,10 +311,8 @@ span{
   padding: 8px 1px 8px;
   margin: 30px 0 0 80px;
   border: none;
-
 }
 
-/* Styles for lesson module 3 starts here */
 
 .lessonParagraphsAwaiting{
   width: 40rem;
@@ -351,16 +341,11 @@ span{
   padding: 8px 16px 8px 16px;
   margin: 30px 20px 0 20px;
   border: none;
-
 }
 .reSubmitBtn:hover{
-  
   background: #d1424c;
-  
-
 }
 
-/* Styles for lesson module 4 starts here */
 
 .unStartedDueDate{
   color: #f54f59;
@@ -385,7 +370,6 @@ span{
 }
 
 
-/* Styles for Lesson grades page starts here */
 
 .assignmentsMainWrapperForGrades {
   display: flex;
@@ -485,7 +469,6 @@ span{
 
 }
 
-/* Styles for Grades breakdown page starts here */
 
 .gradesBreakdownDiv{
   height: 100%;
