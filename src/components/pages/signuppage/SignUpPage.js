@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useRef } from 'react';
 import Logo from './images/Mask group.png';
 import Eye from './images/Eye.png';
@@ -9,15 +9,13 @@ import Asterisk from './images/Asterisk.png';
 import classes from './SignUp.module.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 // import { useForm } from 'react-hook-form';
 
-const SignUpPage = () => {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
+const SignUpPage = ({ getFirstName, getLastName, getEmail, getPassword }) => {
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
@@ -52,8 +50,9 @@ const SignUpPage = () => {
     if (data.firstName && data.lastName && data.email && data.password) {
       handleSubmit(data);
     } else {
-      console.log('Please fill all the fields');
+      return 'Please fill all the fields';
     }
+    navigate('/login');
   };
 
   // const [isNewUser, setIsNewUser] = useState(false);
@@ -187,8 +186,8 @@ const SignUpPage = () => {
                 <br />
                 <input
                   placeholder="Enter your first name"
-                  value={firstName}
-                  onChange={(e) => setFirstName(e.target.value)}
+                  // value={getFirstName}
+                  onChange={getFirstName}
                   className={classes.fNameInput}
                   {...register('firstName', { required: true })}
                 />
@@ -203,10 +202,11 @@ const SignUpPage = () => {
                 <br />
 
                 <input
+                  type="text"
                   placeholder="Enter your last name"
                   className={classes.lNameInput}
-                  value={lastName}
-                  onChange={(e) => setLastName(e.target.value)}
+                  // value={getLastName}
+                  onChange={getLastName}
                   aria-invalid="true"
                   {...register('lastName', { required: true })}
                 />
@@ -230,8 +230,8 @@ const SignUpPage = () => {
                   className={classes.inputPasswordEmail}
                   type="email"
                   placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  // value={getEmail}
+                  onChange={getEmail}
                   {...register('email', { required: true, pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ })}
                 />
                 <br />
@@ -251,8 +251,8 @@ const SignUpPage = () => {
                   <input
                     className={classes.inputPasswordEmail}
                     type={showPassword ? 'text' : 'password'}
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    // value={getPassword}
+                    onChange={getPassword}
                     placeholder="Enter your password"
                     {...register('password', {
                       required: 'Please enter a password',
@@ -300,6 +300,10 @@ const SignUpPage = () => {
               <input
                 className={classes.admissionCode}
                 type="text"
+                maxLength={1}
+                min={0}
+                // max={9}
+                // onKeyDown={handleNumericInput}
                 {...register('input1', { required: true })}
               />
               <input
@@ -307,8 +311,8 @@ const SignUpPage = () => {
                 type="text"
                 maxLength={1}
                 min={0}
-                max={9}
-                onKeyDown={handleNumericInput}
+                // max={9}
+                // onKeyDown={handleNumericInput}
                 {...register('input2', { required: true })}
               />
               <input
@@ -317,7 +321,7 @@ const SignUpPage = () => {
                 maxLength={1}
                 min={0}
                 max={9}
-                onKeyDown={handleNumericInput}
+                // onKeyDown={handleNumericInput}
                 {...register('input3', { required: true })}
               />
               <input
@@ -371,6 +375,13 @@ const SignUpPage = () => {
       </div>
     </div>
   );
+};
+
+SignUpPage.propTypes = {
+  getFirstName: PropTypes.string,
+  getLastName: PropTypes.string,
+  getEmail: PropTypes.string,
+  getPassword: PropTypes.string
 };
 
 export default SignUpPage;
