@@ -88,11 +88,10 @@
 .namesInputs{
     display: flex;
     flex-direction: row;
-    
-    gap: 35%;
+    gap: 5%;
     color: #3a3a3a;
     margin-left: 35px;
-    
+    width: 826px;
 }
 .labelNames{
     flex-direction: row;
