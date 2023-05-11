@@ -116,16 +116,19 @@ const NavBar = () => {
                 </div>
 
                 <Menu>
-                  <MenuItem component={<Link to="/settings" />} className={styles.profileMenu}>
+                  <MenuItem
+                    component={<Link to="/settings" />}
+                    className={styles.profileMenu}
+                    id={styles.profileLink}>
                     <img src={ProfileIcon} alt="Icon" />
                     <span className={styles.spanLink}>Profile Information</span>
                   </MenuItem>
-                  <MenuItem component={<Link to="/settings" />}>
+                  <MenuItem component={<Link to="/settings" />} id={styles.profileLink}>
                     <img src={Border} alt="Border" className={styles.border} />
                     <img src={SettingsIcon} alt="Icon" className={styles.settingsIcon} />
                     <span className={styles.spanLink}>Settings</span>
                   </MenuItem>
-                  <MenuItem component={<Link to="/settings" />}>
+                  <MenuItem component={<Link to="/settings" />} id={styles.profileLink}>
                     <img src={LogOutIcon} alt="Icon" />
                     <span className={styles.spanLink}>Log Out</span>
                   </MenuItem>

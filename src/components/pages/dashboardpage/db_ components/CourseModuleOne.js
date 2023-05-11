@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styles from './/Dashboard.module.css';
 import NavBar from './NavBar';
 import SideNavBar from './SideNavBar';
@@ -11,6 +11,50 @@ import MariamPic from '..//images/mariam.png';
 import DameePic from '..//images/damee.png';
 
 const CourseModuleOne = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  /* cardRef that references the comment card element. */
+  const cardRef = useRef(null);
+  /* state variable to store the original height of the comment card.*/
+  const [defaultHeight, setDefaultHeight] = useState(0);
+  /* state variable to control the height dynamically. */
+  const [currentHeight, setCurrentHeight] = useState(0);
+
+  /* function to expand the card */
+  const handleViewMoreComments = () => {
+    setIsExpanded(true);
+  };
+
+  /* function to collapse the card */
+  const handleCollapseComments = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+  /* set the initial originalHeight and currentHeight values once when the component mounts. 
+  We calculate the originalHeight by accessing the offsetHeight property of the comment card element. */
+  useEffect(() => {
+    if (cardRef.current) {
+      setDefaultHeight(cardRef.current.offsetHeight);
+      setCurrentHeight(cardRef.current.offsetHeight);
+    }
+  }, []);
+
+  /* update the currentHeight whenever the isExpanded state changes. If the card is expanded, we set the currentHeight to 
+  the scrollHeight of the comment card element. else change it back to the originalHeight. */
+  useEffect(() => {
+    if (cardRef.current) {
+      if (isExpanded) {
+        setCurrentHeight(cardRef.current.scrollHeight);
+      } else {
+        setCurrentHeight(defaultHeight);
+      }
+    }
+  }, [isExpanded, defaultHeight]);
+
+  /* set the height dynamically using inline styles on the comment card element. */
+  const cardStyle = {
+    height: currentHeight + 'px'
+  };
+
   return (
     <div>
       <NavBar />
@@ -158,68 +202,227 @@ const CourseModuleOne = () => {
                 <div className={styles.lessonImage}></div>
               </div>
 
-              <div className={styles.moduleCommentCard}>
-                <div className={styles.commentsFlex}>
-                  <div>
-                    <h2 className={styles.commentTitle}>Comments</h2>
+              {isExpanded ? (
+                <div
+                  className={`${styles.moduleCommentCard} ${isExpanded ? styles.expandedCard : ''}`}
+                  style={cardStyle}
+                  ref={cardRef}>
+                  <div className={styles.commentsFlex}>
+                    <div>
+                      <h2 className={styles.commentTitle}>Comments</h2>
+                    </div>
+                    <div>
+                      <p className={styles.ratingText}>Leave a Rating</p>
+                      <object data={Star} className={styles.starComment}></object>
+                    </div>
                   </div>
-                  <div>
-                    <p className={styles.ratingText}>Leave a Rating</p>
-                    <object data={Star} className={styles.starComment}></object>
+
+                  <div className={styles.moduleComment}>
+                    <img src={TimiPic} alt="" className={styles.commentPic} />
+
+                    <input
+                      className={styles.commentSearchBar}
+                      placeholder="Leave a comment about the module"
+                      type="text"
+                    />
+
+                    <div className={styles.moduleChatBox}>
+                      <div className={styles.moduleChatFlex}>
+                        <div className={styles.moduleChatComment}>
+                          <h3 className={styles.moduleChatName}>Abdulkareem Mariam</h3>
+                          <p className={styles.moduleChatText}>
+                            Thank you so much for the very detailed explanation. I thought I wasn’t
+                            going to understand since I missed the class but the video did justice.
+                          </p>
+                        </div>
+                        <div>
+                          <img src={MariamPic} alt="" className={styles.chatPic} />
+                        </div>
+                      </div>
+
+                      <div className={styles.moduleChatReactionFlex}>
+                        <p className={styles.moduleChatDate}>5d ago</p>
+                        <p className={styles.moduleChatReaction}>Like</p>
+                        <p className={styles.moduleChatReaction}>Reply</p>
+                      </div>
+
+                      <div className={styles.moduleChatFlex}>
+                        <div className={styles.moduleChatCommentSmall}>
+                          <h3 className={styles.moduleChatName}>Damee</h3>
+                          <p className={styles.moduleChatText}>Thank you so much🔥⭐</p>
+                        </div>
+                        <div>
+                          <img src={DameePic} alt="" className={styles.chatPic} />
+                        </div>
+                      </div>
+
+                      <div className={styles.moduleChatReactionFlexSecond}>
+                        <p className={styles.moduleChatDate}>5d ago</p>
+                        <p className={styles.moduleChatReaction}>Like</p>
+                        <p className={styles.moduleChatReaction}>Reply</p>
+                      </div>
+
+                      <div className={styles.moduleChatFlex}>
+                        <div className={styles.moduleChatComment}>
+                          <h3 className={styles.moduleChatName}>Abdulkareem Mariam</h3>
+                          <p className={styles.moduleChatText}>
+                            Thank you so much for the very detailed explanation. I thought I wasn’t
+                            going to understand since I missed the class but the video did justice.
+                          </p>
+                        </div>
+                        <div>
+                          <img src={MariamPic} alt="" className={styles.chatPic} />
+                        </div>
+                      </div>
+
+                      <div className={styles.moduleChatReactionFlex}>
+                        <p className={styles.moduleChatDate}>5d ago</p>
+                        <p className={styles.moduleChatReaction}>Like</p>
+                        <p className={styles.moduleChatReaction}>Reply</p>
+                      </div>
+
+                      <div className={styles.moduleChatFlex}>
+                        <div className={styles.moduleChatCommentSmall}>
+                          <h3 className={styles.moduleChatName}>Damee</h3>
+                          <p className={styles.moduleChatText}>Thank you so much🔥⭐</p>
+                        </div>
+                        <div>
+                          <img src={DameePic} alt="" className={styles.chatPic} />
+                        </div>
+                      </div>
+
+                      <div className={styles.moduleChatReactionFlexSecond}>
+                        <p className={styles.moduleChatDate}>5d ago</p>
+                        <p className={styles.moduleChatReaction}>Like</p>
+                        <p className={styles.moduleChatReaction}>Reply</p>
+                      </div>
+
+                      <div className={styles.moduleChatFlex}>
+                        <div className={styles.moduleChatComment}>
+                          <h3 className={styles.moduleChatName}>Abdulkareem Mariam</h3>
+                          <p className={styles.moduleChatText}>
+                            Thank you so much for the very detailed explanation. I thought I wasn’t
+                            going to understand since I missed the class but the video did justice.
+                          </p>
+                        </div>
+                        <div>
+                          <img src={MariamPic} alt="" className={styles.chatPic} />
+                        </div>
+                      </div>
+
+                      <div className={styles.moduleChatFlex}>
+                        <div className={styles.moduleChatCommentSmall}>
+                          <h3 className={styles.moduleChatName}>Damee</h3>
+                          <p className={styles.moduleChatText}>Thank you so much🔥⭐</p>
+                        </div>
+                        <div>
+                          <img src={DameePic} alt="" className={styles.chatPic} />
+                        </div>
+                      </div>
+
+                      <div className={styles.moduleChatReactionFlexSecond}>
+                        <p className={styles.moduleChatDate}>5d ago</p>
+                        <p className={styles.moduleChatReaction}>Like</p>
+                        <p className={styles.moduleChatReaction}>Reply</p>
+                      </div>
+
+                      <div className={styles.moduleChatFlex}>
+                        <div className={styles.moduleChatComment}>
+                          <h3 className={styles.moduleChatName}>Abdulkareem Mariam</h3>
+                          <p className={styles.moduleChatText}>
+                            Thank you so much for the very detailed explanation. I thought I wasn’t
+                            going to understand since I missed the class but the video did justice.
+                          </p>
+                        </div>
+                        <div>
+                          <img src={MariamPic} alt="" className={styles.chatPic} />
+                        </div>
+                      </div>
+
+                      <div className={styles.moduleChatFlex}>
+                        <div className={styles.moduleChatCommentSmall}>
+                          <h3 className={styles.moduleChatName}>Damee</h3>
+                          <p className={styles.moduleChatText}>Thank you so much🔥⭐</p>
+                        </div>
+                        <div>
+                          <img src={DameePic} alt="" className={styles.chatPic} />
+                        </div>
+                      </div>
+                      <Link className={styles.moduleCollapse} onClick={handleCollapseComments}>
+                        Collapse
+                      </Link>
+                    </div>
                   </div>
                 </div>
-
-                <div className={styles.moduleComment}>
-                  <img src={TimiPic} alt="" className={styles.commentPic} />
-
-                  <input
-                    className={styles.commentSearchBar}
-                    placeholder="Leave a comment about the module"
-                    type="text"
-                  />
-
-                  <div className={styles.moduleChatBox}>
-                    <div className={styles.moduleChatFlex}>
-                      <div className={styles.moduleChatComment}>
-                        <h3 className={styles.moduleChatName}>Abdulkareem Mariam</h3>
-                        <p className={styles.moduleChatText}>
-                          Thank you so much for the very detailed explanation. I thought I wasn’t
-                          going to understand since I missed the class but the video did justice.
-                        </p>
-                      </div>
-                      <div>
-                        <img src={MariamPic} alt="" className={styles.chatPic} />
-                      </div>
+              ) : (
+                <div className={styles.moduleCommentCard}>
+                  <div className={styles.commentsFlex}>
+                    <div>
+                      <h2 className={styles.commentTitle}>Comments</h2>
                     </div>
-
-                    <div className={styles.moduleChatReactionFlex}>
-                      <p className={styles.moduleChatDate}>5d ago</p>
-                      <p className={styles.moduleChatReaction}>Like</p>
-                      <p className={styles.moduleChatReaction}>Reply</p>
-                    </div>
-
-                    <div className={styles.moduleChatFlex}>
-                      <div className={styles.moduleChatCommentSmall}>
-                        <h3 className={styles.moduleChatName}>Damee</h3>
-                        <p className={styles.moduleChatText}>Thank you so much🔥⭐</p>
-                      </div>
-                      <div>
-                        <img src={DameePic} alt="" className={styles.chatPic} />
-                      </div>
-                    </div>
-
-                    <div className={styles.moduleChatReactionFlexSecond}>
-                      <p className={styles.moduleChatDate}>5d ago</p>
-                      <p className={styles.moduleChatReaction}>Like</p>
-                      <p className={styles.moduleChatReaction}>Reply</p>
+                    <div>
+                      <p className={styles.ratingText}>Leave a Rating</p>
+                      <object data={Star} className={styles.starComment}></object>
                     </div>
                   </div>
 
-                  <Link to="" className={styles.moduleLinkComment}>
-                    View more comments
-                  </Link>
+                  <div className={styles.moduleComment}>
+                    <img src={TimiPic} alt="" className={styles.commentPic} />
+
+                    <input
+                      className={styles.commentSearchBar}
+                      placeholder="Leave a comment about the module"
+                      type="text"
+                    />
+
+                    <div className={styles.moduleChatBox}>
+                      <div className={styles.moduleChatFlex}>
+                        <div className={styles.moduleChatComment}>
+                          <h3 className={styles.moduleChatName}>Abdulkareem Mariam</h3>
+                          <p className={styles.moduleChatText}>
+                            Thank you so much for the very detailed explanation. I thought I wasn’t
+                            going to understand since I missed the class but the video did justice.
+                          </p>
+                        </div>
+                        <div>
+                          <img src={MariamPic} alt="" className={styles.chatPic} />
+                        </div>
+                      </div>
+
+                      <div className={styles.moduleChatReactionFlex}>
+                        <p className={styles.moduleChatDate}>5d ago</p>
+                        <p className={styles.moduleChatReaction}>Like</p>
+                        <p className={styles.moduleChatReaction}>Reply</p>
+                      </div>
+
+                      <div className={styles.moduleChatFlex}>
+                        <div className={styles.moduleChatCommentSmall}>
+                          <h3 className={styles.moduleChatName}>Damee</h3>
+                          <p className={styles.moduleChatText}>Thank you so much🔥⭐</p>
+                        </div>
+                        <div>
+                          <img src={DameePic} alt="" className={styles.chatPic} />
+                        </div>
+                      </div>
+
+                      <div className={styles.moduleChatReactionFlexSecond}>
+                        <p className={styles.moduleChatDate}>5d ago</p>
+                        <p className={styles.moduleChatReaction}>Like</p>
+                        <p className={styles.moduleChatReaction}>Reply</p>
+                      </div>
+                    </div>
+
+                    {!isExpanded && (
+                      <Link
+                        to=""
+                        className={styles.moduleLinkComment}
+                        onClick={handleViewMoreComments}>
+                        View more comments
+                      </Link>
+                    )}
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </div>
