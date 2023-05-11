@@ -1,0 +1,13 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "firstName": "John",
+        "lastName": "Okunowo",
+        "email": "johnOkunowo@gmail.com",
+        "password": "Password123",
+        "track": "UI/UX"
+      }
+    ]
+  }
+  
