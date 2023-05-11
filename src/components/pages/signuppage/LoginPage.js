@@ -132,9 +132,11 @@ const LoginPage = () => {
               </div>
             </div>
           </div>
-          <button className={classes.loginBtn} type="submit" onSubmit={handleSubmit}>
-            Log In
-          </button>
+          <Link to="/Dashboard">
+            <button className={classes.loginBtn} type="submit" onSubmit={handleSubmit}>
+              Log In
+            </button>
+          </Link>
           <p id={classes.loginLastPara}>
             Don&#39;t have an account?{' '}
             <Link className={classes.signUpLink} to="/signup">
