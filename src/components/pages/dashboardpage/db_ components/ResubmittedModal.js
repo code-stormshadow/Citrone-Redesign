@@ -23,7 +23,7 @@ function ResubmittedModal(props) {
           </Link>
         </div>
         <div>
-          <Link to="/">
+          <Link to="/assignment">
             <button className={styles.btnModule}>Back to assignment</button>
           </Link>
         </div>
