@@ -263,7 +263,7 @@
 .loginDiv{
     background: #F8E8E9;
     width: 100%;
-    height: 100%;
+    height: 820px;
     padding-top: 70px;
     padding-bottom: 70px;
     display: flex;
@@ -276,8 +276,8 @@
     display: flex;
     flex-direction: row;
     gap: 3px;
+    margin-top: 50px;
     margin-left: 75px;
-    margin-bottom: 10px;    
 }
 #logInLogoImg, #forgotPassLogo{
     height: 50px;
@@ -294,6 +294,7 @@
     padding: 40px 30px 40px 50px;
     width: 90%;
     border-radius: 5px;
+    margin-top: 10px;
     margin-left: 80px;
 }
 #logInHeader{

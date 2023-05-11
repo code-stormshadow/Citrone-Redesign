@@ -33,9 +33,10 @@ const LoginPage = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    // https://example.com/api/login
     try {
       // Make an API call to validate the user's credentials
-      const response = await fetch('https://example.com/api/login', {
+      const response = await fetch('https://citrone-lms.onrender.com/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
