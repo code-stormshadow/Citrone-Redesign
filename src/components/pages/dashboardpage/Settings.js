@@ -27,11 +27,11 @@ const Settings = () => {
           <div className={styles.settingsProfileFlex}>
             <div className={styles.settingProfileCard}>
               <img src={ProfilePic} alt="" className={styles.settingsProfilePic} />
-              <h3>Olurotimi Akinnagbe</h3>
-              <h5>UI/UX Design</h5>
+              <h3 className={styles.settingsProfileName}>Olurotimi Akinnagbe</h3>
+              <h5 className={styles.settingsProfileCourse}>UI/UX Design</h5>
               <div className={styles.settingsLocationFlex}>
                 <img src={NGFlag} alt="" />
-                <p>Lagos, Nigeria</p>
+                <p className={styles.settingsLocation}>Lagos, Nigeria</p>
               </div>
               <button className={styles.settingsProfileBtn}>Edit Profile</button>
             </div>
@@ -39,25 +39,74 @@ const Settings = () => {
               <h2 className={styles.settingsProfileText}>Profile Information</h2>
               <hr style={{ border: '1px solid rgba(217, 217, 217, 0.8);' }} />
               <form className={styles.settingsForm}>
-                <label>First Name</label>
-                <div>
-                  <input type="text" name="fname" />
-                </div>
+                <label>
+                  <span className={styles.settingsFormName}>First Name</span>
+                  <input
+                    type="text"
+                    name="fname"
+                    className={styles.input}
+                    placeholder="Olurotimi"
+                  />
+                </label>
 
-                <label>Last Name</label>
+                <label className={styles.formLastName}>
+                  Last Name
+                  <input
+                    type="text"
+                    name="lname"
+                    className={styles.input}
+                    placeholder="Akinnagbe"
+                  />
+                </label>
 
-                <input type="text" name="lname" />
-
-                <div>
+                <div className={styles.settingsFormDiv}>
                   <label>Email Address</label>
-                  <input type="email" name="email" />
+                  <div>
+                    <input
+                      type="email"
+                      name="email"
+                      className={styles.formEmail}
+                      placeholder="Tyrantakinnagbe@gmail.com"
+                    />
+                  </div>
                 </div>
-                <label>Country</label>
-                <input type="text" name="country" />
-                <label>City</label>
-                <input type="text" name="city" />
-                <label>Bio</label>
-                <input type="text" name="bio" />
+
+                <div className={styles.settingsFormDiv}>
+                  <label>Country</label>
+                  <div>
+                    <input
+                      type="text"
+                      name="country"
+                      className={styles.formInput}
+                      placeholder="Nigeria"
+                    />
+                  </div>
+                </div>
+
+                <div className={styles.settingsFormDiv}>
+                  <label>City</label>
+                  <div>
+                    <input
+                      type="text"
+                      name="city"
+                      className={styles.formInput}
+                      placeholder="Lagos"
+                    />
+                  </div>
+                </div>
+
+                <div className={styles.settingsFormDiv}>
+                  <label>Bio</label>
+                  <div>
+                    <input
+                      type="text"
+                      name="bio"
+                      value="bio"
+                      className={styles.formBio}
+                      placeholder="I am passionate about creating intuitive and visually appealing products that solve real-world problems for users. I have experience working on mobile and web applications, SaaS platforms, and e-commerce websites."
+                    />
+                  </div>
+                </div>
               </form>
             </div>
           </div>
