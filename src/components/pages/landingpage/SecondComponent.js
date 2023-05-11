@@ -66,10 +66,10 @@ const SecondComponent = () => {
         </div>
         <div className={classes['second-container-image-container']}>
           <div>
-            <img src={Student} alt="" />
+            <img id={classes['second-container-image']} src={Student} alt="" />
           </div>
           <div>
-            <img src={Questions} alt="" />
+            <img id={classes['second-container-image']} src={Questions} alt="" />
           </div>
         </div>
       </section>

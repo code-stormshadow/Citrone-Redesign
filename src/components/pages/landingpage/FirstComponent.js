@@ -11,11 +11,15 @@ const FirstComponent = () => {
   return (
     <section className={classes['first-container']}>
       <div className={classes['header-container']}>
-        <img className={classes.logo} src={Logo} alt="" />
-        <h2 className={classes.citrone}>Citrone</h2>
-        <Link to="/login">
-          <button className={classes['login-button']}>Log In</button>
-        </Link>
+        <div className={classes['logo-citrone-container']}>
+          <img className={classes.logo} src={Logo} alt="" />
+          <h2 className={classes.citrone}>Citrone</h2>
+        </div>
+        <div className={classes['login-container']}>
+          <Link to="/login">
+            <button className={classes['login-button']}>Log In</button>
+          </Link>
+        </div>
       </div>
       <div className={classes['section-landing-1']}>
         <div className={classes['paragraph-container']}>

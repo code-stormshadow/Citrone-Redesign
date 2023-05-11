@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Dashboard from './components/pages/dashboardpage/Dashboard';
 import LandingPage from './components/pages/landingpage/LandingPage';
-import LoginPage from './components/pages/loginpage/LoginPage';
+import LoginPage from './components/pages/signuppage/LoginPage';
 import SignUpPage from './components/pages/signuppage/SignUpPage';
 import ForgotPasswordPage from './components/pages/signuppage/ForgotPasswordPage';
 import CheckMail from './components/pages/signuppage/CheckMail';
@@ -22,14 +22,45 @@ import CompletedModules from './components/pages/dashboardpage/db_ components/Co
 import Quiz2Grade from './components/pages/dashboardpage/quizComponents/Quiz2Grade';
 import LessonOneAssignment from './components/pages/dashboardpage/db_ components/LessonOneAssignment';
 import ReSubmit from './components/pages/dashboardpage/db_ components/Resubmit';
+import { useState, useEffect } from 'react';
 
 function App() {
+  const [isNewUser, setIsNewUser] = useState(false);
+
+  const Greeting = () => {
+    const classes = {
+      /* Define your classes object here */
+    };
+    if (isNewUser) {
+      return (
+        <div id={classes.greetingDiv} style={{ display: 'block' }}>
+          <h1 id={classes.greetingHeader}>
+            <span id={classes.congratulations}>Congratulations!</span> Your account has been
+            successfully created. You may log in now.
+          </h1>
+        </div>
+      );
+    } else {
+      return null;
+    }
+  };
+  Greeting();
+
+  useEffect(() => {
+    // Call server API to check if user is new
+    fetch('/api/isNewUser')
+      .then((res) => res.json())
+      .then((data) => {
+        setIsNewUser(data.isNewUser);
+      })
+      .catch((error) => console.error(error));
+  }, []);
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<LandingPage />}></Route>
         <Route path="signup" element={<SignUpPage />}></Route>
-        <Route path="login" element={<LoginPage />}></Route>
+        <Route path="login" element={<LoginPage isNewUser={isNewUser} />}></Route>
         <Route path="forgot-password" element={<ForgotPasswordPage />}></Route>
         <Route path="checkmail" element={<CheckMail />}></Route>
         <Route path="set-password" element={<SetPassword />}></Route>
