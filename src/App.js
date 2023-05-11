@@ -46,7 +46,7 @@ function App() {
         <Route path="logout" element={<LogOut />}></Route>
         <Route path="moduleone" element={<ModuleOne />}></Route>
         <Route path="course-module-one" element={<CourseModuleOne />}></Route>
-        <Route path="/dashboard/completed-modules" element={<CompletedModules />}></Route>
+        <Route path="/completed-modules" element={<CompletedModules />}></Route>
         <Route path="quizgrade" element={<Quiz2Grade />}></Route>
         <Route path="lesson-1-assignment" element={<LessonOneAssignment />}></Route>
         <Route path="re-submit" element={<ReSubmit />}></Route>

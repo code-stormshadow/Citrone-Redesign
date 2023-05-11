@@ -30,84 +30,93 @@ const SideNavBar = (props) => {
 
   const { collapsed } = useProSidebar();
 
-  const [isActiveDashboard, setIsActiveDashboard] = useState(false);
-  const [isActiveCourse, setIsActiveCourse] = useState(false);
-  const [isActiveAssignment, setIsActiveAssignment] = useState(false);
-  const [isActiveQuiz, setIsActiveQuiz] = useState(false);
-  const [isActiveSt, setIsActiveSt] = useState(false);
-  const [isActiveFaq, setIsActiveFaq] = useState(false);
-  const [isActiveSettings, setIsActiveSettings] = useState(false);
+  // const [isActiveDashboard, setIsActiveDashboard] = useState(false);
+  // const [isActiveCourse, setIsActiveCourse] = useState(false);
+  // const [isActiveAssignment, setIsActiveAssignment] = useState(false);
+  // const [isActiveQuiz, setIsActiveQuiz] = useState(false);
+  // const [isActiveSt, setIsActiveSt] = useState(false);
+  // const [isActiveFaq, setIsActiveFaq] = useState(false);
+  // const [isActiveSettings, setIsActiveSettings] = useState(false);
+
+  // useEffect(() => {
+  //   const path = window.location.pathname;
+  //   setIsActiveDashboard(path === '/dashboard');
+  // }, [setIsActiveDashboard]);
+
+  // const activeDashboardClick = () => {
+  //   setIsActiveDashboard(true);
+  //   setIsActiveCourse(false);
+  // };
+
+  // const activeCourseClick = () => {
+  //   setIsActiveDashboard(false);
+  //   setIsActiveCourse(true);
+  // };
+
+  // useEffect(() => {
+  //   const path = window.location.pathname;
+  //   setIsActiveCourse(path === '/course-content');
+  //   // setIsActiveCourse(path === '/course-module-one');
+  // }, [setIsActiveCourse]);
+
+  // const activeAssignmentClick = () => {
+  //   setIsActiveDashboard(false);
+  //   setIsActiveCourse(false);
+  //   setIsActiveAssignment(true);
+  // };
+
+  // useEffect(() => {
+  //   const path = window.location.pathname;
+  //   setIsActiveAssignment(path === '/assignment');
+  //   /* setIsActiveAssignment(path === '/lesson-1-assignment'); */
+  // }, [setIsActiveAssignment]);
+
+  // const activeQuizClick = () => {
+  //   setIsActiveAssignment(false);
+  //   setIsActiveQuiz(true);
+  // };
+
+  // useEffect(() => {
+  //   const path = window.location.pathname;
+  //   setIsActiveQuiz(path === '/quizzes');
+  // }, [setIsActiveQuiz]);
+
+  // const activeStClick = () => {
+  //   setIsActiveQuiz(false);
+  //   setIsActiveSt(true);
+  // };
+
+  // useEffect(() => {
+  //   const path = window.location.pathname;
+  //   setIsActiveSt(path === '/students_tutors');
+  // }, [setIsActiveSt]);
+
+  // const activeFaqClick = () => {
+  //   setIsActiveSt(false);
+  //   setIsActiveFaq(true);
+  // };
+
+  // useEffect(() => {
+  //   const path = window.location.pathname;
+  //   setIsActiveFaq(path === '/faq');
+  // }, [setIsActiveFaq]);
+
+  // const activeSettingsClick = () => {
+  //   setIsActiveFaq(false);
+  //   setIsActiveSettings(true);
+  // };
+
+  // useEffect(() => {
+  //   const path = window.location.pathname;
+  //   setIsActiveSettings(path === '/settings');
+  // }, [setIsActiveSettings]);
+
+  const [activePath, setActivePath] = useState('');
+  const location = useLocation();
 
   useEffect(() => {
-    const path = window.location.pathname;
-    setIsActiveDashboard(path === '/dashboard');
-  }, [setIsActiveDashboard]);
-
-  const activeDashboardClick = () => {
-    setIsActiveDashboard(true);
-    setIsActiveCourse(false);
-  };
-
-  const activeCourseClick = () => {
-    setIsActiveDashboard(false);
-    setIsActiveCourse(true);
-  };
-
-  useEffect(() => {
-    const path = window.location.pathname;
-    setIsActiveCourse(path === '/course-content');
-  }, [setIsActiveCourse]);
-
-  const activeAssignmentClick = () => {
-    setIsActiveDashboard(false);
-    setIsActiveCourse(false);
-    setIsActiveAssignment(true);
-  };
-
-  useEffect(() => {
-    const path = window.location.pathname;
-    setIsActiveAssignment(path === '/assignment');
-  }, [setIsActiveAssignment]);
-
-  const activeQuizClick = () => {
-    setIsActiveAssignment(false);
-    setIsActiveQuiz(true);
-  };
-
-  useEffect(() => {
-    const path = window.location.pathname;
-    setIsActiveQuiz(path === '/quizzes');
-  }, [setIsActiveQuiz]);
-
-  const activeStClick = () => {
-    setIsActiveQuiz(false);
-    setIsActiveSt(true);
-  };
-
-  useEffect(() => {
-    const path = window.location.pathname;
-    setIsActiveSt(path === '/students_tutors');
-  }, [setIsActiveSt]);
-
-  const activeFaqClick = () => {
-    setIsActiveSt(false);
-    setIsActiveFaq(true);
-  };
-
-  useEffect(() => {
-    const path = window.location.pathname;
-    setIsActiveFaq(path === '/faq');
-  }, [setIsActiveFaq]);
-
-  const activeSettingsClick = () => {
-    setIsActiveFaq(false);
-    setIsActiveSettings(true);
-  };
-
-  useEffect(() => {
-    const path = window.location.pathname;
-    setIsActiveSettings(path === '/settings');
-  }, [setIsActiveSettings]);
+    setActivePath(location.pathname);
+  }, [location.pathname]);
 
   return (
     <div id="app" style={{ height: '100%' }}>
@@ -140,10 +149,17 @@ const SideNavBar = (props) => {
             component={<Link to="/dashboard" />}
             id={styles.menuItem}
             key="dashboard"
-            className={`${styles.menuDashboard} ${isActiveDashboard ? styles.active : ''}`}
-            onClick={activeDashboardClick}>
+            className={`${styles.menuDashboard} ${
+              activePath.startsWith('/dashboard') || activePath.startsWith('/completed-modules')
+                ? styles.active
+                : ''
+            }`}>
             <img
-              src={isActiveDashboard ? ActiveDashboardIcon : DashboardIcon}
+              src={
+                activePath.startsWith('/dashboard') || activePath.startsWith('/completed-modules')
+                  ? ActiveDashboardIcon
+                  : DashboardIcon
+              }
               alt="Icon"
               className={styles.navIcon}
             />
@@ -153,11 +169,20 @@ const SideNavBar = (props) => {
           <MenuItem
             component={<Link to="/course-content" />}
             key="course"
-            className={`${styles.course} ${isActiveCourse ? styles.active : ''}`}
-            onClick={activeCourseClick}
+            className={`${styles.course} ${
+              activePath.startsWith('/course-content') ||
+              activePath.startsWith('/course-module-one')
+                ? styles.active
+                : ''
+            }`}
             id={styles.menuItemLink}>
             <img
-              src={isActiveCourse ? ActiveCourseIcon : CourseIcon}
+              src={
+                activePath.startsWith('/course-content') ||
+                activePath.startsWith('/course-module-one')
+                  ? ActiveCourseIcon
+                  : CourseIcon
+              }
               alt="Course Icon"
               className={styles.navIcon}
             />
@@ -166,11 +191,26 @@ const SideNavBar = (props) => {
 
           <MenuItem
             component={<Link to="/assignment" className={styles.sideMenu} />}
-            className={isActiveAssignment ? styles.active : ''}
-            onClick={activeAssignmentClick}
+            className={`${styles.assignment} ${
+              activePath.startsWith('/assignment') ||
+              activePath.startsWith('/lesson-assignments') ||
+              activePath.startsWith('/lesson-1-assignment') ||
+              activePath.startsWith('/lesson-grades') ||
+              activePath.startsWith('/re-submit')
+                ? styles.active
+                : ''
+            }`}
             id={styles.menuItemLink}>
             <img
-              src={isActiveAssignment ? ActiveAssignmentIcon : AssignmentIcon}
+              src={
+                activePath.startsWith('/assignment') ||
+                activePath.startsWith('/lesson-assignments') ||
+                activePath.startsWith('/lesson-1-assignment') ||
+                activePath.startsWith('/lesson-grades') ||
+                activePath.startsWith('/re-submit')
+                  ? ActiveAssignmentIcon
+                  : AssignmentIcon
+              }
               alt="Icon"
               className={styles.navIcon}
             />
@@ -179,11 +219,22 @@ const SideNavBar = (props) => {
 
           <MenuItem
             component={<Link to="/quizzes" className={styles.sideMenu} />}
-            className={isActiveQuiz ? styles.active : ''}
-            onClick={activeQuizClick}
+            className={`${styles.quiz} ${
+              activePath.startsWith('/quizzes') ||
+              activePath.startsWith('/quizgrade') ||
+              activePath.startsWith('/moduleone')
+                ? styles.active
+                : ''
+            }`}
             id={styles.menuItemLink}>
             <img
-              src={isActiveQuiz ? ActiveQuizIcon : QuizIcon}
+              src={
+                activePath.startsWith('/quizzes') ||
+                activePath.startsWith('/quizgrade') ||
+                activePath.startsWith('/moduleone')
+                  ? ActiveQuizIcon
+                  : QuizIcon
+              }
               alt="Icon"
               className={styles.navIcon}
             />
@@ -192,20 +243,24 @@ const SideNavBar = (props) => {
 
           <MenuItem
             component={<Link to="/students_tutors" className={styles.sideMenu} />}
-            className={isActiveSt ? styles.active : ''}
-            onClick={activeStClick}
+            className={`${styles.students_tutors} ${
+              activePath.startsWith('/students_tutors') ? styles.active : ''
+            }`}
             id={styles.menuItemLink}>
-            <img src={isActiveSt ? ActiveStIcon : StIcon} alt="Icon" className={styles.navIcon} />
+            <img
+              src={activePath.startsWith('/students_tutors') ? ActiveStIcon : StIcon}
+              alt="Icon"
+              className={styles.navIcon}
+            />
             <span className={styles.menu_link}>Students & Tutors</span>
           </MenuItem>
 
           <MenuItem
             component={<Link to="/faq" className={styles.sideMenu} />}
-            className={isActiveFaq ? styles.active : ''}
-            onClick={activeFaqClick}
+            className={`${styles.faq} ${activePath.startsWith('/faq') ? styles.active : ''}`}
             id={styles.menuItemLink}>
             <img
-              src={isActiveFaq ? ActiveFaqIcon : FaqIcon}
+              src={activePath.startsWith('/faq') ? ActiveFaqIcon : FaqIcon}
               alt="Icon"
               className={styles.navIcon}
             />
@@ -214,11 +269,12 @@ const SideNavBar = (props) => {
 
           <MenuItem
             component={<Link to="/settings" />}
-            className={isActiveSettings ? styles.active : ''}
-            onClick={activeSettingsClick}
+            className={`${styles.settings} ${
+              activePath.startsWith('/settings') ? styles.active : ''
+            }`}
             id={styles.menuItemLink}>
             <img
-              src={isActiveSettings ? ActiveSettingsIcon : SettingsIcon}
+              src={activePath.startsWith('/settings') ? ActiveSettingsIcon : SettingsIcon}
               alt="Icon"
               className={styles.navIcon}
             />
