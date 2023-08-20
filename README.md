@@ -5,7 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Contributors
 
 John Feyisayo - https://github.com/johnfeyisayo
+
 Emi-ife Faluyi - https://github.com/code-stormshadow
+
 Ayo Eboweme - https://github.com/lebrin-Ay
 
 ## Available Scripts
